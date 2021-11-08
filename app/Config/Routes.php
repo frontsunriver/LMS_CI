@@ -48,7 +48,7 @@ $routes->post('/calendario/evento', 'Calendario::detalles', ['filter' => 'auth']
 
 $routes->get('/exam', 'Exam::index', ['filter' => 'auth']);
 $routes->get('/exam/detail', 'Exam::detail', ['filter' => 'auth']);
-
+$routes->post('/exam/getExamList', 'Exam::getExamList', ['filter' => 'auth']);
 
 /*
  * --------------------------------------------------------------------

@@ -62,10 +62,47 @@ class ExamModel extends Model
             ->get()->getFirstRow();
     }
 
-    function getExamList($id) {
+    function getExamList($nemo, $cod) {
+        $returnvValue = [];
+        $result =  $this->dao->query("SELECT exam_list.id, exam_list.title, int_curso.cursocod, int_salon.nemodes FROM ".
+                "exam_list LEFT JOIN int_curso ON exam_list.idcurso = int_curso.cursocod ".
+                "LEFT JOIN int_salon ON exam_list.idsalon = int_salon.nemo ".
+                "WHERE exam_list.idcurso = ".$cod." and exam_list.idsalon = ".$nemo)->getResult();
+        foreach ($result as $key) {
+            $count = $this->dao->query("select * from exam_quiz where list_id = ".$key->id)->getResult();
+            $temp = [];
+            $temp['id'] = $key->id;
+            $temp['title'] = $key->title;
+            $temp['cursocod'] = $key->cursocod;
+            $temp['nemodes'] = $key->nemodes;
+            $temp['quizeCount'] = count($count);
+            array_push($returnvValue, $temp);
+        }
+        return $returnvValue;
+    }
+
+
+    function getnemodes($nemo){
+        $result = $this->dao->query("select nemodes from int_salon where nemo = ".$nemo)->getResult();
+        $temp = [];
+        $temp['nemodes'] = $result[0]->nemodes;
+        $temp['nemo'] = $nemo;
+        return $temp;
+    }
+
+    function getcursonom($cod){
+        $result = $this->dao->query("select cursonom from int_curso where cursocod = ".$cod)->getResult();
+        $temp = [];
+        $temp['cursonom'] = $result[0]->cursonom;
+        $temp['cod'] = $cod;
+        return $temp;
+    }
+
+    function getExamQusList($id) {
         return $this->dao->query("SELECT count(*) as count, exam_list.title, exam_list.id FROM ".
                 "exam_quiz LEFT JOIN exam_list ON exam_list.id = exam_quiz.list_id ".
                 "LEFT JOIN exam_main ON exam_list.main_id = exam_main.id ".
                 "WHERE exam_main.id = ".$id)->getResult();
     }
+
 }

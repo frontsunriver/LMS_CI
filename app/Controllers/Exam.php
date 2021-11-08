@@ -43,59 +43,51 @@ class Exam extends BaseController
 
         $calendario=new CalendarioModel();
         $cursos=[];
-
         if($this->user_on['user_info']->profile=="Administrador del Sistema"){$cursos=$calendario->getCursos();}
         if($this->user_on['user_info']->profile=="Profesor"){$cursos=$calendario->getCursosProf($this->user_on['user_info']->p_codigo);}
-
         $this->user_on['cursos'] = $cursos;
-        // print_r($this->user_on);
-        // exit;
         return view('exam/index', $this->user_on);
 
     }
 
-    // public function detail()
-    // {
-    //     $id = $this->request->getGet('id');
-    //     $exam = new ExamModel();
-    //     $data = $exam->getById($id);
-    //     $this->user_on['exam'] = $data;
-    //     return view('exam/detail', $this->user_on);
-    // }
 
-    public function detail_exam($nemo=0,$cod=0)
+
+    public function getExamList()
     {  
+        $nemo = $this->request->getPost('nemo');
+        $cod = $this->request->getPost('cod');
         if($nemo==0 || $cod==0){return redirect()->to(base_url('/exam'));}
         if(!session('scodigo')){return redirect()->to(base_url('/'));}
+        $exam = new ExamModel();
+        $data = $exam->getExamList($nemo, $cod);
+        $this->user_on['data'] = $data;
+        return view('exam/exam_detail', $this->user_on);
+    }
+
+    public function examDetail($nemo=0,$cod=0){
+
         $calendario=new CalendarioModel();
-        $periodos=[];
-        $eventos=[];
+        if($this->user_on['user_info']->profile=="Administrador del Sistema"){$cursos=$calendario->getCursos();}
+        if($this->user_on['user_info']->profile=="Profesor"){$cursos=$calendario->getCursosProf($this->user_on['user_info']->p_codigo);}
+        $this->user_on['cursos'] = $cursos;
 
-        $periodos=$calendario->getPeriodos();
-        $nombre_curso=$calendario->getNombreCurso($cod);
-        $nombre_salon=$calendario->getNombreSalon($nemo);
-        $profesor=$calendario->getProfCurso($nemo,$cod);
-        $cod_prof=$profesor->p_codigo;
-        $eventos=$calendario->getEventos($nemo,$cod,$cod_prof);
-        $combos=$calendario->getCombos();
-        $curso=['nemo'=>$nemo,'cod'=>$cod];
+        if($nemo==0 || $cod==0){return redirect()->to(base_url('/exam'));}
+        if(!session('scodigo')){return redirect()->to(base_url('/'));}
+        $exam = new ExamModel();
+        $nemodes = $exam->getnemodes($nemo);
+        $cursonom = $exam->getcursonom($cod);
 
-        $this->user_on['periodos'] = $periodos;
-        $this->user_on['nombre_curso'] = $nombre_curso->cursonom;
-        $this->user_on['nombre_salon'] = $nombre_salon->nemodes;
-        $this->user_on['profesor'] = $profesor;
-        $this->user_on['eventos'] = $eventos;
-        $this->user_on['curso'] = $curso;
-        $this->user_on['combos'] = $combos;
+        $this->user_on['nemodes'] = $nemodes;
+        $this->user_on['cursonom'] = $cursonom;
         return view('exam/exam_detail', $this->user_on);
     }
     
 
-    public function getExamList()
+    public function getExamQusList()
     {
         $id = $this->request->getPost('exam_id');
         $exam = new ExamModel();
-        $data = $exam->getExamList($id);
+        $data = $exam->getExamQusList($id);
         $result['data'] = $data;
         echo json_encode($result);
     }

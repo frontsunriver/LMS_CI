@@ -62,7 +62,7 @@
 
                               <?php foreach ($cursos as $key) { ?>
                               <div class="col-12 col-md-6 col-lg-4 col-xl-3 curso" data-search="<?php echo $key->nemodes." ".$key->cursonom." ".$key->p_nomcomp; ?>">
-                                <a href="<?php echo base_url('/exam/detail_exam/'.$key->nemo.'/'.$key->cursocod); ?>" style="text-decoration: none;color: #212529;">
+                                <a href="<?php echo base_url('/exam/examdetail/'.$key->nemo.'/'.$key->cursocod); ?>" style="text-decoration: none;color: #212529;">
                                 <div class="card my-2 mx-1" >
                                   <div class="row no-gutters">
                                     <div class="col-4">
