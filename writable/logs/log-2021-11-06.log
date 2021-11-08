@@ -1,0 +1,13 @@
+CRITICAL - 2021-11-06 08:41:03 --> syntax error, unexpected '1' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(487): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Views/calendario/calendario.php(20): CodeIgniter\View\View->include('layout/sidebar')
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/admaula/c...')
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('calendario/cale...', Array, true)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(49): view('calendario/cale...', Array)
+#7 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->index()
+#8 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#9 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

@@ -1,0 +1,9 @@
+cesienet.sie-aulavirtual.com/app/Config/Routes.php
+cesienet.sie-aulavirtual.com/app/Controllers
+cesienet.sie-aulavirtual.com/app/Views
+cesienet.sie-aulavirtual.com/app/Models
+cesienet.sie-aulavirtual.com/public/assets/css/dashboard.css
+cesienet.sie-aulavirtual.com/public/assets/css/style.css
+cesienet.sie-aulavirtual.com/public/assets/script/calendario.js
+cesienet.sie-aulavirtual.com/public/assets/img
+

@@ -1,0 +1,32 @@
+CRITICAL - 2021-11-02 17:07:48 --> syntax error, unexpected '$'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/home/admaula/c...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-02 17:08:06 --> syntax error, unexpected '$'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/cur...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/cur...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-02 18:38:06 --> syntax error, unexpected ';', expecting ']'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/cur...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/cur...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-02 20:45:56 --> Unknown column 'int_curso.nemo' in 'on clause'
+CRITICAL - 2021-11-02 20:45:56 --> Call to a member function getResult() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(45): App\Models\CalendarioModel->getCursos()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->index()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

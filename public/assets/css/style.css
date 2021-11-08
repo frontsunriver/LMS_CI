@@ -1,0 +1,265 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.d-hidden {
+  display: none !important;
+}
+/* login -------------*/
+.vertical-alg {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.title-bottom-area {
+  background-color: #115490;
+  background: #115490;
+  display: table !important;
+  line-height: initial;
+  padding: 14px 40px 14px 20px;
+  letter-spacing: 0.3px;
+}
+.bg-login {
+  background: url(../img/bg/fondo-web.png) #fff no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box-login {
+  position: fixed;
+  right: 0;
+  top: 0;
+  max-width: 414px;
+  -webkit-border-top-left-radius: 25px;
+  -webkit-border-bottom-left-radius: 25px;
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-bottomleft: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.box-login .img-center {
+  margin: 0 auto;
+}
+.csf-s .form-control,
+.csf-s .input-group-text {
+  border-radius: 0px;
+}
+
+.csf-s .form-control {
+  border: 2px solid #115490;
+  border-right: 0px;
+  -webkit-border-top-left-radius: 16px;
+  -webkit-border-bottom-left-radius: 16px;
+  -moz-border-radius-topleft: 16px;
+  -moz-border-radius-bottomleft: 16px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.csf-s .input-group-text {
+  border: 2px solid #115490;
+  background-color: #115490;
+  background: #115490;
+  -webkit-border-top-right-radius: 16px;
+  -webkit-border-bottom-right-radius: 16px;
+  -moz-border-radius-topright: 16px;
+  -moz-border-radius-bottomright: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.csf-s .form-control::-webkit-input-placeholder {
+  color: #115490 !important;
+}
+.csf-s .form-control::placeholder {
+  color: #115490 !important;
+}
+.csf-s .input-group-text i {
+  width: 18px;
+  height: 18px;
+}
+.unlock-pass:hover{
+border-color: #16a3b7 !important;
+  background-color: #16a3b7 !important;
+  background: #16a3b7 !important;
+}
+.label-s {
+  color: #115490;
+}
+.ico-user {
+  background: url(../img/icon/user.svg);
+}
+.ico-pass {
+  background: url(../img/icon/passw.png);
+}
+.unlock-pass.active .ico-pass{
+  background: url(../img/icon/passw-unlock.png);
+}
+.bg-ico {
+  background-size: 18px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.color-primary.form-check-input {
+  border: 1px solid #115490;
+}
+.color-primary.form-check-input:checked {
+  background-color: #115490;
+  border-color: #115490;
+}
+
+.btn-secondary {
+  border-color: #16a3b7;
+  background-color: #16a3b7;
+  background: #16a3b7;
+}
+.btn-secondary:hover {
+  border-color: #115490;
+  background-color: #115490;
+  background: #115490;
+}
+.list-social a {
+  margin: 0 5px;
+}
+
+.trans,
+.trans * {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.trans:hover,
+.trans:hover * {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.jconfirm-title{
+  line-height: 25px !important;
+}
+
+@media screen and (max-width: 700px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+  .box-login{
+    border-radius: 0px;
+  }
+  .box-login .img-center {
+    width: 160px;
+  }
+  #title-login {
+    font-size: 26px !important;
+    display: block;
+    text-align: center;
+  }
+  .csf-s .form-control,
+  .csf-s .input-group-text {
+    border-radius: 0px;
+  }
+  .csf-s .form-control {
+    border: 1px solid #115490;
+    border-right: 0px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .csf-s .input-group-text {
+    border: 1px solid #115490;
+    background-color: #115490;
+    background: #115490;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 166pxpx;
+  }
+  .list-social {
+    margin-top: 40px !important;
+  }
+  #fix-section {
+    right: 0px;
+    left: auto;
+    bottom: 20px;
+    font-size: 15px !important;
+    padding: 11px 20px 11px 30px !important;
+    border-radius: 0px !important;
+    -webkit-border-top-left-radius: 25px !important;
+    -webkit-border-bottom-left-radius: 25px !important;
+    -moz-border-radius-topleft: 25px !important;
+    -moz-border-radius-bottomleft: 25px !important;
+    border-top-left-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+  }
+  #btn-login-user {
+    width: 100%;
+  }
+  /* notif bar */
+  .d-hidden {
+    display: block !important;
+  }
+  #notif-bar {
+    padding: 8px 10px;
+    background: #fff;
+    border-top: 1px solid gray;
+    box-shadow: 0px -2px 7px -3px rgb(110 110 110 / 68%);
+    -webkit-box-shadow: 0px -2px 7px -3px rgb(110 110 110 / 68%);
+    -moz-box-shadow: 0px -2px 7px -3px rgba(110, 110, 110, 0.68);
+  }
+  #notif-bar .align-middle {
+    float: left;
+  }
+  #notif-bar .lright {
+    font-size: 13px;
+    color: #115490;
+    float: right;
+    margin-top: 5px;
+  }
+  #notif-bar a {
+    text-decoration: none;
+  }
+  #notif-bar .close {
+    color: #000;
+    font-weight: 500;
+    margin-left: 6px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .bg-login-form > section {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  .list-social {
+    margin-top: 20px !important;
+  }
+  #fix-section {
+    bottom: 3px !important;
+    padding: 6px 10px 7px 20px !important;
+    font-size: 14px !important;
+  }
+  #fix-section b {
+    font-weight: 600 !important;
+  }
+  #notif-bar {
+    padding: 6px 8px;
+  }
+  #notif-bar .logo {
+    height: 20px;
+  }
+  #notif-bar .lright {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}

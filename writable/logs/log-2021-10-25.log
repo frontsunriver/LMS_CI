@@ -1,0 +1,26 @@
+ERROR - 2021-10-25 14:42:52 --> Table 'admaula_bdsienet_2021.cfg_usuario' doesn't exist
+CRITICAL - 2021-10-25 14:42:52 --> Call to a member function getFirstRow() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Validation/Userrules.php(9): CodeIgniter\BaseModel->first()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Validation/Validation.php(312): App\Validation\Userrules->validateUser('aulavirtual', 'name_user,passw...', Array, NULL)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Validation/Validation.php(159): CodeIgniter\Validation\Validation->processRules('password_user', 'password_user', 'aulavirtual', Array, Array)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Controller.php(183): CodeIgniter\Validation\Validation->run()
+#5 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Login.php(38): CodeIgniter\Controller->validate(Array, Array)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#7 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-10-25 14:43:11 --> Table 'admaula_bdsienet_2021.cfg_usuario' doesn't exist
+CRITICAL - 2021-10-25 14:43:11 --> Call to a member function getFirstRow() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Validation/Userrules.php(9): CodeIgniter\BaseModel->first()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Validation/Validation.php(312): App\Validation\Userrules->validateUser('aulavirtual', 'name_user,passw...', Array, NULL)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Validation/Validation.php(159): CodeIgniter\Validation\Validation->processRules('password_user', 'password_user', 'aulavirtual', Array, Array)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Controller.php(183): CodeIgniter\Validation\Validation->run()
+#5 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Login.php(38): CodeIgniter\Controller->validate(Array, Array)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#7 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

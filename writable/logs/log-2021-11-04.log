@@ -1,0 +1,293 @@
+CRITICAL - 2021-11-04 08:33:36 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:33:36 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:33:36 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:33:36 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:33:36 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:33:36 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:33:36 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:35:41 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:35:41 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:35:41 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:35:41 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:35:41 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:35:41 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:35:41 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:35:41 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:36:01 --> `App\Models\CalendarioModel` model class does not specify a Primary Key.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(591): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\Cale...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(121): CodeIgniter\Model->__call('getNewEventId', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-04 08:58:08 --> syntax error, unexpected '$this' (T_VARIABLE)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/cur...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/cur...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 10:43:12 --> Use of undefined constant fecha_entrega - assumed 'fecha_entrega' (this will throw an Error in a future version of PHP)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/home/admaula/c...', 140, Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 11:12:32 --> syntax error, unexpected 'if' (T_IF)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/sav...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/sav...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 11:12:32 --> syntax error, unexpected 'if' (T_IF)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/cur...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/cur...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 11:38:37 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/sav...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/sav...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 11:38:37 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/sav...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/sav...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 12:39:41 --> Object of class stdClass could not be converted to string
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('calendario/deta...', Array, true)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(117): view('calendario/deta...', Array)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->new_evento()
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#6 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-04 12:39:46 --> Object of class stdClass could not be converted to string
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('calendario/deta...', Array, true)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(117): view('calendario/deta...', Array)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->new_evento()
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#6 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-04 12:44:36 --> Object of class stdClass could not be converted to string
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('calendario/deta...', Array, true)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(117): view('calendario/deta...', Array)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->new_evento()
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#6 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-04 17:47:55 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/sav...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/sav...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 18:46:30 --> The original file is not a valid file.
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(143): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(194): CodeIgniter\HTTP\Files\UploadedFile->move('./assets/files/...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->save_evento()
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-04 19:01:54 --> syntax error, unexpected 'return' (T_RETURN)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/sav...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/sav...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 19:27:48 --> Cannot redeclare App\Models\CalendarioModel::getInfo()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-04 19:29:46 --> Cannot redeclare App\Models\CalendarioModel::getInfo()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-04 19:36:08 --> syntax error, unexpected '$calendario' (T_VARIABLE)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/sec...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/sec...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 19:36:16 --> syntax error, unexpected '$calendario' (T_VARIABLE)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/cur...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/cur...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 19:36:59 --> syntax error, unexpected '$calendario' (T_VARIABLE)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/cur...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/cur...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 19:38:11 --> syntax error, unexpected '$calendario' (T_VARIABLE)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/cur...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/cur...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 19:38:27 --> syntax error, unexpected '$calendario' (T_VARIABLE)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/cur...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/cur...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 19:38:40 --> syntax error, unexpected '$calendario' (T_VARIABLE)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/cur...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/cur...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-04 19:39:38 --> syntax error, unexpected '$calendario' (T_VARIABLE)
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/calendario/cur...')
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(809): CodeIgniter\Router\Router->handle('/calendario/cur...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

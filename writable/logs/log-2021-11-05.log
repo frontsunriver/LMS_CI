@@ -1,0 +1,26 @@
+CRITICAL - 2021-11-05 16:41:34 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in /home/admaula/cesienet.sie-aulavirtual.com/app/Models/CalendarioModel.php on line 121
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Models/CalendarioModel.php(121): CodeIgniter\Database\BaseBuilder->like('calendario_even...', NULL)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(324): App\Models\CalendarioModel->getEventosFecha('2021001', '06', '12', '2021')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->mes('2021001', '06', '12', '2021')
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-05 17:14:59 --> syntax error, unexpected ')'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('calendario/cale...', Array, true)
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(354): view('calendario/cale...', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->mes('2021001', '06', '10', '2021')
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-05 17:15:16 --> syntax error, unexpected ')'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('calendario/cale...', Array, true)
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(352): view('calendario/cale...', Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->mes('2021001', '06', '10', '2021')
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

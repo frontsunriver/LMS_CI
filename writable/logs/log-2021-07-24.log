@@ -1,0 +1,480 @@
+CRITICAL - 2021-07-24 18:00:11 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 18:00:11 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 18:00:12 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 18:00:12 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 18:00:13 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 18:00:13 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 18:00:13 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 18:00:13 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 18:00:18 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 18:00:18 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 18:23:28 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 18:23:28 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 18:24:09 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 18:24:09 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 18:24:24 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 18:24:24 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 18:26:27 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 18:26:27 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 20:07:47 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 20:07:47 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 20:14:14 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\laragon\\www\\...', 80, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(728): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '127.0.0.1')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(9): session('mensaje')
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-24 20:14:14 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Config\Events.php:35) in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\laragon\\www\\...', 137, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 21:59:08 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 21:59:23 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 21:59:23 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 22:00:07 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 22:00:07 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 22:00:08 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 22:00:08 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 22:00:08 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 22:00:08 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 22:00:08 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 22:00:08 --> Cannot declare class App\Filters\Auth, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 22:02:59 --> Class 'Config\App\Validation\Userrules' not found
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(118): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(30): CodeIgniter\Controller->validate(Array, Array)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 22:07:04 --> Class 'Config\App\Validation\Userrules' not found
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(118): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(30): CodeIgniter\Controller->validate(Array, Array)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 22:08:36 --> Class 'Config\App\Validation\Userrules' not found
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(118): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(30): CodeIgniter\Controller->validate(Array, Array)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 22:11:48 --> Class 'Config\App\Validation\Userrules' not found
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(118): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(30): CodeIgniter\Controller->validate(Array, Array)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 22:15:31 --> Class 'Config\App\Validation\Userrules' not found
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(118): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(30): CodeIgniter\Controller->validate(Array, Array)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 22:17:48 --> syntax error, unexpected ')', expecting ';'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Validation\\...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Validation\\...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(576): spl_autoload_call('App\\Validation\\...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(118): CodeIgniter\Validation\Validation->loadRuleSets()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(30): CodeIgniter\Controller->validate(Array, Array)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-07-24 22:18:03 --> You must set the database table to be used with your query.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Model.php(602): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Model.php(798): CodeIgniter\Model->builder()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Validation\Userrules.php(9): CodeIgniter\Model->__call('where', Array)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(312): App\Validation\Userrules->validateUser('k_@9ockn', 'name_user,passw...', Array, NULL)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(159): CodeIgniter\Validation\Validation->processRules('password_user', 'password_user', 'k_@9ockn', Array, Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(30): CodeIgniter\Controller->validate(Array, Array)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-07-24 22:18:25 --> You must set the database table to be used with your query.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Model.php(602): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Model.php(798): CodeIgniter\Model->builder()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Validation\Userrules.php(9): CodeIgniter\Model->__call('where', Array)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(312): App\Validation\Userrules->validateUser('k_@9ockn', 'name_user,passw...', Array, NULL)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Validation\Validation.php(159): CodeIgniter\Validation\Validation->processRules('password_user', 'password_user', 'k_@9ockn', Array, Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(30): CodeIgniter\Controller->validate(Array, Array)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-07-24 22:36:55 --> syntax error, unexpected ')', expecting ';' or ','
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-24 22:58:15 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getVars()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-24 22:59:20 --> Honeypot.theClientIsABot
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Honeypot.php(38): CodeIgniter\Honeypot\Exceptions\HoneypotException::isBot()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\Honeypot->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 22:59:31 --> Honeypot.theClientIsABot
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Honeypot.php(38): CodeIgniter\Honeypot\Exceptions\HoneypotException::isBot()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\Honeypot->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 23:04:01 --> Class 'App\Controllers\Users' not found
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-24 23:13:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): App\Models\UserModel->getUser(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 23:13:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): App\Models\UserModel->getUser(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 23:14:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): App\Models\UserModel->getUser(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 23:14:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): App\Models\UserModel->getUser(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 23:14:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::join()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): App\Models\UserModel->getUser(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 23:17:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): App\Models\UserModel->getUser(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 23:19:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): App\Models\UserModel->getUser(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 23:20:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::result_array()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): App\Models\UserModel->getUser(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 23:21:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): App\Models\UserModel->getUser(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,128 @@
+CRITICAL - 2021-11-01 09:34:57 --> join(): Invalid arguments passed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'join(): Invalid...', '/home/admaula/c...', 99, Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Models/CalendarioModel.php(99): join('calendario_secc...', 'calendario_secc...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(65): App\Models\CalendarioModel->getEventos('2021001', '06', '000029')
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->curso('2021001', '06')
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-01 09:36:19 --> join(): Invalid arguments passed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'join(): Invalid...', '/home/admaula/c...', 99, Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Models/CalendarioModel.php(99): join('calendario_even...', 'calendario_even...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php(65): App\Models\CalendarioModel->getEventos('2021001', '06', '000029')
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->curso('2021001', '06')
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-01 16:56:24 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Helpers/url_helper.php on line 105
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Helpers/url_helper.php(105): _get_uri(NULL, Object(Config\App))
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Helpers/url_helper.php(128): site_url(NULL, NULL, Object(Config\App))
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Views/layout/sidebar.php(43): base_url(NULL)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/admaula/c...')
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(487): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#6 /home/admaula/cesienet.sie-aulavirtual.com/app/Views/resume.php(19): CodeIgniter\View\View->include('layout/sidebar')
+#7 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/admaula/c...')
+#8 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('resume', Array, true)
+#10 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(71): view('resume', Array)
+#11 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#12 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#13 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#15 {main}
+ERROR - 2021-11-01 16:58:15 --> Unknown column 'm.m_enlace' in 'field list'
+CRITICAL - 2021-11-01 16:58:15 --> Call to a member function getResult() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(25): App\Models\UserModel->getMenu(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-01 16:58:43 --> Unknown column 'm.m_enlace' in 'field list'
+CRITICAL - 2021-11-01 16:58:43 --> Call to a member function getResult() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(25): App\Models\UserModel->getMenu(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-01 16:58:43 --> Unknown column 'm.m_enlace' in 'field list'
+CRITICAL - 2021-11-01 16:58:43 --> Call to a member function getResult() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(25): App\Models\UserModel->getMenu(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-01 16:58:43 --> Unknown column 'm.m_enlace' in 'field list'
+CRITICAL - 2021-11-01 16:58:43 --> Call to a member function getResult() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(25): App\Models\UserModel->getMenu(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-01 16:58:44 --> Unknown column 'm.m_enlace' in 'field list'
+CRITICAL - 2021-11-01 16:58:44 --> Call to a member function getResult() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(25): App\Models\UserModel->getMenu(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-01 16:58:59 --> Unknown column 'm.m_enlace' in 'field list'
+CRITICAL - 2021-11-01 16:58:59 --> Call to a member function getResult() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(25): App\Models\UserModel->getMenu(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-01 16:59:01 --> Unknown column 'm.m_enlace' in 'field list'
+CRITICAL - 2021-11-01 16:59:01 --> Call to a member function getResult() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(25): App\Models\UserModel->getMenu(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-01 16:59:01 --> Unknown column 'm.m_enlace' in 'field list'
+CRITICAL - 2021-11-01 16:59:01 --> Call to a member function getResult() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(25): App\Models\UserModel->getMenu(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-01 16:59:01 --> Unknown column 'm.m_enlace' in 'field list'
+CRITICAL - 2021-11-01 16:59:01 --> Call to a member function getResult() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(25): App\Models\UserModel->getMenu(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-01 20:39:50 --> Too few arguments to function App\Controllers\Calendario::detalles(), 0 passed in /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->detalles()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-01 20:40:21 --> Too few arguments to function App\Controllers\Calendario::detalles(), 0 passed in /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calendario->detalles()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

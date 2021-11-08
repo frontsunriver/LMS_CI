@@ -1,0 +1,501 @@
+CRITICAL - 2021-08-05 13:26:47 --> syntax error, unexpected '',cfg_personal.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Validation\Userrules.php(9): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Validation\Validation.php(312): App\Validation\Userrules->validateUser('k_@9ockn', 'name_user,passw...', Array, NULL)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Validation\Validation.php(159): CodeIgniter\Validation\Validation->processRules('password_user', 'password_user', 'k_@9ockn', Array, Array)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(38): CodeIgniter\Controller->validate(Array, Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-08-05 13:26:54 --> syntax error, unexpected '',cfg_personal.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Validation\Userrules.php(9): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Validation\Validation.php(312): App\Validation\Userrules->validateUser('k_@9ockn', 'name_user,passw...', Array, NULL)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Validation\Validation.php(159): CodeIgniter\Validation\Validation->processRules('password_user', 'password_user', 'k_@9ockn', Array, Array)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(38): CodeIgniter\Controller->validate(Array, Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-08-05 13:27:14 --> syntax error, unexpected '',cfg_personal.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Validation\Userrules.php(9): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Validation\Validation.php(312): App\Validation\Userrules->validateUser('k_@9ockn', 'name_user,passw...', Array, NULL)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Validation\Validation.php(159): CodeIgniter\Validation\Validation->processRules('password_user', 'password_user', 'k_@9ockn', Array, Array)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(38): CodeIgniter\Controller->validate(Array, Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-08-05 13:27:55 --> syntax error, unexpected '',cfg_personal.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Validation\Userrules.php(9): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Validation\Validation.php(312): App\Validation\Userrules->validateUser('k_@9ockn', 'name_user,passw...', Array, NULL)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Validation\Validation.php(159): CodeIgniter\Validation\Validation->processRules('password_user', 'password_user', 'k_@9ockn', Array, Array)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(38): CodeIgniter\Controller->validate(Array, Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-08-05 13:32:27 --> syntax error, unexpected '',p.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:32:40 --> syntax error, unexpected '',p.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:33:25 --> syntax error, unexpected '',p.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:34:31 --> syntax error, unexpected '',p.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:34:33 --> syntax error, unexpected '',p.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:34:57 --> syntax error, unexpected '',p.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:34:58 --> syntax error, unexpected '',p.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:34:58 --> syntax error, unexpected '',p.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:34:58 --> syntax error, unexpected '',p.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:35:03 --> syntax error, unexpected '',p.p_materno,'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): spl_autoload_call('App\\Models\\User...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:35:33 --> Too few arguments to function App\Models\UserModel::getInfo(), 0 passed in D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php on line 99 and exactly 1 expected
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): App\Models\UserModel->getInfo()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 13:35:46 --> Too few arguments to function App\Models\UserModel::getInfo(), 0 passed in D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php on line 99 and exactly 1 expected
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): App\Models\UserModel->getInfo()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 13:36:07 --> Too few arguments to function App\Models\UserModel::getInfo(), 0 passed in D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php on line 99 and exactly 1 expected
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(99): App\Models\UserModel->getInfo()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 13:41:05 --> Cannot use object of type stdClass as array
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('resume', Array, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(105): view('resume', Array)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 13:42:31 --> Undefined offset: 0
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\laragon\\www\\...', 105, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 13:42:43 --> Cannot use object of type stdClass as array
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-05 13:42:56 --> Cannot use object of type stdClass as array
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-05 13:43:21 --> Trying to get property 'fullname' of non-object
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\laragon\\www\\...', 105, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 13:43:28 --> Trying to get property 'fullname' of non-object
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\laragon\\www\\...', 105, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 13:44:12 --> Cannot use object of type stdClass as array
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-05 13:45:39 --> Call to a member function first() on array
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(100): App\Models\UserModel->getInfo(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 13:46:21 --> Call to a member function get() on array
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(100): App\Models\UserModel->getInfo(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 13:46:33 --> Call to a member function getRow() on array
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(100): App\Models\UserModel->getInfo(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 17:27:36 --> Too few arguments to function CodeIgniter\Database\BaseResult::getCustomResultObject(), 0 passed in D:\laragon\www\cesienet.sie-aulavirtual\app\Models\UserModel.php on line 75 and exactly 1 expected
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Models\UserModel.php(75): CodeIgniter\Database\BaseResult->getCustomResultObject()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(103): App\Models\UserModel->getHeaderMenu(Array)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-05 17:30:03 --> Too few arguments to function CodeIgniter\Database\BaseResult::getCustomResultObject(), 0 passed in D:\laragon\www\cesienet.sie-aulavirtual\app\Models\UserModel.php on line 81 and exactly 1 expected
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Models\UserModel.php(81): CodeIgniter\Database\BaseResult->getCustomResultObject()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(103): App\Models\UserModel->getHeaderMenu(Array)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-05 17:30:20 --> Too few arguments to function CodeIgniter\Database\BaseResult::getCustomResultObject(), 0 passed in D:\laragon\www\cesienet.sie-aulavirtual\app\Models\UserModel.php on line 81 and exactly 1 expected
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Models\UserModel.php(81): CodeIgniter\Database\BaseResult->getCustomResultObject()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(103): App\Models\UserModel->getHeaderMenu(Array)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-05 17:31:05 --> Undefined variable: user_info
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\laragon\\www\\...', 108, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-05 17:58:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'T001'' and m.m_coduser='ADMIN' 
+					order by 1' at line 5
+CRITICAL - 2021-08-05 17:58:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'T001'' and m.m_coduser='ADMIN' 
+					order by 1' at line 5
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('select\n\t\t\t\t\t\tm....')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('select\n\t\t\t\t\t\tm....')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('select\n\t\t\t\t\t\tm....')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Models\UserModel.php(74): CodeIgniter\Database\BaseConnection->query('select\n\t\t\t\t\t\tm....')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(104): App\Models\UserModel->getHeaderMenu(Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-08-05 17:58:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'T001'' and m.m_coduser='ADMIN' 
+					order by 1' at line 5
+CRITICAL - 2021-08-05 17:58:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'T001'' and m.m_coduser='ADMIN' 
+					order by 1' at line 5
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('select\n\t\t\t\t\t\tm....')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('select\n\t\t\t\t\t\tm....')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('select\n\t\t\t\t\t\tm....')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Models\UserModel.php(74): CodeIgniter\Database\BaseConnection->query('select\n\t\t\t\t\t\tm....')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(104): App\Models\UserModel->getHeaderMenu(Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-08-05 17:59:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'T001'' and m.m_coduser='ADMIN' 
+					order by 1' at line 5
+CRITICAL - 2021-08-05 17:59:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'T001'' and m.m_coduser='ADMIN' 
+					order by 1' at line 5
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('select\n\t\t\t\t\t\tm....')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('select\n\t\t\t\t\t\tm....')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('select\n\t\t\t\t\t\tm....')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Models\UserModel.php(74): CodeIgniter\Database\BaseConnection->query('select\n\t\t\t\t\t\tm....')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(104): App\Models\UserModel->getHeaderMenu(Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-08-05 17:59:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'T001'' and m.m_coduser='ADMIN' 
+					order by 1' at line 5
+CRITICAL - 2021-08-05 17:59:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'T001'' and m.m_coduser='ADMIN' 
+					order by 1' at line 5
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('select\n\t\t\t\t\t\tm....')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('select\n\t\t\t\t\t\tm....')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('select\n\t\t\t\t\t\tm....')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Models\UserModel.php(74): CodeIgniter\Database\BaseConnection->query('select\n\t\t\t\t\t\tm....')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Home.php(104): App\Models\UserModel->getHeaderMenu(Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->resume()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-08-05 18:34:09 --> Too few arguments to function CodeIgniter\View\View::section(), 0 passed in D:\laragon\www\cesienet.sie-aulavirtual\app\Views\partials\head.php on line 1 and exactly 1 expected
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\partials\head.php(1): CodeIgniter\View\View->section()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(487): CodeIgniter\View\View->render('partials/head', NULL, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\resume.php(4): CodeIgniter\View\View->include('partials/head')
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('resume', Array, true)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(24): view('resume', Array)
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-08-05 18:34:21 --> Too few arguments to function CodeIgniter\View\View::section(), 0 passed in D:\laragon\www\cesienet.sie-aulavirtual\app\Views\partials\head.php on line 1 and exactly 1 expected
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\partials\head.php(1): CodeIgniter\View\View->section()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(487): CodeIgniter\View\View->render('partials/head', NULL, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\resume.php(4): CodeIgniter\View\View->include('partials/head')
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('resume', Array, true)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(24): view('resume', Array)
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-08-05 18:34:30 --> syntax error, unexpected '?>'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(487): CodeIgniter\View\View->render('partials/head', NULL, true)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\resume.php(4): CodeIgniter\View\View->include('partials/head')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('resume', Array, true)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(24): view('resume', Array)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#8 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-08-05 18:50:56 --> syntax error, unexpected '?>'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('domi', Array, true)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(24): view('domi', Array)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-08-05 19:46:51 --> Call to undefined function App\Controllers\user_connected()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-05 19:48:26 --> Undefined variable: user_info
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\layout\sidebar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\laragon\\www\\...', 7, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(487): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\resume.php(19): CodeIgniter\View\View->include('layout/sidebar')
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('resume', Array, true)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(31): view('resume', Array)
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-08-05 19:49:15 --> Undefined variable: user_info
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\layout\sidebar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\laragon\\www\\...', 7, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(487): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\resume.php(19): CodeIgniter\View\View->include('layout/sidebar')
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('resume', Array, true)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(31): view('resume', Array)
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#10 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-08-05 19:51:12 --> syntax error, unexpected '<', expecting end of file
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-08-05 20:00:19 --> Object of class stdClass could not be converted to string
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(487): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\resume.php(19): CodeIgniter\View\View->include('layout/sidebar')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('resume', Array, true)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(33): view('resume', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-08-05 20:00:32 --> Object of class stdClass could not be converted to string
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(487): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\resume.php(19): CodeIgniter\View\View->include('layout/sidebar')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('resume', Array, true)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(33): view('resume', Array)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-08-05 20:00:47 --> Argument 2 passed to view() must be of the type array, object given, called in D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php on line 33
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(33): view('resume', Object(stdClass))
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 20:00:57 --> Argument 2 passed to view() must be of the type array, object given, called in D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php on line 33
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(33): view('resume', Object(stdClass))
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 20:02:11 --> Argument 2 passed to view() must be of the type array, object given, called in D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php on line 33
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(33): view('resume', Object(stdClass))
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 20:05:24 --> Object of class stdClass could not be converted to string
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(14): App\Controllers\Dashboard->connected()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-05 20:20:54 --> syntax error, unexpected ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(487): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\app\Views\resume.php(19): CodeIgniter\View\View->include('layout/sidebar')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('resume', Array, true)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Dashboard.php(33): view('resume', Array)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Dashboard->resume()
+#8 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

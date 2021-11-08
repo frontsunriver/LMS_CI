@@ -1,0 +1,14 @@
+CRITICAL - 2021-08-06 13:48:14 --> Undefined variable: data
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Login.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\laragon\\www\\...', 22, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-06 13:58:51 --> Undefined variable: data
+#0 D:\laragon\www\cesienet.sie-aulavirtual\app\Controllers\Login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\laragon\\www\\...', 32, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

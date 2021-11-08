@@ -1,0 +1,36 @@
+ERROR - 2021-09-09 21:57:20 --> Error connecting to the database: Access denied for user '****'@'localhost' to database 'admaula_bdsienet_2019'
+CRITICAL - 2021-09-09 21:57:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' to database 'admaula_bdsienet_2019'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Models/UserModel.php(72): CodeIgniter\Database\BaseConnection->query('select p.p_codi...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(21): App\Models\UserModel->getInfo(Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#6 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-09-09 21:57:25 --> Error connecting to the database: Access denied for user '****'@'localhost' to database 'admaula_bdsienet_2019'
+CRITICAL - 2021-09-09 21:57:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' to database 'admaula_bdsienet_2019'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Models/UserModel.php(72): CodeIgniter\Database\BaseConnection->query('select p.p_codi...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(21): App\Models\UserModel->getInfo(Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#6 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-09-09 21:57:28 --> Error connecting to the database: Access denied for user '****'@'localhost' to database 'admaula_bdsienet_2019'
+CRITICAL - 2021-09-09 21:57:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' to database 'admaula_bdsienet_2019'
+#0 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/admaula/cesienet.sie-aulavirtual.com/app/Models/UserModel.php(72): CodeIgniter\Database\BaseConnection->query('select p.p_codi...')
+#2 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(21): App\Models\UserModel->getInfo(Array)
+#3 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Dashboard.php(14): App\Controllers\Dashboard->connected()
+#4 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Dashboard->__construct()
+#5 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#6 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,8 @@
+[27-Oct-2021 18:16:37 America/Chicago] PHP Fatal error:  Cannot declare class App\Controllers\Dashboard, because the name is already in use in /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php on line 0
+[27-Oct-2021 18:19:00 America/Chicago] PHP Fatal error:  Cannot declare class App\Controllers\Dashboard, because the name is already in use in /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php on line 0
+[27-Oct-2021 18:19:08 America/Chicago] PHP Fatal error:  Cannot declare class App\Controllers\Dashboard, because the name is already in use in /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php on line 0
+[27-Oct-2021 18:19:11 America/Chicago] PHP Fatal error:  Cannot declare class App\Controllers\Dashboard, because the name is already in use in /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php on line 0
+[27-Oct-2021 18:19:11 America/Chicago] PHP Fatal error:  Cannot declare class App\Controllers\Dashboard, because the name is already in use in /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php on line 0
+[03-Nov-2021 15:49:35 America/Chicago] PHP Fatal error:  Cannot redeclare App\Controllers\Calendario::detalles() in /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Calendario.php on line 96
+[04-Nov-2021 19:27:48 America/Chicago] PHP Fatal error:  Cannot redeclare App\Models\CalendarioModel::getInfo() in /home/admaula/cesienet.sie-aulavirtual.com/app/Models/CalendarioModel.php on line 135
+[04-Nov-2021 19:29:46 America/Chicago] PHP Fatal error:  Cannot redeclare App\Models\CalendarioModel::getInfo() in /home/admaula/cesienet.sie-aulavirtual.com/app/Models/CalendarioModel.php on line 135

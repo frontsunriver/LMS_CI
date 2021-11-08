@@ -1,0 +1,5 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^cesienet\.sie\-aulavirtual\.com$
+RewriteRule ^/?$ "https\:\/\/cesienet\.sie\-aulavirtual\.com\/" [R=301,L]
+

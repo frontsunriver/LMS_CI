@@ -1,0 +1,56 @@
+ERROR - 2021-08-14 22:57:57 --> Table 'admaula_bdsienet_2021.cfg_tipo_usuario' doesn't exist
+CRITICAL - 2021-08-14 22:57:57 --> Call to a member function getRow() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Login.php(45): App\Models\UserModel->getUser(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-14 22:58:15 --> Table 'admaula_bdsienet_2021.cfg_tipo_usuario' doesn't exist
+CRITICAL - 2021-08-14 22:58:15 --> Call to a member function getRow() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Login.php(45): App\Models\UserModel->getUser(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-14 22:58:47 --> Table 'admaula_bdsienet_2021.cfg_tipo_usuario' doesn't exist
+CRITICAL - 2021-08-14 22:58:47 --> Call to a member function getRow() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Login.php(45): App\Models\UserModel->getUser(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-14 22:59:57 --> Table 'admaula_bdsienet_2021.cfg_tipo_usuario' doesn't exist
+CRITICAL - 2021-08-14 22:59:57 --> Call to a member function getRow() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Login.php(45): App\Models\UserModel->getUser(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-14 23:01:08 --> Table 'admaula_bdsienet_2021.cfg_tipo_usuario' doesn't exist
+CRITICAL - 2021-08-14 23:01:08 --> Call to a member function getRow() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Login.php(45): App\Models\UserModel->getUser(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-14 23:11:15 --> Table 'admaula_bdsienet_2021.cfg_tipo_usuario' doesn't exist
+CRITICAL - 2021-08-14 23:11:15 --> Call to a member function getRow() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Login.php(45): App\Models\UserModel->getUser(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-14 23:12:02 --> Table 'admaula_bdsienet_2021.cfg_tipo_usuario' doesn't exist
+CRITICAL - 2021-08-14 23:12:02 --> Call to a member function getRow() on bool
+#0 /home/admaula/cesienet.sie-aulavirtual.com/app/Controllers/Login.php(45): App\Models\UserModel->getUser(Array)
+#1 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->authenticate()
+#2 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 /home/admaula/cesienet.sie-aulavirtual.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/admaula/cesienet.sie-aulavirtual.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

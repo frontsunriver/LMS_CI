@@ -1,0 +1,645 @@
+CRITICAL - 2021-07-25 12:00:35 --> Undefined property: CodeIgniter\View\View::$security
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Views\login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\laragon\\www\\...', 50, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-25 12:03:10 --> Undefined property: CodeIgniter\View\View::$security
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Views\login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\laragon\\www\\...', 50, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-25 12:03:12 --> Undefined property: CodeIgniter\View\View::$security
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Views\login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\laragon\\www\\...', 50, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-25 12:05:30 --> Undefined property: CodeIgniter\View\View::$security
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Views\login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\laragon\\www\\...', 50, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-25 12:05:31 --> Undefined property: CodeIgniter\View\View::$security
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Views\login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\laragon\\www\\...', 50, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-25 12:07:06 --> Call to undefined function csrf_name()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-25 12:28:11 --> Call to undefined function form_open()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-25 12:28:58 --> Call to undefined function form_open()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-25 12:30:06 --> Call to undefined function form_open()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-25 12:32:59 --> Call to undefined function form_open()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-25 12:33:00 --> Call to undefined function form_open()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-25 12:33:00 --> Call to undefined function form_open()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-25 12:33:00 --> Call to undefined function form_open()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-25 12:33:00 --> Call to undefined function form_open()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login', Array)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-25 12:34:27 --> Undefined property: App\Controllers\Home::$load
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\laragon\\www\\...', 11, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-25 12:50:03 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 12:50:39 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 12:51:31 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 12:54:12 --> Array to string conversion
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\laragon\\www\\...', 21, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-25 12:58:11 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 12:58:53 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 13:24:34 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 13:37:31 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(12): view('login')
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-25 17:07:32 --> Undefined index: u_codigo
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\laragon\\www\\...', 56, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(42): App\Controllers\Home->setUserSession(Array)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 17:08:11 --> Undefined index: u_codigo
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\laragon\\www\\...', 56, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(42): App\Controllers\Home->setUserSession(Array)
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 17:11:00 --> Cannot use object of type stdClass as array
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(42): App\Controllers\Home->setUserSession(Object(stdClass))
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-25 17:11:40 --> Cannot use object of type stdClass as array
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(42): App\Controllers\Home->setUserSession(Object(stdClass))
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-25 17:12:03 --> Cannot use object of type stdClass as array
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(45): App\Controllers\Home->setUserSession(Object(stdClass))
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-25 17:28:43 --> Argument 1 passed to CodeIgniter\Session\Session::push() must be of the type string, array given, called in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php on line 73
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(73): CodeIgniter\Session\Session->push(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(42): App\Controllers\Home->setUserSession(Object(stdClass))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 17:30:31 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 17:31:37 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 17:33:48 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 17:35:38 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 17:39:28 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 17:39:37 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 17:40:19 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 18:52:21 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 19:26:09 --> syntax error, unexpected '$anon' (T_VARIABLE)
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\...')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-25 19:57:38 --> Undefined property: App\Controllers\Home::$input
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\laragon\\www\\...', 22, Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-25 20:00:22 --> Class 'App\Controllers\Cookie' not found
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-25 20:00:51 --> Call to a member function getName() on null
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-25 20:03:55 --> Class 'App\Controllers\Cookie' not found
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-25 20:05:39 --> Cookie object with name "login_token" and prefix "" was not found in the collection.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(134): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(40): CodeIgniter\Cookie\CookieStore->get('login_token')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 20:06:09 --> Cookie object with name "login_token" and prefix "" was not found in the collection.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(134): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(41): CodeIgniter\Cookie\CookieStore->get('login_token')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 20:12:03 --> Call to undefined function App\Controllers\get_cookie()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-25 20:12:13 --> Call to undefined function App\Controllers\get_cookie()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-25 20:16:08 --> Cookie object with name "login_token" and prefix "" was not found in the collection.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(134): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(61): CodeIgniter\Cookie\CookieStore->get('login_token')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 20:16:32 --> Cookie object with name "login_token" and prefix "" was not found in the collection.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(134): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(61): CodeIgniter\Cookie\CookieStore->get('login_token')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 20:20:13 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:20:22 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:20:42 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:20:52 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:20:53 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:20:54 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:08 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:08 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:08 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:09 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:09 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:09 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:10 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:12 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:16 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:19 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:40 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:40 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:40 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:21:41 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:22:03 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:22:05 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:22:05 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:22:05 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:14 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:15 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:15 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:15 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:15 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:15 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:16 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:16 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:16 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:16 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:16 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:17 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:17 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:18 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:18 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:18 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:18 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:19 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:19 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:23:19 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:24:49 --> Cannot redeclare App\Controllers\Home::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-25 20:26:37 --> Call to undefined function App\Controllers\has_cookie()
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index2()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-25 21:15:23 --> Object of class CodeIgniter\HTTP\Response could not be converted to string
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->authenticate()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-25 21:25:30 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 21:26:27 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 21:36:13 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 21:36:29 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 21:37:43 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 21:38:18 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 21:44:41 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 21:45:16 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 21:58:53 --> The action you requested is not allowed.
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Security\Security.php(240): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Filters\Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('authenticate', 'before')
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-25 22:14:35 --> Argument 3 passed to form_hidden() must be of the type bool, array given, called in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Views\login.php on line 47
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Views\login.php(47): form_hidden('csrf_token_name', 'd800ccbb6a54c5d...', Array, 'hidden')
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(31): view('login')
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-25 22:16:07 --> Argument 3 passed to form_hidden() must be of the type bool, array given, called in D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Views\login.php on line 47
+#0 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Views\login.php(47): form_hidden('csrf_token_name', 'd800ccbb6a54c5d...', Array)
+#1 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(230): include('D:\\laragon\\www\\...')
+#2 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#4 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\app\Controllers\Home.php(31): view('login')
+#5 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->index()
+#6 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\cesienet.sie-aulavirtual\dev\sieaulavirtual-dev\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
