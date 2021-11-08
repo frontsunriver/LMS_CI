@@ -28,7 +28,6 @@
                 <?= $this->include('layout/top-menu') ?>
 
                 <section class="px-md-4 bg-light">
-
                   
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -36,7 +35,6 @@
                         <li class="breadcrumb-item active" aria-current="page"></li>
                         </ol>
                     </nav>
-
                     <div class="container-fluid p-0">
                         <div class="row">
                             <div class="col-12">
@@ -44,7 +42,7 @@
                                     <div class="card-style card">
                                     <div class="card-header">
                                         <div class="name p-1" style="display: inline-block;">Exam:<?=$nemodes['nemodes']?>-<?=$cursonom['cursonom']?> </div>
-
+                                        <a type="button" href="<?php echo base_url('/exam/createExam/'.$nemodes['nemo'].'/'.$cursonom['cod']); ?>" class=" btn float-end py-1 px-2 btn-success me-2">create exam</a></button>
                                     </div>
                                     <div class="card-body">
                                         <table id="example" class="display" style="width:100%">
@@ -85,7 +83,7 @@
                 info: false,
                 // "bInfo":false,
                 ajax: {
-                    url: "getExamList",
+                    url: "/exam/getExamList",
                     type: 'POST',
                     "data": {
                         "nemo": <?=$nemodes['nemo']?>,
@@ -93,16 +91,11 @@
                     }
                 },
                 columns: [
-                {
-                    data: 'title'
-                },
-                {
-                    data:'quizeCount'
-                },
+                {data: 'title' },
+                {data:'quizeCount' },
                 {
                     data: null,
                     render: function(data, type, row) {
-                        console.log(data);
                         return '\
                             <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
                                 Edit\
@@ -113,25 +106,10 @@
                             </a>\
                         ';
                     }
-                }]
-                // columnDefs: [{
-                //         targets: -1,
-                //         title: 'Actions',
-                //         orderable: false,
-                //         render: function(data, type, full, meta) {
-                //             return '\
-                //             <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
-                //                 <i class="la la-edit"></i>\
-                //             </a>\
-                //             <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Delete">\
-                //                 <i class="la la-trash"></i>\
-                //             </a>\
-                //         ';
-                //         },
-                //     },
-                // ],
+                }],
             });
         });
 
     </script>
 <?= $this->endSection()?>
+

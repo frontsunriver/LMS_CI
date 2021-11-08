@@ -60,8 +60,8 @@ class Exam extends BaseController
         if(!session('scodigo')){return redirect()->to(base_url('/'));}
         $exam = new ExamModel();
         $data = $exam->getExamList($nemo, $cod);
-        $this->user_on['data'] = $data;
-        return view('exam/exam_detail', $this->user_on);
+        $result['data'] = $data;
+        echo json_encode($result);
     }
 
     public function examDetail($nemo=0,$cod=0){
@@ -82,13 +82,16 @@ class Exam extends BaseController
         return view('exam/exam_detail', $this->user_on);
     }
     
-
-    public function getExamQusList()
-    {
-        $id = $this->request->getPost('exam_id');
+    public function createExam($nemo=0,$cod=0){
+        if($nemo==0 || $cod==0){return redirect()->to(base_url('/exam'));}
+        if(!session('scodigo')){return redirect()->to(base_url('/'));}
         $exam = new ExamModel();
-        $data = $exam->getExamQusList($id);
-        $result['data'] = $data;
-        echo json_encode($result);
+        $nemodes = $exam->getnemodes($nemo);
+        $cursonom = $exam->getcursonom($cod);
+
+        $this->user_on['nemodes'] = $nemodes;
+        $this->user_on['cursonom'] = $cursonom;
+        return view('exam/exam_create', $this->user_on);
     }
+
 }

@@ -64,7 +64,7 @@ class ExamModel extends Model
 
     function getExamList($nemo, $cod) {
         $returnvValue = [];
-        $result =  $this->dao->query("SELECT exam_list.id, exam_list.title, int_curso.cursocod, int_salon.nemodes FROM ".
+        $result =  $this->dao->query("SELECT exam_list.id, exam_list.title, int_curso.cursocod, int_curso.cursonom,  int_salon.nemodes FROM ".
                 "exam_list LEFT JOIN int_curso ON exam_list.idcurso = int_curso.cursocod ".
                 "LEFT JOIN int_salon ON exam_list.idsalon = int_salon.nemo ".
                 "WHERE exam_list.idcurso = ".$cod." and exam_list.idsalon = ".$nemo)->getResult();
@@ -74,6 +74,7 @@ class ExamModel extends Model
             $temp['id'] = $key->id;
             $temp['title'] = $key->title;
             $temp['cursocod'] = $key->cursocod;
+            $temp['cursonom'] = $key->cursonom;
             $temp['nemodes'] = $key->nemodes;
             $temp['quizeCount'] = count($count);
             array_push($returnvValue, $temp);
