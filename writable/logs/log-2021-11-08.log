@@ -26,3 +26,170 @@ CRITICAL - 2021-11-08 03:26:29 --> Call to undefined method CodeIgniter\Database
 #4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
 #6 {main}
+CRITICAL - 2021-11-08 10:41:42 --> Class 'App\Controllers\CalendarioModel' not found
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->index()
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#5 {main}
+CRITICAL - 2021-11-08 10:42:10 --> Undefined variable: exam_list
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\index.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\workspace\\Co...', 61, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/index', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(51): view('exam/index', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->index()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+CRITICAL - 2021-11-08 10:51:58 --> Undefined property: stdClass::$id
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\index.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\workspace\\Co...', 66, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/index', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(51): view('exam/index', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->index()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+CRITICAL - 2021-11-08 10:52:40 --> Trying to get property 'title' of non-object
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\detail.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\workspace\\Co...', 36, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/detail', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(61): view('exam/detail', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->detail()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+CRITICAL - 2021-11-08 10:54:23 --> Trying to get property 'title' of non-object
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\detail.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\workspace\\Co...', 36, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/detail', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(61): view('exam/detail', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->detail()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+CRITICAL - 2021-11-08 10:54:27 --> Trying to get property 'title' of non-object
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\detail.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\workspace\\Co...', 36, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/detail', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(61): view('exam/detail', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->detail()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+CRITICAL - 2021-11-08 10:54:57 --> Trying to get property 'title' of non-object
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\detail.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\workspace\\Co...', 36, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/detail', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(61): view('exam/detail', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->detail()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+CRITICAL - 2021-11-08 10:55:08 --> Trying to get property 'title' of non-object
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\detail.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\workspace\\Co...', 36, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/detail', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(61): view('exam/detail', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->detail()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+CRITICAL - 2021-11-08 10:55:25 --> Trying to get property 'title' of non-object
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\detail.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\workspace\\Co...', 36, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/detail', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(61): view('exam/detail', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->detail()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+CRITICAL - 2021-11-08 11:20:18 --> Trying to get property 'title' of non-object
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\detail.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\workspace\\Co...', 36, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/detail', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(63): view('exam/detail', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->detail()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+ERROR - 2021-11-08 11:21:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ON `int_salon`.`nemo` = `int_asignapr`.`nemo`
+JOIN `cfg_personal` ON `cfg_per...' at line 4
+CRITICAL - 2021-11-08 11:21:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ON `int_salon`.`nemo` = `int_asignapr`.`nemo`
+JOIN `cfg_personal` ON `cfg_per...' at line 4
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Models\CalendarioModel.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Calendario.php(45): App\Models\CalendarioModel->getCursos()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Calendario->index()
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#8 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#11 {main}
+ERROR - 2021-11-08 11:21:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ON `int_salon`.`nemo` = `int_asignapr`.`nemo`
+JOIN `cfg_personal` ON `cfg_per...' at line 4
+CRITICAL - 2021-11-08 11:21:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ON `int_salon`.`nemo` = `int_asignapr`.`nemo`
+JOIN `cfg_personal` ON `cfg_per...' at line 4
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Models\CalendarioModel.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Calendario.php(45): App\Models\CalendarioModel->getCursos()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Calendario->index()
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#8 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#11 {main}
+CRITICAL - 2021-11-08 11:51:06 --> Undefined variable: fecha_creacion
+#0 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Calendario.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\workspace\\Co...', 181, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Calendario->edt_evento()
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-08 11:54:00 --> Undefined variable: inicio
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\calendario\calendario2.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\workspace\\Co...', 93, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('calendario/cale...', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Calendario.php(354): view('calendario/cale...', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Calendario->mes('2021001', '01')
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}

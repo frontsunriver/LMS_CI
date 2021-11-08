@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\ExamModel;
 use App\Models\UserModel;
+use App\Models\CalendarioModel;
 use Config\Services;
 
 class Exam extends BaseController
@@ -39,21 +40,56 @@ class Exam extends BaseController
 
     public function index()
     {
-        $exam = new ExamModel();
-        $data = $exam->getExamMainList();
-        $this->user_on['exam_list'] = $data; 
-        
+
+        $calendario=new CalendarioModel();
+        $cursos=[];
+
+        if($this->user_on['user_info']->profile=="Administrador del Sistema"){$cursos=$calendario->getCursos();}
+        if($this->user_on['user_info']->profile=="Profesor"){$cursos=$calendario->getCursosProf($this->user_on['user_info']->p_codigo);}
+
+        $this->user_on['cursos'] = $cursos;
+        // print_r($this->user_on);
+        // exit;
         return view('exam/index', $this->user_on);
+
     }
 
-    public function detail()
-    {
-        $id = $this->request->getGet('id');
-        $exam = new ExamModel();
-        $data = $exam->getById($id);
-        $this->user_on['exam'] = $data;
-        return view('exam/detail', $this->user_on);
+    // public function detail()
+    // {
+    //     $id = $this->request->getGet('id');
+    //     $exam = new ExamModel();
+    //     $data = $exam->getById($id);
+    //     $this->user_on['exam'] = $data;
+    //     return view('exam/detail', $this->user_on);
+    // }
+
+    public function detail_exam($nemo=0,$cod=0)
+    {  
+        if($nemo==0 || $cod==0){return redirect()->to(base_url('/exam'));}
+        if(!session('scodigo')){return redirect()->to(base_url('/'));}
+        $calendario=new CalendarioModel();
+        $periodos=[];
+        $eventos=[];
+
+        $periodos=$calendario->getPeriodos();
+        $nombre_curso=$calendario->getNombreCurso($cod);
+        $nombre_salon=$calendario->getNombreSalon($nemo);
+        $profesor=$calendario->getProfCurso($nemo,$cod);
+        $cod_prof=$profesor->p_codigo;
+        $eventos=$calendario->getEventos($nemo,$cod,$cod_prof);
+        $combos=$calendario->getCombos();
+        $curso=['nemo'=>$nemo,'cod'=>$cod];
+
+        $this->user_on['periodos'] = $periodos;
+        $this->user_on['nombre_curso'] = $nombre_curso->cursonom;
+        $this->user_on['nombre_salon'] = $nombre_salon->nemodes;
+        $this->user_on['profesor'] = $profesor;
+        $this->user_on['eventos'] = $eventos;
+        $this->user_on['curso'] = $curso;
+        $this->user_on['combos'] = $combos;
+        return view('exam/exam_detail', $this->user_on);
     }
+    
 
     public function getExamList()
     {
