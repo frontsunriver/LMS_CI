@@ -1,8 +1,24 @@
+var initialModal = '' + 
+'<input type="hidden" id="last_num" value="1">' + 
+'<div class="input-group" id="div0">' +
+    '<div class="input-group-text">' +
+'        <input class="form-check-input " type="radio" name="flexRadioDefault" value="0" checked="">' + 
+    '</div>' + 
+    '<input type="text" id="input0" class="form-control input" aria-label="Text input with radio button" value="">' + 
+'</div>' + 
+'<div class="input-group" id="div1">' + 
+    '<div class="input-group-text">' + 
+        '<input class="form-check-input " type="radio" name="flexRadioDefault" value="1">' + 
+    '</div>' + 
+    '<input type="text" id="input1" class="form-control input" aria-label="Text input with radio button" value="">' + 
+    '<button type="button" onclick="removeQuestion(1)">remove</button>' +
+'</div>' + 
+'' ;
+
 function showUniqueModal(){
     var is_exam = $('#is_exam').val();
     if(is_exam != "false"){
-        var unique = new bootstrap.Modal($("#uniqueModal"), {});
-        unique.show();
+        $("#uniqueModal").modal("show");
     }else{
         alertErrorSwl();
         return false;
@@ -123,13 +139,20 @@ function saveUniqQus(){
                     icon: 'success',
                     text: 'Your examination has been successfully saved!',
                 })
-                if(exam_id != "false"){
-                    var table = $('#qusList').DataTable();
-                    table.ajax.reload();
-                }else{
-                    ini_ques_tbl(data);
-                    $("#is_exam").val();
-                }
+                var table = $('#qusList').DataTable();
+                table.ajax.reload();
+                $("#uniqueModal").modal("hide");
+                $('#uniqueModal').on('hidden.bs.modal', function (e) {
+                    $(this)
+                        .find("input,textarea,select")
+                            .val('')
+                            .end()
+                        .find("input[type=checkbox], input[type=radio]")
+                            .prop("checked", "")
+                            .end();
+                    })
+                $("#qus_modal").html("");
+                $("#qus_modal").html(initialModal);
             }else{
                 Swal.fire({
                     icon: 'error',
@@ -139,7 +162,7 @@ function saveUniqQus(){
             }
         });
 }
-function ini_ques_tbl(data){
+function ini_ques_tbl(){
     $("#qusList").DataTable({
         responsive: true,
         searchDelay: 500,
@@ -152,8 +175,8 @@ function ini_ques_tbl(data){
         ajax: {
             url: "/exam/getQuesList",
             type: 'POST',
-            "data": {
-                "exam_id" : data
+            "data": function(d){
+                d.exam_id = $("#is_exam").val();
             }
         },
         columns: [

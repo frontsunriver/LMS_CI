@@ -69,7 +69,7 @@ class ExamModel extends Model
                 "LEFT JOIN int_salon ON exam_list.idsalon = int_salon.nemo ".
                 "WHERE exam_list.idcurso = ".$cod." and exam_list.idsalon = ".$nemo)->getResult();
         foreach ($result as $key) {
-            $count = $this->dao->query("select * from exam_quiz where list_id = ".$key->id)->getResult();
+            $count = $this->dao->query("select * from exam_quiz where exam_id = ".$key->id)->getResult();
             $temp = [];
             $temp['id'] = $key->id;
             $temp['title'] = $key->title;

@@ -383,3 +383,64 @@ CRITICAL - 2021-11-09 11:27:21 --> Unknown column 'list_id' in 'where clause'
 #8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
 #10 {main}
+ERROR - 2021-11-09 11:36:09 --> Unknown column 'list_id' in 'where clause'
+CRITICAL - 2021-11-09 11:36:09 --> Unknown column 'list_id' in 'where clause'
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select * from e...')
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select * from e...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select * from e...')
+#3 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(72): CodeIgniter\Database\BaseConnection->query('select * from e...')
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(62): App\Models\ExamModel->getExamList('2021001', '1')
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->getExamList()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+ERROR - 2021-11-09 11:37:23 --> Unknown column 'list_id' in 'where clause'
+CRITICAL - 2021-11-09 11:37:23 --> Unknown column 'list_id' in 'where clause'
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select * from e...')
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select * from e...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select * from e...')
+#3 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(72): CodeIgniter\Database\BaseConnection->query('select * from e...')
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(62): App\Models\ExamModel->getExamList('2021001', '1')
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->getExamList()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+ERROR - 2021-11-09 11:45:11 --> Unknown column 'list_id' in 'where clause'
+CRITICAL - 2021-11-09 11:45:11 --> Unknown column 'list_id' in 'where clause'
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select * from e...')
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select * from e...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select * from e...')
+#3 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(72): CodeIgniter\Database\BaseConnection->query('select * from e...')
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(62): App\Models\ExamModel->getExamList('2021001', '1')
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->getExamList()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+ERROR - 2021-11-09 11:47:05 --> Unknown column 'list_id' in 'where clause'
+CRITICAL - 2021-11-09 11:47:05 --> Unknown column 'list_id' in 'where clause'
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select * from e...')
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select * from e...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select * from e...')
+#3 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(72): CodeIgniter\Database\BaseConnection->query('select * from e...')
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(62): App\Models\ExamModel->getExamList('2021001', '1')
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->getExamList()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+CRITICAL - 2021-11-09 11:57:50 --> Undefined index: exam_id
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 146, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(128): App\Models\ExamModel->getQuesList(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->getQuesList()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}

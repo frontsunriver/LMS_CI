@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="card-body row">
                                     <div class = "col-4">
-				                    <input type="hidden" id="is_exam" value= <?=$exam_id?>>
+				                    <input type="hidden" id="is_exam" value='<?=$exam_id?>'>
 				                    <input type="hidden" id="ini_table" value= "false">
 				                    <input type="hidden" id="nemo" value= <?=$nemodes['nemo']?>>
 				                    <input type="hidden" id="cod" value= <?=$cursonom['cod']?>>
@@ -214,18 +214,16 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script>
     <!-- <script src="//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         $(document).ready(function(){
-            var exam_id = $("#is_exam").val();
-            if(exam_id != "false"){
-                ini_ques_tbl();
-            }
+            ini_ques_tbl();
         });
 
     </script>
-    <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script>
 
 <?= $this->endSection()?>
 

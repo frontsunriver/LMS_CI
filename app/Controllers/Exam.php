@@ -91,7 +91,7 @@ class Exam extends BaseController
 
         $this->user_on['nemodes'] = $nemodes;
         $this->user_on['cursonom'] = $cursonom;
-        $this->user_on['exam_id'] = "false";
+        $this->user_on['exam_id'] = 0;
         return view('exam/exam_create', $this->user_on);
     }
 
