@@ -91,7 +91,41 @@ class Exam extends BaseController
 
         $this->user_on['nemodes'] = $nemodes;
         $this->user_on['cursonom'] = $cursonom;
+        $this->user_on['exam_id'] = "false";
         return view('exam/exam_create', $this->user_on);
     }
 
+    public function saveExam(){
+        $exam = new ExamModel();
+        $param = $_POST;
+        $returndata = $exam->saveExame($param);
+        return json_encode($returndata);
+    }
+
+    public function saveExamQuestion(){
+        $exam = new ExamModel();
+        $param = $_POST;
+        $returndata;
+        switch ($param['type']) {
+            case 0:
+                $returndata = $exam->saveUniqQuestion($param);
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4: 
+                break;
+        }
+        return json_encode($returndata);
+    }
+
+    public function getQuesList(){
+        $param = $_POST;
+        $exam = new ExamModel();
+        $result['data'] = $exam->getQuesList($param);
+        echo json_encode($result);
+    }
 }

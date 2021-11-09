@@ -106,4 +106,46 @@ class ExamModel extends Model
                 "WHERE exam_main.id = ".$id)->getResult();
     }
 
+    function saveExame($param){
+        $data = [
+            'title' => $param['title'],
+            'content'  => $param['content'],
+            'idsalon'  => $param['idsalon'],
+            'idcurso'  => $param['iscurso']
+        ];
+        $result = $this->dao->table('exam_list')->insert($data);
+        $id = $this->dao->insertID();
+        return $id;
+    }
+
+    function saveUniqQuestion($param){
+        $examid = $param['examid'];
+        $problems = $param['questions'];
+        $content = $param['content'];
+        $answer = 0;
+        $question = "";
+        for($i = 0; $i < count($problems); $i++){
+            if($problems[$i]['answer'] != "false"){
+                $answer = $i;
+            }
+            $question .= $problems[$i]['question']."&";            
+        }
+
+        $data = [
+            'exam_id' => $examid,
+            'type' => 0,
+            'ques_content' => $content,
+            'answer' => $answer,
+            'question' => $question
+
+        ];
+        $this->dao->table('exam_quiz')->insert($data);
+        return $examid;
+    }
+    function getQuesList($param){
+        $id = $param['exam_id'];
+        $result = $this->dao->query("select * from exam_quiz where exam_id = ".$id)->getResult();
+        return $result;
+    }
+
 }
