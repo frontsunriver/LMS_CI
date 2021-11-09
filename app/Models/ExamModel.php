@@ -122,6 +122,7 @@ class ExamModel extends Model
         $examid = $param['examid'];
         $problems = $param['questions'];
         $content = $param['content'];
+        $quizeid = $param['quizeid'];
         $answer = 0;
         $question = "";
         for($i = 0; $i < count($problems); $i++){
@@ -139,7 +140,12 @@ class ExamModel extends Model
             'question' => $question
 
         ];
-        $this->dao->table('exam_quiz')->insert($data);
+        if($quizeid != ""){
+            $this->dao->table('exam_quiz')->where('id', $quizeid)->update($data);
+
+        }else{
+            $this->dao->table('exam_quiz')->insert($data);
+        }
         return $examid;
     }
     function getQuesList($param){
@@ -148,4 +154,15 @@ class ExamModel extends Model
         return $result;
     }
 
+    function deleteQuiz($param){
+        $id = $param['id'];
+        $this->dao->table('exam_quiz')->delete(['id'=>$id]);
+        return true;
+    }
+
+    function getQuizById($param){
+        $id = $param['id'];
+        $result = $this->dao->query("select * from exam_quiz where id = ".$id)->getFirstRow();
+        return $result;
+    }
 }

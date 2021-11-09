@@ -16,6 +16,7 @@ var initialModal = '' +
 '' ;
 
 function showUniqueModal(){
+    clearModal();
     var is_exam = $('#is_exam').val();
     if(is_exam != "false"){
         $("#uniqueModal").modal("show");
@@ -115,6 +116,7 @@ function saveUniqQus(){
     var inputList = $("#qus_modal > div");
     var limitTime = $("#limit_time").val();
     var examid = $("#is_exam").val();
+    var quizeid = $("#quiz_id").val();
     var qus = new Array();
     for(var i = 0; i < inputList.length; i++){
         var radio = inputList[i].children[0].children[0].checked;
@@ -131,7 +133,8 @@ function saveUniqQus(){
             content: content,
             questions : qus,
             limitTime : limitTime,
-            examid : examid
+            examid : examid,
+            quizeid : quizeid
         },
         function(data, status){
             if(status == "success"){
@@ -161,6 +164,7 @@ function saveUniqQus(){
                   })
             }
         });
+        $("#quiz_id").val("");
 }
 function ini_ques_tbl(){
     $("#qusList").DataTable({
@@ -181,20 +185,115 @@ function ini_ques_tbl(){
         },
         columns: [
         {data:'ques_content' },
-        {data: 'type' },
+        { 
+            data: 'type',
+            render: function(data, type, row){
+                if(row.type == 0){
+                    return 'Unique Answer';
+                }
+            }
+        },
         {
             data: null,
             render: function(data, type, row) {
                 return '\
-                    <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
+                    <a href="javascript:editQuize(' + row.id + ')" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
                         Edit\
                     </a>\
                     |\
-                    <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Delete">\
+                    <a href="javascript:deleteQuize(' +row.id + ')" class="btn btn-sm btn-clean btn-icon" title="Delete">\
                         delete\
                     </a>\
                 ';
             }
         }],
     });
+}
+// 2021:11:19:11:36
+
+
+var clearModal = function() {
+    $('#uniqueModal').on('hidden.bs.modal', function (e) {
+        $(this)
+            .find("input,textarea,select")
+                .val('')
+                .end()
+            .find("input[type=checkbox], input[type=radio]")
+                .prop("checked", "")
+                .end();
+        })
+    $("#qus_modal").html("");
+    $("#qus_modal").html(initialModal);
+}
+
+
+var deleteQuize = function(id){
+    $.post("/exam/unique/delete",
+        {
+            id : id
+        },
+        function(data, status){
+            if(status == "success"){
+                var table = $('#qusList').DataTable();
+                table.ajax.reload();
+            }else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Somethings wrong...',
+                  })
+            }
+        });
+}
+
+var editQuize = function(id){
+    $.post("/exam/quiz/getQuizById",
+        {
+            id : id
+        },
+        function(data, status){
+            if(status == "success"){
+                result = JSON.parse(data);
+                if(result.data.type == "0"){
+                    createUniqueModal(data);
+                }
+            }else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Somethings wrong...',
+                  })
+            }
+        });
+}
+var createUniqueModal = function(data){
+    var temp = JSON.parse(data);
+    var data = temp.data;
+    var content = data.ques_content;
+    var answer = data.answer;
+    var id = data.id;
+    var question_array = data.question.split("&");
+    $("#qus_content").val(content);
+    $("#quiz_id").val(id);
+    $("#qus_modal").html("");
+    var html = '<input type="hidden" id="last_num" value="' + (question_array.length - 2) + '">';
+    for(var i = 0; i < question_array.length - 1; i++) {
+        if(i == 0) {
+            if(Number(answer) == i){
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"></div>';
+            }else {
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"></div>';
+            }
+        }else {
+            if(Number(answer) == i){
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ')">remove</button></div>';
+            }else {
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ')">remove</button></div>';
+            }
+        }
+        
+    }
+
+    $("#qus_modal").html(html);
+    $("#uniqueModal").modal('show');
 }

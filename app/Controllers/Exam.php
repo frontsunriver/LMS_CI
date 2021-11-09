@@ -128,4 +128,17 @@ class Exam extends BaseController
         $result['data'] = $exam->getQuesList($param);
         echo json_encode($result);
     }
+    public function deleteQuize(){
+        $param = $_POST;
+        $exam = new ExamModel();
+        $result['data'] = $exam->deleteQuiz($param);
+        echo json_encode($result);
+    }
+ 
+    public function getQuizById() {
+        $param = $_POST;
+        $exam = new ExamModel();
+        $result['data'] = $exam->getQuizById($param);
+        echo json_encode($result);
+    }
 }
