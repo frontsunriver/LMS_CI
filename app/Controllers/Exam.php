@@ -116,6 +116,8 @@ class Exam extends BaseController
                 $returndata = $exam->saveQuestion($param);
                 break;
             case 2:
+                $param['type'] = 2;
+                $returndata = $exam->saveQuestion($param);
                 break;
             case 3:
                 break;

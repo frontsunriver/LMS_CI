@@ -124,7 +124,6 @@ class ExamModel extends Model
         $content = $param['content'];
         $quizeid = $param['quizeid'];
         $type = $param['type'];
-        $answer = [];
         $question = "";
         $data = [
             'exam_id' => $examid,

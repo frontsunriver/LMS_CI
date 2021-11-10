@@ -30,7 +30,9 @@ var initialMultiModal = '' +
     '<button type="button" onclick="removeQuestion(1,1)">remove</button>' +
 '</div>' + 
 '' ;
-
+var initialBlankModal = '' + 
+'<input type="hidden" id="blank_last_num" value="0">' + 
+'' ;
 function showUniqueModal(){
     clearModal(0);
     var is_exam = $('#is_exam').val();
@@ -60,8 +62,10 @@ function showMatchModal(){
     }
 }
 function showBlankModal(){
+    clearModal(2);
     var is_exam = $('#is_exam').val();
     if(is_exam != 0){
+        $("#blankModal").modal("show");
     }else{
         alertErrorSwl();
         return false;
@@ -75,7 +79,6 @@ function showFreeModal(){
         return false;
     }
 }
-
 function saveExam(){
     $('.alert').alert()
     var title = $("#exam_title").val();
@@ -127,7 +130,12 @@ function addQuestion(val){
         $("#multi_last_num").val(++num);
         $('#multi_qus_modal').append("<div class='input-group' id = 'multi_div"+num+"'><div class='input-group-text'><input class='form-check-input' type='checkbox' name='flexRadioDefault'></div><input type='text' id = 'multi_input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' onclick = 'removeQuestion("+num+","+val+")'>remove</button></div>");
     }else if(val == 2){
-
+        var num = $("#blank_last_num").val();
+        $("#blank_last_num").val(++num);
+        var text = '';
+        text += YourEditor.getData();
+        YourEditor.setData(text+='[Blank]');
+        $('#blank_qus_modal').append("<div class='input-group' id = 'blank_div"+num+"'><input type='text' id = 'blank_input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' onclick = 'removeQuestion("+num+","+val+")'>remove</button></div>");
     }else if(val == 3){
 
     }else{
@@ -140,7 +148,7 @@ function removeQuestion(val1, val2){
     }else if(val2 == 1 ){
         $("#multi_div"+val1+"").remove();
     }else if(val2 == 2){
-
+        $("#blank_div"+val1+"").remove();
     }else if(val2 == 3){
 
     }else{
@@ -257,6 +265,60 @@ function saveMultiQus(){
         });
         $("#quiz_id").val("");
 }
+function saveBlankQus(){
+    var content = YourEditor.getData();
+    var inputList = $("#blank_qus_modal > div");
+    var limitTime = $("#limit_time").val();
+    var examid = $("#is_exam").val();
+    var quizeid = $("#quiz_id").val();
+    var qus = new Array();
+    for(var i = 0; i < inputList.length; i++){
+        var text = inputList[i].children[0].value;
+        var quesItem = {
+            question : text 
+        }
+        qus.push(quesItem);
+    }
+    $.post("/exam/create/question",
+        {
+            type: 2,
+            content: content,
+            questions : qus,
+            limitTime : limitTime,
+            examid : examid,
+            quizeid : quizeid
+        },
+        function(data, status){
+            if(status == "success"){
+                Swal.fire({
+                    icon: 'success',
+                    text: 'Your examination has been successfully saved!',
+                })
+                var table = $('#qusList').DataTable();
+                table.ajax.reload();
+                $("#blankModal").modal("hide");
+                $('#blankModal').on('hidden.bs.modal', function (e) {
+                    $(this)
+                        .find("input,textarea,select")
+                            .val('')
+                            .end()
+                        .find("input[type=checkbox], input[type=radio]")
+                            .prop("checked", "")
+                            .end();
+                    })
+                $("#blank_qus_modal").html("");
+                $("#blank_qus_modal").html(initialBlankModal);
+                YourEditor.setData("");
+            }else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Somethings wrong...',
+                  })
+            }
+        });
+        $("#quiz_id").val("");
+}
 function ini_ques_tbl(){
     $("#qusList").DataTable({
         responsive: true,
@@ -283,6 +345,8 @@ function ini_ques_tbl(){
                     return 'Unique Answer';
                 }else if(row.type == 1){
                     return 'Multiple Answer';
+                }else if(row.type == 2){
+                    return 'Blank Answer';
                 }
             }
         },
@@ -328,7 +392,18 @@ var clearModal = function(val) {
         $("#multi_qus_modal").html("");
         $("#multi_qus_modal").html(initialMultiModal);
     }else if(val == 2){
-
+        $('#blankModal').on('hidden.bs.modal', function (e) {
+            $(this)
+                .find("input,textarea,select")
+                    .val('')
+                    .end()
+                .find("input[type=checkbox], input[type=radio]")
+                    .prop("checked", "")
+                    .end();
+            })
+        $("#blank_qus_modal").html("");
+        $("#blank_qus_modal").html(initialBlankModal);
+        YourEditor.setData("");
     }else if(val == 3){
 
     }else{
@@ -336,8 +411,6 @@ var clearModal = function(val) {
     }
     
 }
-
-
 var deleteQuize = function(id){
     $.post("/exam/unique/delete",
         {
@@ -356,20 +429,20 @@ var deleteQuize = function(id){
             }
         });
 }
-
 var editQuize = function(id){
     $.post("/exam/quiz/getQuizById",
         {
             id : id
         },
         function(data, status){
-            console.log(data);
             if(status == "success"){
                 result = JSON.parse(data);
                 if(result.data.type == "0"){
                     createUniqueModal(data);
                 }else if(result.data.type == "1"){
                     createMultipleModal(data);
+                }else if(result.data.type == "2"){
+                    createBlankModal(data);
                 }
             }else{
                 Swal.fire({
@@ -440,4 +513,25 @@ var createMultipleModal = function(data){
 
     $("#multi_qus_modal").html(html);
     $("#multipleModal").modal('show');
+}
+var createBlankModal = function(data){
+    var temp = JSON.parse(data);
+    var data = temp.data;
+    var content = data.ques_content;
+    var id = data.id;
+    var problems = JSON.parse(temp.data.qus_answer);
+    YourEditor.setData(content);
+    $("#quiz_id").val(id);
+    $("#blank_qus_modal").html("");
+    var html = '<input type="hidden" id="blank_last_num" value="' + (problems.length - 1) + '">';
+    for(var i = 0; i < problems.length; i++) {
+        if(i == 0) {
+            html += '<div class="input-group" id="blank_div' + i + '"><input type="text" id="blank_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"></div>';
+        }else {
+            html += '<div class="input-group" id="blank_div' + i + '"><input type="text" id="blank_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',1)">remove</button></div>';
+        }
+        
+    }
+    $("#blank_qus_modal").html(html);
+    $("#blankModal").modal('show');
 }

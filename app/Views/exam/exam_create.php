@@ -183,7 +183,7 @@
             </div>
             <div class="modal-body" >
                 <div class = "form-group">
-                    <textarea class="form-control" name="qus_content" id = "qus_content" aria-label="Type here Question..."></textarea>
+                    <textarea class="form-control" name="qus_content" id = "qus_content" aria-label="Type here Question..." rows="3"></textarea>
                 </div>
                 <div class = "form-group" id = "qus_modal">
                     <input type="hidden" id="last_num" value= 1>
@@ -254,16 +254,55 @@
     </div>
 </div>
 <!-- multiple answer modal end -->
+
+<!-- multiple blank modal beggin-->
+<div class="modal fade" id="blankModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Blank Answers.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" >
+                <div class = "form-group editArea">
+                    <textarea class="form-control form-control-lg"  id="blank_quiz" placeholder="Type question here. Example: Practice makes you [Blank]" rows="15"></textarea>
+                </div>
+                <div class = "form-group">
+                    <button type = "button" onclick = "addQuestion(2)">add blank</button>
+                </div>
+                <div class = "form-group" id = "blank_qus_modal">
+                    <input type="hidden" id="blank_last_num" value= 0>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick = "saveBlankQus()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- multiple blank modal end -->
 <?= $this->endSection()?>
 <?= $this->section('defer')?>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/31.0.0/classic/ckeditor.js"></script>
     <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script>
     <!-- <script src="//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        let YourEditor;
+        ClassicEditor
+        .create( document.querySelector( '#blank_quiz' ) )
+        .then( editor => {
+            window.editor = editor;
+            YourEditor = editor;
+        } )
+        .catch( error => {
+                console.error( error );
+                                } );
         $(document).ready(function(){
             ini_ques_tbl();
         });
