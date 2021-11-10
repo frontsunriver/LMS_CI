@@ -207,7 +207,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick = "saveUniqQus()">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick = "saveUniqQus()">Add</button>
             </div>
         </div>
     </div>
@@ -272,11 +272,32 @@
                 </div>
                 <div class = "form-group" id = "blank_qus_modal">
                     <input type="hidden" id="blank_last_num" value= 0>
+                    
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary" onclick = "saveBlankQus()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="freeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Free Answers.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" >
+                <div class = "form-group editArea">
+                    <textarea class="form-control form-control-lg"  id="free_quiz" placeholder="Type question here." rows="15"></textarea>
+                </div>
+                <input type="hidden" id="free_last_num" value= 0>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick = "saveFreeQus()">Save changes</button>
             </div>
         </div>
     </div>
@@ -289,23 +310,29 @@
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/31.0.0/classic/ckeditor.js"></script>
     <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script>
-    <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script>
-    <!-- <script src="//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         let YourEditor;
+        let freeEditor;
         ClassicEditor
         .create( document.querySelector( '#blank_quiz' ) )
         .then( editor => {
-            window.editor = editor;
             YourEditor = editor;
         } )
         .catch( error => {
                 console.error( error );
-                                } );
+        } );
         $(document).ready(function(){
             ini_ques_tbl();
         });
+        ClassicEditor
+        .create( document.querySelector( '#free_quiz' ) )
+        .then( editor => {
+            freeEditor = editor;
+        } )
+        .catch( error => {
+                console.error( error );
+        } );
 
     </script>
 

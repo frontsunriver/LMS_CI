@@ -72,8 +72,10 @@ function showBlankModal(){
     }
 }
 function showFreeModal(){
+    clearModal(3);
     var is_exam = $('#is_exam').val();
     if(is_exam != 0){
+        $("#freeModal").modal("show");
     }else{
         alertErrorSwl();
         return false;
@@ -134,7 +136,17 @@ function addQuestion(val){
         $("#blank_last_num").val(++num);
         var text = '';
         text += YourEditor.getData();
-        YourEditor.setData(text+='[Blank]');
+        text = text.replace("&nbsp;","");
+        var text_array = text.split("</p>");
+        var temp = ''
+        for(var i = 0; i < text_array.length - 1 ; i++){
+            if(i == text_array.length - 2){
+                temp += text_array[i] + ' [Blank]</p>';
+            }else {
+                temp += text_array[i] + ' </p>';
+            }
+        }
+        YourEditor.setData(temp);
         $('#blank_qus_modal').append("<div class='input-group' id = 'blank_div"+num+"'><input type='text' id = 'blank_input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' onclick = 'removeQuestion("+num+","+val+")'>remove</button></div>");
     }else if(val == 3){
 
@@ -149,6 +161,24 @@ function removeQuestion(val1, val2){
         $("#multi_div"+val1+"").remove();
     }else if(val2 == 2){
         $("#blank_div"+val1+"").remove();
+        var text = YourEditor.getData();
+        var temp = text.split("[Blank]");
+        var result = '';
+        console.log(temp);
+        console.log(val1);
+        for(var i = 0; i<temp.length; i++){
+            if(val1 - 1 == i){
+                result += temp[i];
+            }else{
+                if(i != temp.length - 1){
+                    result += temp[i]+'[Blank]';
+                }else{
+                    result += temp[i];
+                }
+            }
+        }
+        console.log(result);
+        YourEditor.setData(result);
     }else if(val2 == 3){
 
     }else{
@@ -275,10 +305,12 @@ function saveBlankQus(){
     for(var i = 0; i < inputList.length; i++){
         var text = inputList[i].children[0].value;
         var quesItem = {
-            question : text 
+            question : text
         }
         qus.push(quesItem);
     }
+    content = content.replace(/\[Blank\]/g,"__");
+    console.log(content);
     $.post("/exam/create/question",
         {
             type: 2,
@@ -319,6 +351,49 @@ function saveBlankQus(){
         });
         $("#quiz_id").val("");
 }
+function saveFreeQus(){
+    var content = freeEditor.getData();
+    var limitTime = $("#limit_time").val();
+    var examid = $("#is_exam").val();
+    var quizeid = $("#quiz_id").val();
+    $.post("/exam/create/question",
+        {
+            type: 3,
+            content: content,
+            questions : "",
+            limitTime : limitTime,
+            examid : examid,
+            quizeid : quizeid
+        },
+        function(data, status){
+            if(status == "success"){
+                Swal.fire({
+                    icon: 'success',
+                    text: 'Your examination has been successfully saved!',
+                })
+                var table = $('#qusList').DataTable();
+                table.ajax.reload();
+                $("#freeModal").modal("hide");
+                $('#freeModal').on('hidden.bs.modal', function (e) {
+                    $(this)
+                        .find("input,textarea,select")
+                            .val('')
+                            .end()
+                        .find("input[type=checkbox], input[type=radio]")
+                            .prop("checked", "")
+                            .end();
+                    })
+                freeEditor.setData("");
+            }else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Somethings wrong...',
+                  })
+            }
+        });
+        $("#quiz_id").val("");
+}
 function ini_ques_tbl(){
     $("#qusList").DataTable({
         responsive: true,
@@ -347,6 +422,8 @@ function ini_ques_tbl(){
                     return 'Multiple Answer';
                 }else if(row.type == 2){
                     return 'Blank Answer';
+                }else if(row.type == 3){
+                    return 'Free Answer';
                 }
             }
         },
@@ -405,7 +482,7 @@ var clearModal = function(val) {
         $("#blank_qus_modal").html(initialBlankModal);
         YourEditor.setData("");
     }else if(val == 3){
-
+        freeEditor.setData("");
     }else{
 
     }
@@ -443,6 +520,8 @@ var editQuize = function(id){
                     createMultipleModal(data);
                 }else if(result.data.type == "2"){
                     createBlankModal(data);
+                }else if(result.data.type == "3"){
+                    createFreeModal(data);
                 }
             }else{
                 Swal.fire({
@@ -534,4 +613,13 @@ var createBlankModal = function(data){
     }
     $("#blank_qus_modal").html(html);
     $("#blankModal").modal('show');
+}
+var createFreeModal = function(data){
+    var temp = JSON.parse(data);
+    var data = temp.data;
+    var content = data.ques_content;
+    var id = data.id;
+    freeEditor.setData(content);
+    $("#quiz_id").val(id);
+    $("#freeModal").modal('show');
 }
