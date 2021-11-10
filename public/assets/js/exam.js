@@ -207,23 +207,23 @@ function saveUniqQus(){
 }
 function saveMultiQus(){
     var content = $('#multi_qus_content').val();
-    var inputList = $("#qus_modal > div");
+    var inputList = $("#multi_qus_modal > div");
     var limitTime = $("#limit_time").val();
     var examid = $("#is_exam").val();
     var quizeid = $("#quiz_id").val();
     var qus = new Array();
     for(var i = 0; i < inputList.length; i++){
-        var radio = inputList[i].children[0].children[0].checked;
+        var checkbox = inputList[i].children[0].children[0].checked;
         var text = inputList[i].children[1].value;
         var quesItem = {
-            answer : radio,
+            answer : checkbox,
             question : text 
         }
         qus.push(quesItem);
     }
     $.post("/exam/create/question",
         {
-            type: 0,
+            type: 1,
             content: content,
             questions : qus,
             limitTime : limitTime,
@@ -238,8 +238,8 @@ function saveMultiQus(){
                 })
                 var table = $('#qusList').DataTable();
                 table.ajax.reload();
-                $("#uniqueModal").modal("hide");
-                $('#uniqueModal').on('hidden.bs.modal', function (e) {
+                $("#multipleModal").modal("hide");
+                $('#multipleModal').on('hidden.bs.modal', function (e) {
                     $(this)
                         .find("input,textarea,select")
                             .val('')
@@ -248,8 +248,8 @@ function saveMultiQus(){
                             .prop("checked", "")
                             .end();
                     })
-                $("#qus_modal").html("");
-                $("#qus_modal").html(initialModal);
+                $("#multi_qus_modal").html("");
+                $("#multi_qus_modal").html(initialMultiModal);
             }else{
                 Swal.fire({
                     icon: 'error',
@@ -373,6 +373,8 @@ var editQuize = function(id){
                 result = JSON.parse(data);
                 if(result.data.type == "0"){
                     createUniqueModal(data);
+                }else if(result.data.type == "1"){
+
                 }
             }else{
                 Swal.fire({
@@ -403,9 +405,9 @@ var createUniqueModal = function(data){
             }
         }else {
             if(Number(answer) == i){
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ')">remove</button></div>';
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ',0)">remove</button></div>';
             }else {
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ')">remove</button></div>';
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ',0)">remove</button></div>';
             }
         }
         
@@ -413,4 +415,35 @@ var createUniqueModal = function(data){
 
     $("#qus_modal").html(html);
     $("#uniqueModal").modal('show');
+}
+var createMultipleModal = function(data){
+    var temp = JSON.parse(data);
+    var data = temp.data;
+    var content = data.ques_content;
+    var answer = data.answer;
+    var id = data.id;
+    var question_array = data.question.split("&");
+    $("#multi_qus_content").val(content);
+    $("#quiz_id").val(id);
+    $("#multi_qus_modal").html("");
+    var html = '<input type="hidden" id="multi_last_num" value="' + (question_array.length - 2) + '">';
+    for(var i = 0; i < question_array.length - 1; i++) {
+        if(i == 0) {
+            if(Number(answer) == i){
+                html += '<div class="input-group" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value="" checked></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"></div>';
+            }else {
+                html += '<div class="input-group" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value=""></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"></div>';
+            }
+        }else {
+            if(Number(answer) == i){
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value="" checked></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ',1)">remove</button></div>';
+            }else {
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value=""></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ',1)">remove</button></div>';
+            }
+        }
+        
+    }
+
+    $("#multi_qus_modal").html(html);
+    $("#multipleModal").modal('show');
 }
