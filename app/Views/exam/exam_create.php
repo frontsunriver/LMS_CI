@@ -20,6 +20,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo base_url('/exam'); ?>">Exam</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url('/exam/examdetail'); ?>/<?= $nemodes['nemo']?>/<?=$cursonom['cod']?>"><?=$nemodes['nemodes']?>-<?=$cursonom['cursonom']?></a></li>
                     <li class="breadcrumb-item active" aria-current="page"></li>
                     </ol>
                 </nav>
@@ -127,11 +128,11 @@
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <label class="col-sm-12 control-label text-sm-left pt-2"><h3>About of exam.</h3></label>
+                                                        <label class="col-sm-12 control-label text-sm-left pt-2"><h3>About exam.</h3></label>
                                                     </div>
                                                     <div class="form-group row">
                                                         <div class="col-sm-12">
-                                                            <textarea class="form-control" name="exam_content" id = "exam_content" aria-label="With textarea"></textarea>
+                                                            <textarea class="form-control" name="exam_content" style= "min-height:100px !important" id = "exam_content" aria-label="With textarea"></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end" style = "margin-top : 20px;">
@@ -182,32 +183,32 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" >
-                <div class = "form-group">
-                    <textarea class="form-control" name="qus_content" id = "qus_content" aria-label="Type here Question..." rows="3"></textarea>
+                <div class = "input-group mb-3">
+                    <textarea class="form-control" name="qus_content" id = "qus_content" style = "min-height : 200px !important" aria-label="Type here Question..." placeholder = "Type here problem..."></textarea>
                 </div>
-                <div class = "form-group" id = "qus_modal">
+                <div class = "input-group mb-3" id = "qus_modal">
                     <input type="hidden" id="last_num" value= 1>
-                    <div class="input-group" id = "div0">
+                    <div class="input-group mb-3" id = "div0">
                         <div class="input-group-text" >
                             <input class="form-check-input "  type="radio" name="flexRadioDefault"  value = "0" checked>
                         </div>
                         <input type="text" id = "input0" class="form-control input" aria-label="Text input with radio button" value = "">
                     </div>
-                    <div class="input-group" id = "div1">
+                    <div class="input-group mb-3" id = "div1">
                         <div class="input-group-text">
                             <input class="form-check-input "  type="radio" name="flexRadioDefault"  value = "1">
                         </div>
                         <input type="text" id = "input1" class="form-control input" aria-label="Text input with radio button" value = "">
-                        <button type = "button" onclick = "removeQuestion(1, 0)">remove</button>
+                        <button type = "button" class = "btn btn-secondary btn-sm" onclick = "removeQuestion(1, 0)">Remove</button>
                     </div>
                 </div>
                 <div class = "form-group">
-                    <button type = "button" onclick = "addQuestion(0)">add</button>
+                    <button type = "button" class = "btn btn-primary " onclick = "addQuestion(0)">Add</button>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick = "saveUniqQus()">Add</button>
+                <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btn-lg" onclick = "saveUniqQus()">Add Problem</button>
             </div>
         </div>
     </div>
@@ -223,32 +224,32 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" >
-                <div class = "form-group">
-                    <textarea class="form-control" name="multi_qus_content" id = "multi_qus_content" aria-label="Type here Question..."></textarea>
+                <div class = "form-group mb-3">
+                    <textarea class="form-control" name="multi_qus_content" style = "min-height : 200px !important" id = "multi_qus_content" aria-label="Type here Question..."></textarea>
                 </div>
                 <div class = "form-group" id = "multi_qus_modal">
                     <input type="hidden" id="multi_last_num" value= 1>
-                    <div class="input-group" id = "multi_div0">
+                    <div class="input-group mb-3" id = "multi_div0">
                         <div class="input-group-text" >
                             <input class="form-check-input "  type="checkbox" name="flexRadioDefault"  value = "0">
                         </div>
                         <input type="text" id = "multi_input0" class="form-control input" aria-label="Text input with radio button" value = "">
                     </div>
-                    <div class="input-group" id = "multi_div1">
+                    <div class="input-group mb-3" id = "multi_div1">
                         <div class="input-group-text">
                             <input class="form-check-input "  type="checkbox" name="flexRadioDefault"  value = "1">
                         </div>
                         <input type="text" id = "multi_input1" class="form-control input" aria-label="Text input with radio button" value = "">
-                        <button type = "button" onclick = "removeQuestion(1,1)">remove</button>
+                        <button type = "button" class = "btn btn-secondary btn-sm" onclick = "removeQuestion(1,1)">Remove</button>
                     </div>
                 </div>
                 <div class = "form-group">
-                    <button type = "button" onclick = "addQuestion(1)">add</button>
+                    <button type = "button" class = "btn btn-primary" onclick = "addQuestion(1)">Add</button>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick = "saveMultiQus()">Save changes</button>
+                <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btn-lg" onclick = "saveMultiQus()">Save changes</button>
             </div>
         </div>
     </div>
@@ -264,11 +265,11 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" >
-                <div class = "form-group editArea">
-                    <textarea class="form-control form-control-lg"  id="blank_quiz" placeholder="Type question here. Example: Practice makes you [Blank]" rows="15"></textarea>
+                <div class = "form-group editArea mb-3">
+                    <textarea class="form-control form-control-lg" id="blank_quiz" placeholder="Type question here. Example: Practice makes you [Blank]"></textarea>
                 </div>
-                <div class = "form-group">
-                    <button type = "button" onclick = "addQuestion(2)">add blank</button>
+                <div class = "form-group mb-3">
+                    <button type = "button" class = "btn btn-primary" onclick = "addQuestion(2)">add blank</button>
                 </div>
                 <div class = "form-group" id = "blank_qus_modal">
                     <input type="hidden" id="blank_last_num" value= 0>
@@ -292,14 +293,14 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" >
-                <div class = "form-group editArea">
-                    <textarea class="form-control form-control-lg"  id="free_quiz" placeholder="Type question here." rows="15"></textarea>
+                <div class = "form-group mb-3 editArea">
+                    <textarea class="form-control form-control-lg"  id="free_quiz" placeholder="Type question here."></textarea>
                 </div>
                 <input type="hidden" id="free_last_num" value= 0>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick = "saveFreeQus()">Save changes</button>
+                <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btn-lg" onclick = "saveFreeQus()">Save changes</button>
             </div>
         </div>
     </div>
@@ -314,25 +315,25 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" >
-                <div class = "form-group">
-                    <textarea class="form-control" name="match_qus_content" id = "match_qus_content" aria-label="Type here Question..."></textarea>
+                <div class = "form-group mb-3">
+                    <textarea class="form-control" name="match_qus_content" style = "min-height:200px !important" id = "match_qus_content" placeholder="Type here Question..."></textarea>
                 </div>
                 <div class = "form-group" id = "match_qus_modal">
                     <input type="hidden" id="match_last_num" value= 1>
-                    <div class = "row" id = match_div0>
-                        <div class="col-5">
-                            <input type="text" id = "match_input0" class="form-control input" aria-label="Text input with radio button" value = "">
+                    <div class = "form-group row mb-3" id = match_div0>
+                        <div class="form-group col-5">
+                            <input type="text" id = "match_input0l" class="form-control input" aria-label="Text input with radio button" value = "">
                         </div>
-                        <div class="col-5">
-                            <input type="text" id = "match_input0" class="form-control input" aria-label="Text input with radio button" value = "">
+                        <div class="form-group col-5">
+                            <input type="text" id = "match_input0r" class="form-control input" aria-label="Text input with radio button" value = "">
                         </div>
-                        <div class="col-2">
-                            <button type = "button" onclick = "removeQuestion(1,4)">remove</button>
+                        <div class="form-group col-2">
+                            <button type = "button" class = "btn btn-secondary btn-sm" onclick = "removeQuestion(1,4)">Remove</button>
                         </div>
                     </div>
                 </div>
                 <div class = "form-group">
-                    <button type = "button" onclick = "addQuestion(4)">add</button>
+                    <button type = "button" class ="btn btn-primary" onclick = "addQuestion(4)">Add</button>
                 </div>
             </div>
             <div class="modal-footer">
@@ -358,6 +359,7 @@
         .create( document.querySelector( '#blank_quiz' ) )
         .then( editor => {
             YourEditor = editor;
+            editor.ui.view.editable.element.style.height = '200px';
         } )
         .catch( error => {
                 console.error( error );
@@ -369,6 +371,7 @@
         .create( document.querySelector( '#free_quiz' ) )
         .then( editor => {
             freeEditor = editor;
+            editor.ui.view.editable.element.style.height = '200px';
         } )
         .catch( error => {
                 console.error( error );
