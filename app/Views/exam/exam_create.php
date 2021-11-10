@@ -173,43 +173,87 @@
     </main>
 </div>
 <input type="hidden" id="quiz_id"/>
+<!-- unique answer modal beggin-->
 <div class="modal fade" id="uniqueModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit Unique Answers.</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" >
-        <div class = "form-group">
-            <textarea class="form-control" name="qus_content" id = "qus_content" aria-label="Type here Question..."></textarea>
-        </div>
-        <div class = "form-group" id = "qus_modal">
-            <input type="hidden" id="last_num" value= 1>
-            <div class="input-group" id = "div0">
-                <div class="input-group-text" >
-                    <input class="form-check-input "  type="radio" name="flexRadioDefault"  value = "0" checked>
-                </div>
-                <input type="text" id = "input0" class="form-control input" aria-label="Text input with radio button" value = "">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Unique Answers.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="input-group" id = "div1">
-                <div class="input-group-text">
-                    <input class="form-check-input "  type="radio" name="flexRadioDefault"  value = "1">
+            <div class="modal-body" >
+                <div class = "form-group">
+                    <textarea class="form-control" name="qus_content" id = "qus_content" aria-label="Type here Question..."></textarea>
                 </div>
-                <input type="text" id = "input1" class="form-control input" aria-label="Text input with radio button" value = "">
-                <button type = "button" onclick = "removeQuestion(1)">remove</button>
+                <div class = "form-group" id = "qus_modal">
+                    <input type="hidden" id="last_num" value= 1>
+                    <div class="input-group" id = "div0">
+                        <div class="input-group-text" >
+                            <input class="form-check-input "  type="radio" name="flexRadioDefault"  value = "0" checked>
+                        </div>
+                        <input type="text" id = "input0" class="form-control input" aria-label="Text input with radio button" value = "">
+                    </div>
+                    <div class="input-group" id = "div1">
+                        <div class="input-group-text">
+                            <input class="form-check-input "  type="radio" name="flexRadioDefault"  value = "1">
+                        </div>
+                        <input type="text" id = "input1" class="form-control input" aria-label="Text input with radio button" value = "">
+                        <button type = "button" onclick = "removeQuestion(1, 0)">remove</button>
+                    </div>
+                </div>
+                <div class = "form-group">
+                    <button type = "button" onclick = "addQuestion(0)">add</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick = "saveUniqQus()">Save changes</button>
             </div>
         </div>
-        <div class = "form-group">
-            <button type = "button" onclick = "addQuestion()">add</button>
-        </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onclick = "saveUniqQus()">Save changes</button>
-      </div>
     </div>
-  </div>
 </div>
+<!-- unique answer modal end -->
+
+<!-- multiple answer modal beggin-->
+<div class="modal fade" id="multipleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Multiple Answers.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" >
+                <div class = "form-group">
+                    <textarea class="form-control" name="multi_qus_content" id = "multi_qus_content" aria-label="Type here Question..."></textarea>
+                </div>
+                <div class = "form-group" id = "multi_qus_modal">
+                    <input type="hidden" id="multi_last_num" value= 1>
+                    <div class="input-group" id = "multi_div0">
+                        <div class="input-group-text" >
+                            <input class="form-check-input "  type="checkbox" name="flexRadioDefault"  value = "0">
+                        </div>
+                        <input type="text" id = "multi_input0" class="form-control input" aria-label="Text input with radio button" value = "">
+                    </div>
+                    <div class="input-group" id = "multi_div1">
+                        <div class="input-group-text">
+                            <input class="form-check-input "  type="checkbox" name="flexRadioDefault"  value = "1">
+                        </div>
+                        <input type="text" id = "multi_input1" class="form-control input" aria-label="Text input with radio button" value = "">
+                        <button type = "button" onclick = "removeQuestion(1,1)">remove</button>
+                    </div>
+                </div>
+                <div class = "form-group">
+                    <button type = "button" onclick = "addQuestion(1)">add</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick = "saveMultiQus()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- multiple answer modal end -->
 <?= $this->endSection()?>
 <?= $this->section('defer')?>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
