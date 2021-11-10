@@ -197,3 +197,51 @@ CRITICAL - 2021-11-10 07:16:21 --> Undefined variable: returndata
 #4 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
 #6 {main}
+ERROR - 2021-11-10 10:34:01 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-11-10 10:34:01 --> Unable to connect to the database.
+Main connection [mysqli]: No connection could be made because the target machine actively refused it.
+
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\workspace\Codeigniter\LMS_CI\app\Models\UserModel.php(72): CodeIgniter\Database\BaseConnection->query('select p.p_codi...')
+#2 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(24): App\Models\UserModel->getInfo(Array)
+#3 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(17): App\Controllers\Exam->connected()
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(779): App\Controllers\Exam->__construct()
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#9 {main}
+ERROR - 2021-11-10 10:34:06 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-11-10 10:34:06 --> Unable to connect to the database.
+Main connection [mysqli]: No connection could be made because the target machine actively refused it.
+
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\workspace\Codeigniter\LMS_CI\app\Models\UserModel.php(72): CodeIgniter\Database\BaseConnection->query('select p.p_codi...')
+#2 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(24): App\Models\UserModel->getInfo(Array)
+#3 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(17): App\Controllers\Exam->connected()
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(779): App\Controllers\Exam->__construct()
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#9 {main}
+CRITICAL - 2021-11-10 10:35:58 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 123, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(116): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-10 10:36:51 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 123, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(116): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}

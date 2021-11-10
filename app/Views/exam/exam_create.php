@@ -255,7 +255,7 @@
 </div>
 <!-- multiple answer modal end -->
 
-<!-- multiple blank modal beggin-->
+<!--  blank modal beggin-->
 <div class="modal fade" id="blankModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -282,6 +282,8 @@
         </div>
     </div>
 </div>
+<!--  blank modal end -->
+<!-- free modal beggin-->
 <div class="modal fade" id="freeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -302,7 +304,45 @@
         </div>
     </div>
 </div>
-<!-- multiple blank modal end -->
+<!-- free modal end -->
+<!-- match modal beggin-->
+<div class="modal fade" id="matchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Match Answers.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" >
+                <div class = "form-group">
+                    <textarea class="form-control" name="match_qus_content" id = "match_qus_content" aria-label="Type here Question..."></textarea>
+                </div>
+                <div class = "form-group" id = "match_qus_modal">
+                    <input type="hidden" id="match_last_num" value= 1>
+                    <div class = "row" id = match_div0>
+                        <div class="col-5">
+                            <input type="text" id = "match_input0" class="form-control input" aria-label="Text input with radio button" value = "">
+                        </div>
+                        <div class="col-5">
+                            <input type="text" id = "match_input0" class="form-control input" aria-label="Text input with radio button" value = "">
+                        </div>
+                        <div class="col-2">
+                            <button type = "button" onclick = "removeQuestion(1,4)">remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "form-group">
+                    <button type = "button" onclick = "addQuestion(4)">add</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick = "saveMatchQus()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- match modal end -->
 <?= $this->endSection()?>
 <?= $this->section('defer')?>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">

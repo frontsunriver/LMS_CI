@@ -124,6 +124,8 @@ class Exam extends BaseController
                 $returndata = $exam->saveQuestion($param);
                 break;
             case 4: 
+                $param['type'] = 4;
+                $returndata = $exam->saveQuestion($param);
                 break;
         }
         return json_encode($returndata);

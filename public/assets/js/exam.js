@@ -33,6 +33,21 @@ var initialMultiModal = '' +
 var initialBlankModal = '' + 
 '<input type="hidden" id="blank_last_num" value="0">' + 
 '' ;
+var initialMatchModal = ''+
+'<input type="hidden" id="match_last_num" value= 1>'+
+'<div class = "row" id = match_div0>'+
+    '<div class="col-5">'+
+        '<input type="text" id = "multi_input0" class="form-control input" aria-label="Text input with radio button" value = "">'+
+    '</div>'+
+    '<div class="col-5">'+
+        '<input type="text" id = "multi_input0" class="form-control input" aria-label="Text input with radio button" value = "">'+
+    '</div>'+
+    '<div class="col-2">'+
+        '<button type = "button" onclick = "removeQuestion(1,4)">remove</button>'+
+    '</div>'+
+'</div>'+
+'';
+
 function showUniqueModal(){
     clearModal(0);
     var is_exam = $('#is_exam').val();
@@ -54,8 +69,10 @@ function showMultipleModal(){
     }
 }
 function showMatchModal(){
+    clearModal(4);
     var is_exam = $('#is_exam').val();
     if(is_exam != 0){
+        $("#matchModal").modal("show");
     }else{
         alertErrorSwl();
         return false;
@@ -151,7 +168,21 @@ function addQuestion(val){
     }else if(val == 3){
 
     }else{
-        
+        var num = $("#match_last_num").val();
+        $("#match_last_num").val(++num);
+        $('#match_qus_modal').append(
+            '<div class = "row" id = match_div'+num+'>'+
+                '<div class="col-5">'+
+                    '<input type="text" id = "multi_input'+num+'" class="form-control input" aria-label="Text input with radio button" value = "">'+
+                '</div>'+
+                '<div class="col-5">'+
+                    '<input type="text" id = "multi_input'+num+'" class="form-control input" aria-label="Text input with radio button" value = "">'+
+                '</div>'+
+                '<div class="col-2">'+
+                    '<button type = "button" onclick = "removeQuestion('+num+','+val+')">remove</button>'+
+                '</div>'+
+            '</div>'
+        )
     }
 }
 function removeQuestion(val1, val2){
@@ -164,8 +195,6 @@ function removeQuestion(val1, val2){
         var text = YourEditor.getData();
         var temp = text.split("[Blank]");
         var result = '';
-        console.log(temp);
-        console.log(val1);
         for(var i = 0; i<temp.length; i++){
             if(val1 - 1 == i){
                 result += temp[i];
@@ -182,7 +211,7 @@ function removeQuestion(val1, val2){
     }else if(val2 == 3){
 
     }else{
-
+        $("#match_div"+val1+"").remove();
     }
 }
 function saveUniqQus(){
@@ -310,7 +339,6 @@ function saveBlankQus(){
         qus.push(quesItem);
     }
     content = content.replace(/\[Blank\]/g,"__");
-    console.log(content);
     $.post("/exam/create/question",
         {
             type: 2,
@@ -394,6 +422,62 @@ function saveFreeQus(){
         });
         $("#quiz_id").val("");
 }
+function saveMatchQus(){
+    var content = $('#match_qus_content').val();
+    var inputList = $("#match_qus_modal > div");
+    var limitTime = $("#limit_time").val();
+    var examid = $("#is_exam").val();
+    var quizeid = $("#quiz_id").val();
+    var qus = new Array();
+    console.log(inputList[0].children[0].children[0].value);
+    for(var i = 0; i < inputList.length; i++){
+        var left = inputList[i].children[0].children[0].value;
+        var right = inputList[i].children[1].children[0].value;
+        var quesItem = {
+            left : left,
+            right : right 
+        }
+        qus.push(quesItem);
+    }
+    $.post("/exam/create/question",
+        {
+            type: 4,
+            content: content,
+            questions : qus,
+            limitTime : limitTime,
+            examid : examid,
+            quizeid : quizeid
+        },
+        function(data, status){
+            if(status == "success"){
+                Swal.fire({
+                    icon: 'success',
+                    text: 'Your examination has been successfully saved!',
+                })
+                var table = $('#qusList').DataTable();
+                table.ajax.reload();
+                $("#matchModal").modal("hide");
+                $('#matchModal').on('hidden.bs.modal', function (e) {
+                    $(this)
+                        .find("input,textarea,select")
+                            .val('')
+                            .end()
+                        .find("input[type=checkbox], input[type=radio]")
+                            .prop("checked", "")
+                            .end();
+                    })
+                $("#match_qus_modal").html("");
+                $("#match_qus_modal").html(initialMatchModal);
+            }else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Somethings wrong...',
+                  })
+            }
+        });
+        $("#quiz_id").val("");
+}
 function ini_ques_tbl(){
     $("#qusList").DataTable({
         responsive: true,
@@ -424,6 +508,8 @@ function ini_ques_tbl(){
                     return 'Blank Answer';
                 }else if(row.type == 3){
                     return 'Free Answer';
+                }else{
+                    return 'Match Answer';
                 }
             }
         },
@@ -484,7 +570,17 @@ var clearModal = function(val) {
     }else if(val == 3){
         freeEditor.setData("");
     }else{
-
+        $('#matchModal').on('hidden.bs.modal', function (e) {
+            $(this)
+                .find("input,textarea,select")
+                    .val('')
+                    .end()
+                .find("input[type=checkbox], input[type=radio]")
+                    .prop("checked", "")
+                    .end();
+            })
+        $("#match_qus_modal").html("");
+        $("#match_qus_modal").html(initialMatchModal);
     }
     
 }
@@ -522,6 +618,8 @@ var editQuize = function(id){
                     createBlankModal(data);
                 }else if(result.data.type == "3"){
                     createFreeModal(data);
+                }else{
+                    createMatchModal(data);
                 }
             }else{
                 Swal.fire({
@@ -623,3 +721,42 @@ var createFreeModal = function(data){
     $("#quiz_id").val(id);
     $("#freeModal").modal('show');
 }
+var createMatchModal = function(data){
+    var temp = JSON.parse(data);
+    var data = temp.data;
+    var content = data.ques_content;
+    var id = data.id;
+    var problems = JSON.parse(temp.data.qus_answer);
+    $("#match_qus_content").val(content);
+    $("#quiz_id").val(id);
+    $("#match_qus_modal").html("");
+    var html = '<input type="hidden" id="multi_last_num" value="' + (problems.length - 1) + '">'+'<div class = "row" id = match_div0>';
+    for(var i = 0; i < problems.length; i++) {
+        if(i == problems.length){
+            html += '<div class="col-5">'+
+                        '<input type="text" id = "match_input'+i+'" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].left+'">'+
+                    '</div>'+
+                    '<div class="col-5">'+
+                        '<input type="text" id = "match_input'+i+'" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].right+'">'+
+                    '</div>'+
+                    '<div class="col-2">'+
+                        '<button type = "button" onclick = "removeQuestion('+i+',4)">remove</button>'+
+                    '</div>'+
+                '</div>';
+        }else{
+            html += '<div class="col-5">'+
+                        '<input type="text" id = "match_input'+i+'" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].left+'">'+
+                    '</div>'+
+                    '<div class="col-5">'+
+                        '<input type="text" id = "match_input'+i+'" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].right+'">'+
+                    '</div>'+
+                    '<div class="col-2">'+
+                        '<button type = "button" onclick = "removeQuestion('+i+',4)">remove</button>'+
+                    '</div>';
+        }
+        
+    }
+
+    $("#match_qus_modal").html(html);
+    $("#matchModal").modal('show');
+}                        
