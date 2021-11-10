@@ -118,27 +118,19 @@ class ExamModel extends Model
         return $id;
     }
 
-    function saveUniqQuestion($param){
+    function saveQuestion($param){
         $examid = $param['examid'];
         $problems = $param['questions'];
         $content = $param['content'];
         $quizeid = $param['quizeid'];
-        $answer = 0;
+        $type = $param['type'];
+        $answer = [];
         $question = "";
-        for($i = 0; $i < count($problems); $i++){
-            if($problems[$i]['answer'] != "false"){
-                $answer = $i;
-            }
-            $question .= $problems[$i]['question']."&";            
-        }
-
         $data = [
             'exam_id' => $examid,
-            'type' => 0,
+            'type' => $type,
             'ques_content' => $content,
-            'answer' => $answer,
-            'question' => $question
-
+            'qus_answer' => json_encode($problems)
         ];
         if($quizeid != ""){
             $this->dao->table('exam_quiz')->where('id', $quizeid)->update($data);

@@ -1,0 +1,67 @@
+CRITICAL - 2021-11-10 00:04:38 --> Undefined variable: returndata
+#0 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\workspace\\Co...', 122, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-10 00:16:02 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\workspace\\Co...', 322, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\Query.php(322): implode(',', Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\Query.php(302): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `ex...', Array)
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\Query->getQuery()
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#6 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(139): CodeIgniter\Database\BaseBuilder->insert(Array)
+#7 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(114): App\Models\ExamModel->saveQuestion(Array)
+#8 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#10 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#13 {main}
+CRITICAL - 2021-11-10 00:18:52 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\workspace\\Co...', 132, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(132): implode(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(114): App\Models\ExamModel->saveQuestion(Array)
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#8 {main}
+CRITICAL - 2021-11-10 00:19:26 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\workspace\\Co...', 128, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(128): implode(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(114): App\Models\ExamModel->saveQuestion(Array)
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#8 {main}
+CRITICAL - 2021-11-10 00:20:23 --> implode(): Argument must be an array
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Argu...', 'D:\\workspace\\Co...', 128, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(128): implode('[{"answer":"fal...')
+#2 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(114): App\Models\ExamModel->saveQuestion(Array)
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#8 {main}
+ERROR - 2021-11-10 00:21:56 --> Unknown column 'question' in 'field list'
+CRITICAL - 2021-11-10 00:21:56 --> Unknown column 'question' in 'field list'
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `ex...')
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ex...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ex...')
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(138): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(114): App\Models\ExamModel->saveQuestion(Array)
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#8 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#11 {main}

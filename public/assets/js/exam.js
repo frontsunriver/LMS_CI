@@ -11,7 +11,7 @@ var initialModal = '' +
         '<input class="form-check-input " type="radio" name="flexRadioDefault" value="1">' + 
     '</div>' + 
     '<input type="text" id="input1" class="form-control input" aria-label="Text input with radio button" value="">' + 
-    '<button type="button" onclick="removeQuestion(1)">remove</button>' +
+    '<button type="button" onclick="removeQuestion(1,0)">remove</button>' +
 '</div>' + 
 '' ;
 var initialMultiModal = '' + 
@@ -54,7 +54,6 @@ function showMultipleModal(){
 function showMatchModal(){
     var is_exam = $('#is_exam').val();
     if(is_exam != 0){
-        console.log("yes");
     }else{
         alertErrorSwl();
         return false;
@@ -63,7 +62,6 @@ function showMatchModal(){
 function showBlankModal(){
     var is_exam = $('#is_exam').val();
     if(is_exam != 0){
-        console.log("yes");
     }else{
         alertErrorSwl();
         return false;
@@ -72,7 +70,6 @@ function showBlankModal(){
 function showFreeModal(){
     var is_exam = $('#is_exam').val();
     if(is_exam != 0){
-        console.log("yes");
     }else{
         alertErrorSwl();
         return false;
@@ -284,7 +281,7 @@ function ini_ques_tbl(){
             render: function(data, type, row){
                 if(row.type == 0){
                     return 'Unique Answer';
-                }else if(row.type == 0){
+                }else if(row.type == 1){
                     return 'Multiple Answer';
                 }
             }
@@ -305,9 +302,6 @@ function ini_ques_tbl(){
         }],
     });
 }
-// 2021:11:19:11:36
-
-
 var clearModal = function(val) {
     if(val == 0){
         $('#uniqueModal').on('hidden.bs.modal', function (e) {
@@ -369,12 +363,13 @@ var editQuize = function(id){
             id : id
         },
         function(data, status){
+            console.log(data);
             if(status == "success"){
                 result = JSON.parse(data);
                 if(result.data.type == "0"){
                     createUniqueModal(data);
                 }else if(result.data.type == "1"){
-
+                    createMultipleModal(data);
                 }
             }else{
                 Swal.fire({
@@ -389,25 +384,25 @@ var createUniqueModal = function(data){
     var temp = JSON.parse(data);
     var data = temp.data;
     var content = data.ques_content;
-    var answer = data.answer;
     var id = data.id;
-    var question_array = data.question.split("&");
+    var problems = JSON.parse(temp.data.qus_answer);
     $("#qus_content").val(content);
     $("#quiz_id").val(id);
     $("#qus_modal").html("");
-    var html = '<input type="hidden" id="last_num" value="' + (question_array.length - 2) + '">';
-    for(var i = 0; i < question_array.length - 1; i++) {
+    var html = '<input type="hidden" id="last_num" value="' + (problems.length - 1) + '">';
+    console.log(problems);
+    for(var i = 0; i < problems.length; i++) {
         if(i == 0) {
-            if(Number(answer) == i){
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"></div>';
+            if(problems[i].answer == "true"){
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"></div>';
             }else {
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"></div>';
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"></div>';
             }
         }else {
-            if(Number(answer) == i){
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ',0)">remove</button></div>';
+            if(problems[i].answer == "true"){
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',0)">remove</button></div>';
             }else {
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ',0)">remove</button></div>';
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',0)">remove</button></div>';
             }
         }
         
@@ -420,25 +415,24 @@ var createMultipleModal = function(data){
     var temp = JSON.parse(data);
     var data = temp.data;
     var content = data.ques_content;
-    var answer = data.answer;
     var id = data.id;
-    var question_array = data.question.split("&");
+    var problems = JSON.parse(temp.data.qus_answer);
     $("#multi_qus_content").val(content);
     $("#quiz_id").val(id);
     $("#multi_qus_modal").html("");
-    var html = '<input type="hidden" id="multi_last_num" value="' + (question_array.length - 2) + '">';
-    for(var i = 0; i < question_array.length - 1; i++) {
+    var html = '<input type="hidden" id="multi_last_num" value="' + (problems.length - 1) + '">';
+    for(var i = 0; i < problems.length; i++) {
         if(i == 0) {
-            if(Number(answer) == i){
-                html += '<div class="input-group" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value="" checked></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"></div>';
+            if(problems[i].answer == "true"){
+                html += '<div class="input-group" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value="" checked></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"></div>';
             }else {
-                html += '<div class="input-group" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value=""></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"></div>';
+                html += '<div class="input-group" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value=""></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"></div>';
             }
         }else {
-            if(Number(answer) == i){
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value="" checked></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ',1)">remove</button></div>';
+            if(problems[i].answer == "true"){
+                html += '<div class="input-group" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value="" checked></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',1)">remove</button></div>';
             }else {
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value=""></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + question_array[i] + '"><button type="button" onclick="removeQuestion(' + i + ',1)">remove</button></div>';
+                html += '<div class="input-group" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value=""></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',1)">remove</button></div>';
             }
         }
         

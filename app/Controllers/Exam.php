@@ -108,9 +108,12 @@ class Exam extends BaseController
         $returndata;
         switch ($param['type']) {
             case 0:
-                $returndata = $exam->saveUniqQuestion($param);
+                $param['type'] = 0;
+                $returndata = $exam->saveQuestion($param);
                 break;
             case 1:
+                $param['type'] = 1;
+                $returndata = $exam->saveQuestion($param);
                 break;
             case 2:
                 break;
