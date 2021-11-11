@@ -11,7 +11,7 @@ var initialModal = '' +
         '<input class="form-check-input " type="radio" name="flexRadioDefault" value="1">' + 
     '</div>' + 
     '<input type="text" id="input1" class="form-control input" aria-label="Text input with radio button" value="">' + 
-    '<button type="button" class = "btn btn-secondary btn-sm" onclick="removeQuestion(1,0)">Remove</button>' +
+    '<button type="button" class = "btn btn-secondary btn-sm" onclick="removeQuestion(1,0)"><i class = "bi bi-trash"></i>Remove</button>' +
 '</div>' + 
 '' ;
 var initialMultiModal = '' + 
@@ -27,7 +27,7 @@ var initialMultiModal = '' +
         '<input class="form-check-input " type="checkbox" name="flexRadioDefault" value="1">' + 
     '</div>' + 
     '<input type="text" id="multi_input1" class="form-control input" aria-label="Text input with radio button" value="">' + 
-    '<button type="button" class = "btn btn-secondary btn-sm" onclick="removeQuestion(1,1)">Remove</button>' +
+    '<button type="button" class = "btn btn-secondary btn-sm" onclick="removeQuestion(1,1)"><i class = "bi bi-trash"></i>Remove</button>' +
 '</div>' + 
 '' ;
 var initialBlankModal = '' + 
@@ -43,7 +43,7 @@ var initialMatchModal = ''+
         '<input type="text" id = "multi_input0r" class="form-control input" aria-label="Text input with radio button" value = "">'+
     '</div>'+
     '<div class="col-2">'+
-        '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion(0,4)">remove</button>'+
+        '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion(0,4)"><i class = "bi bi-trash"></i>Remove</button>'+
     '</div>'+
 '</div>'+
 '';
@@ -174,11 +174,11 @@ function addQuestion(val){
     if(val == 0){
         var num = $("#last_num").val();
         $("#last_num").val(++num);
-        $('#qus_modal').append("<div class='input-group mb-3' id = 'div"+num+"'><div class='input-group-text'><input class='form-check-input' type='radio' name='flexRadioDefault'></div><input type='text' id = 'input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' class = 'btn btn-secondary btn-sm' onclick = 'removeQuestion("+num+","+val+")'><i class='bi bi-trash'></i>Remove</button></div>");
+        $('#qus_modal').append("<div class='input-group mb-3' id = 'div"+num+"'><div class='input-group-text'><input class='form-check-input' type='radio' name='flexRadioDefault'></div><input type='text' id = 'input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' class = 'btn btn-secondary btn-sm' onclick = 'removeQuestion("+num+","+val+")'><i class='bi bi-trash'></i><i class = 'bi bi-trash'></i>Remove</button></div>");
     }else if(val == 1){
         var num = $("#multi_last_num").val();
         $("#multi_last_num").val(++num);
-        $('#multi_qus_modal').append("<div class='input-group mb-3' id = 'multi_div"+num+"'><div class='input-group-text'><input class='form-check-input' type='checkbox' name='flexRadioDefault'></div><input type='text' id = 'multi_input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' class = 'btn btn-secondary btn-sm' onclick = 'removeQuestion("+num+","+val+")'>Remove</button></div>");
+        $('#multi_qus_modal').append("<div class='input-group mb-3' id = 'multi_div"+num+"'><div class='input-group-text'><input class='form-check-input' type='checkbox' name='flexRadioDefault'></div><input type='text' id = 'multi_input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' class = 'btn btn-secondary btn-sm' onclick = 'removeQuestion("+num+","+val+")'><i class = 'bi bi-trash'></i>Remove</button></div>");
     }else if(val == 2){
         var num = $("#blank_last_num").val();
         $("#blank_last_num").val(++num);
@@ -199,7 +199,7 @@ function addQuestion(val){
             }
         }
         YourEditor.setData(temp);
-        $('#blank_qus_modal').append("<div class='input-group mb-3' id = 'blank_div"+num+"'><input type='text' id = 'blank_input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' class = 'btn btn-secondary btn-sm' onclick = 'removeQuestion("+num+","+val+")'>Remove</button></div>");
+        $('#blank_qus_modal').append("<div class='input-group mb-3' id = 'blank_div"+num+"'><input type='text' id = 'blank_input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' class = 'btn btn-secondary btn-sm' onclick = 'removeQuestion("+num+","+val+")'><i class = 'bi bi-trash'></i>Remove</button></div>");
     }else if(val == 3){
 
     }else{
@@ -214,7 +214,7 @@ function addQuestion(val){
                     '<input type="text" id = "multi_input'+num+'r" class="form-control input" aria-label="Text input with radio button" value = "">'+
                 '</div>'+
                 '<div class="col-2">'+
-                    '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+num+','+val+')">Remove</button>'+
+                    '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+num+','+val+')"><i class = "bi bi-trash"></i>Remove</button>'+
                 '</div>'+
             '</div>'
         )
@@ -687,9 +687,9 @@ var createUniqueModal = function(data){
             }
         }else {
             if(problems[i].answer == "true"){
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',0)">remove</button></div>';
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',0)"><i class = "bi bi-trash"></i>Remove</button></div>';
             }else {
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',0)">remove</button></div>';
+                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',0)"><i class = "bi bi-trash"></i>Remove</button></div>';
             }
         }
         
@@ -717,9 +717,9 @@ var createMultipleModal = function(data){
             }
         }else {
             if(problems[i].answer == "true"){
-                html += '<div class="input-group mb-3" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value="" checked></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button class = "btn btn-secondary btn-sm" type="button" onclick="removeQuestion(' + i + ',1)">Remove</button></div>';
+                html += '<div class="input-group mb-3" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value="" checked></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button class = "btn btn-secondary btn-sm" type="button" onclick="removeQuestion(' + i + ',1)"><i class = "bi bi-trash"></i>Remove</button></div>';
             }else {
-                html += '<div class="input-group mb-3" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value=""></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" class = "btn btn-secondary btn-sm" onclick="removeQuestion(' + i + ',1)">Remove</button></div>';
+                html += '<div class="input-group mb-3" id="multi_div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="checkbox" name="flexRadioDefault" value=""></div><input type="text" id="multi_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" class = "btn btn-secondary btn-sm" onclick="removeQuestion(' + i + ',1)"><i class = "bi bi-trash"></i>Remove</button></div>';
             }
         }
         
@@ -740,7 +740,7 @@ var createBlankModal = function(data){
     $("#blank_qus_modal").html("");
     var html = '<input type="hidden" id="blank_last_num" value="' + (problems.length - 1) + '">';
     for(var i = 0; i < problems.length; i++) {
-        html += '<div class="input-group mb-3" id="blank_div' + i + '"><input type="text" id="blank_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" class = "btn btn-secondary btn-sm" onclick="removeQuestion(' + i + ',2)">Remove</button></div>';
+        html += '<div class="input-group mb-3" id="blank_div' + i + '"><input type="text" id="blank_input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" class = "btn btn-secondary btn-sm" onclick="removeQuestion(' + i + ',2)"><i class = "bi bi-trash"></i>Remove</button></div>';
     }
     $("#blank_qus_modal").html(html);
     $("#blankModal").modal('show');
@@ -774,7 +774,7 @@ var createMatchModal = function(data){
                         '<input type="text" id = "match_input'+i+'r" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].right+'">'+
                     '</div>'+
                     '<div class="col-2">'+
-                        '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+i+',4)">Remove</button>'+
+                        '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+i+',4)"><i class = "bi bi-trash"></i>Remove</button>'+
                     '</div>'+
                 '</div>';
         }else{
@@ -785,7 +785,7 @@ var createMatchModal = function(data){
                         '<input type="text" id = "match_input'+i+'r" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].right+'">'+
                     '</div>'+
                     '<div class="col-2">'+
-                        '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+i+',4)">Remove</button>'+
+                        '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+i+',4)"><i class = "bi bi-trash"></i>Remove</button>'+
                     '</div>';
         }
         

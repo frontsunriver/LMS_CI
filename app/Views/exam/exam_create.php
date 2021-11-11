@@ -2,9 +2,13 @@
 <?= $this->section('head') ?>
     <script src="//cdn.tiny.cloud/1/51dzbcm0r82iy8a2yrit963nkv27b2lm3qhz7fftmvxn7glv/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <link rel="stylesheet" type="text/css" href="<?= base_url('/assets/css/dashboard.css') ?>">   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"/>
     <style>
         .ck-content {
             height: 200px;
+        }
+        .bi{
+            padding:3px;
         }
     </style>
 <?= $this->endSection()?>
@@ -49,7 +53,7 @@
                                                         <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
                                                         <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
                                                     </div>
-                                                    <h4 class="name p-1"><i class="el el-question-sign"></i>Questions</h4>
+                                                    <h4 class="name p-1"><i class="bi bi-question-circle"></i>Questions</h4>
                                                 </header>
                                                 <div id="quiz_type_div" class="card-body">
                                                     <div class="row">
@@ -84,7 +88,7 @@
                                                         <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
                                                         <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
                                                     </div>
-                                                    <h4 class="name p-1"><i class="el el-question-sign"></i>Popular Settings</h4>
+                                                    <h4 class="name p-1"><i class="bi bi-gear"></i>Popular Settings</h4>
                                                 </header>
                                                 <div id="quiz_type_div" class="card-body">
                                                     <div class="row">
@@ -106,7 +110,7 @@
                                                     </div>
                                                 </div>
                                                 <div class = "card-footer">
-                                                    <a type="button" href="javascript:savePopularset();" class="btn float-end py-1 px-2 btn-primary me-2 btn-lg">Save</a></button>
+                                                    <a type="button" href="javascript:savePopularset();" class="btn float-end py-1 px-2 btn-primary me-2 btn-lg"><i class = "bi bi-send"></i>Save</a></button>
                                                 </div>
                                             </section>
                                         </div>
@@ -119,7 +123,7 @@
                                                         <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
                                                         <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
                                                     </div>
-                                                    <h4 class="name p-1"><i class="el el-question-sign"></i>About Exam</h4>
+                                                    <h4 class="name p-1"><i class="bi bi-share"></i>About Exam</h4>
                                                 </header>
                                                 <div id="quiz_type_div" class="card-body">
                                                     <div class="row">
@@ -141,7 +145,7 @@
                                                     </div>
                                                 </div>
                                                 <div class = "card-footer">
-                                                    <button class="btn float-end py-1 px-2 btn-primary me-2 btn-lg" type="button" onclick = "saveExam();">Save</button>
+                                                    <button class="btn float-end py-1 px-2 btn-primary me-2 btn-lg" type="button" onclick = "saveExam();"><i class = "bi bi-send"></i>Save</button>
                                                 </div>
                                             </section>
                                         </div>
@@ -152,7 +156,7 @@
                                                         <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
                                                         <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
                                                     </div>
-                                                    <h4 class="name p-1"><i class="el el-question-sign"></i>List of Questions</h4>
+                                                    <h4 class="name p-1"><i class="bi bi-list"></i>List of Questions</h4>
                                                 </header>
                                                 <div id="quiz_type_div" class="card-body">
                                                 <table id="qusList" class="display" style="width:100%">
@@ -203,16 +207,16 @@
                             <input class="form-check-input "  type="radio" name="flexRadioDefault"  value = "1">
                         </div>
                         <input type="text" id = "input1" class="form-control input" aria-label="Text input with radio button" value = "">
-                        <button type = "button" class = "btn btn-secondary btn-sm" onclick = "removeQuestion(1, 0)">Remove</button>
+                        <button type = "button" class = "btn btn-secondary btn-sm" onclick = "removeQuestion(1, 0)"><i class = "bi bi-trash"></i>Remove</button>
                     </div>
                 </div>
                 <div class = "form-group">
-                    <button type = "button" class = "btn btn-primary " onclick = "addQuestion(0)">Add</button>
+                    <button type = "button" class = "btn btn-primary " onclick = "addQuestion(0)"><i class = "bi bi-plus"></i>Add</button>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary btn-lg" onclick = "saveUniqQus()">Add Problem</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick = "saveUniqQus()">Save</button>
             </div>
         </div>
     </div>
@@ -248,12 +252,12 @@
                     </div>
                 </div>
                 <div class = "form-group">
-                    <button type = "button" class = "btn btn-primary" onclick = "addQuestion(1)">Add</button>
+                    <button type = "button" class = "btn btn-primary" onclick = "addQuestion(1)"><i class = "bi bi-plus"></i>Add</button>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary btn-lg" onclick = "saveMultiQus()">Save</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick = "saveMultiQus()">Save</button>
             </div>
         </div>
     </div>
@@ -273,7 +277,7 @@
                     <textarea class="form-control form-control-lg" id="blank_quiz" placeholder="Type question here. Example: Practice makes you [Blank]" height="20"></textarea>
                 </div>
                 <div class = "form-group mb-3">
-                    <button type = "button" class = "btn btn-primary" onclick = "addQuestion(2)">add blank</button>
+                    <button type = "button" class = "btn btn-primary" onclick = "addQuestion(2)"><i class = "bi bi-plus"></i>add blank</button>
                 </div>
                 <div class = "form-group" id = "blank_qus_modal">
                     <input type="hidden" id="blank_last_num" value= 0>
@@ -303,8 +307,8 @@
                 <input type="hidden" id="free_last_num" value= 0>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary btn-lg" onclick = "saveFreeQus()">Save</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick = "saveFreeQus()">Save</button>
             </div>
         </div>
     </div>
@@ -337,7 +341,7 @@
                     </div>
                 </div>
                 <div class = "form-group">
-                    <button type = "button" class ="btn btn-primary" onclick = "addQuestion(4)">Add</button>
+                    <button type = "button" class ="btn btn-primary" onclick = "addQuestion(4)"><i class = "bi bi-plus"></i>Add</button>
                 </div>
             </div>
             <div class="modal-footer">
