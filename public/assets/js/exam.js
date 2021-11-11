@@ -51,7 +51,7 @@ var initialMatchModal = ''+
 function showUniqueModal(){
     clearModal(0);
     var is_exam = $('#is_exam').val();
-    if(is_exam == 0){
+    if(is_exam != 0){
         $("#uniqueModal").modal("show");
     }else{
         alertErrorSwl();
@@ -61,7 +61,7 @@ function showUniqueModal(){
 function showMultipleModal(){
     clearModal(1);
     var is_exam = $('#is_exam').val();
-    if(is_exam == 0){
+    if(is_exam != 0){
         $("#multipleModal").modal("show");
     }else{
         alertErrorSwl();
@@ -71,7 +71,7 @@ function showMultipleModal(){
 function showMatchModal(){
     clearModal(4);
     var is_exam = $('#is_exam').val();
-    if(is_exam == 0){
+    if(is_exam != 0){
         $("#matchModal").modal("show");
     }else{
         alertErrorSwl();
@@ -81,7 +81,7 @@ function showMatchModal(){
 function showBlankModal(){
     clearModal(2);
     var is_exam = $('#is_exam').val();
-    if(is_exam == 0){
+    if(is_exam != 0){
         $("#blankModal").modal("show");
     }else{
         alertErrorSwl();
@@ -91,7 +91,7 @@ function showBlankModal(){
 function showFreeModal(){
     clearModal(3);
     var is_exam = $('#is_exam').val();
-    if(is_exam == 0){
+    if(is_exam != 0){
         $("#freeModal").modal("show");
     }else{
         alertErrorSwl();
@@ -571,7 +571,8 @@ var clearModal = function(val) {
         $("#blank_qus_modal").html("");
         $("#blank_qus_modal").html(initialBlankModal);
         YourEditor.setData("");
-        YourEditor.ui.view.editable.element.style.height = '200px';
+        // YourEditor.ui.view.editable.element.style.height = '200px';
+        YourEditor.config.height = 200;
     }else if(val == 3){
         freeEditor.setData("");
         freeEditor.ui.view.editable.element.style.height = '200px';

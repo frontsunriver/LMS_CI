@@ -2,9 +2,11 @@
 <?= $this->section('head') ?>
     <script src="//cdn.tiny.cloud/1/51dzbcm0r82iy8a2yrit963nkv27b2lm3qhz7fftmvxn7glv/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <link rel="stylesheet" type="text/css" href="<?= base_url('/assets/css/dashboard.css') ?>">   
-    <!-- <link href="//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    
-    <!-- CSS only -->
+    <style>
+        .ck-content {
+            height: 200px;
+        }
+    </style>
 <?= $this->endSection()?>
 <?= $this->section('title') ?>
     Exam
@@ -249,7 +251,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary btn-lg" onclick = "saveMultiQus()">Save changes</button>
+                <button type="button" class="btn btn-primary btn-lg" onclick = "saveMultiQus()">Save</button>
             </div>
         </div>
     </div>
@@ -266,7 +268,7 @@
             </div>
             <div class="modal-body" >
                 <div class = "form-group editArea mb-3">
-                    <textarea class="form-control form-control-lg" id="blank_quiz" placeholder="Type question here. Example: Practice makes you [Blank]"></textarea>
+                    <textarea class="form-control form-control-lg" id="blank_quiz" placeholder="Type question here. Example: Practice makes you [Blank]" height="20"></textarea>
                 </div>
                 <div class = "form-group mb-3">
                     <button type = "button" class = "btn btn-primary" onclick = "addQuestion(2)">add blank</button>
@@ -278,7 +280,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick = "saveBlankQus()">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick = "saveBlankQus()">Save</button>
             </div>
         </div>
     </div>
@@ -300,7 +302,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary btn-lg" onclick = "saveFreeQus()">Save changes</button>
+                <button type="button" class="btn btn-primary btn-lg" onclick = "saveFreeQus()">Save</button>
             </div>
         </div>
     </div>
@@ -338,7 +340,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick = "saveMatchQus()">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick = "saveMatchQus()">Save</button>
             </div>
         </div>
     </div>
