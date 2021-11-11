@@ -70,7 +70,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <!-- <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script>  -->
+    <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script> 
     <script>
         $(document).ready(function(){
             $("#example").DataTable({
@@ -97,11 +97,11 @@
                     data: null,
                     render: function(data, type, row) {
                         return '\
-                            <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
+                            <a href="javascript:editExam('+row.id+');" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
                                 Edit\
                             </a>\
                             |\
-                            <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Delete">\
+                            <a href="javascript:deleteExam('+row.id+');" class="btn btn-sm btn-clean btn-icon" title="Delete">\
                                 delete\
                             </a>\
                         ';

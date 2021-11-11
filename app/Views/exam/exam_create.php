@@ -33,8 +33,7 @@
                                 <div class="card-style card">
                                 <div class="card-header">
                                     <div class="name p-1" style="display: inline-block;">Create Exam of <?=$nemodes['nemodes']?>-<?=$cursonom['cursonom']?></div>
-                                    <a type="button" href="" class=" btn float-end py-1 px-2 btn-success me-2 btn-lg">save</a></button>
-                                    <a type="button" href="<?php echo base_url('/exam'); ?>" class=" btn float-end py-1 px-2 btn-success me-2 btn-lg">cancel</a></button>
+                                    <a type="button" href="<?php echo base_url('/exam'); ?>" class=" btn float-end py-1 px-2 btn-success me-2 btn-lg">Cancel</a></button>
                                 </div>
                                 <div class="card-body row">
                                     <div class = "col-4">
@@ -102,9 +101,12 @@
                                                     </div>
                                                     <div class="form-group row">
                                                         <div class="col-sm-12">
-                                                            <input type="text" name="min_percent" class="form-control" placeholder="Minimum Pass Percent (%)" required="" value="">
+                                                            <input type="text" name="min_percent" id = "pass_percent" class="form-control" placeholder="Minimum Pass Percent (%)" required="" value="">
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class = "card-footer">
+                                                    <a type="button" href="javascript:savePopularset();" class="btn float-end py-1 px-2 btn-primary me-2 btn-lg">Save</a></button>
                                                 </div>
                                             </section>
                                         </div>
@@ -137,9 +139,9 @@
                                                             <textarea class="form-control" name="exam_content" style= "min-height:100px !important" id = "exam_content" aria-label="With textarea"></textarea>
                                                         </div>
                                                     </div>
-                                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end" style = "margin-top : 20px;">
-                                                        <button class="btn btn-primary me-md-2 btn-lg" type="button" onclick = "saveExam();">Save</button>
-                                                    </div>
+                                                </div>
+                                                <div class = "card-footer">
+                                                    <button class="btn float-end py-1 px-2 btn-primary me-2 btn-lg" type="button" onclick = "saveExam();">Save</button>
                                                 </div>
                                             </section>
                                         </div>
@@ -330,7 +332,7 @@
                             <input type="text" id = "match_input0r" class="form-control input" aria-label="Text input with radio button" value = "">
                         </div>
                         <div class="form-group col-2">
-                            <button type = "button" class = "btn btn-secondary btn-sm" onclick = "removeQuestion(1,4)">Remove</button>
+                            <button type = "button" class = "btn btn-secondary" onclick = "removeQuestion(1,4)">Remove</button>
                         </div>
                     </div>
                 </div>

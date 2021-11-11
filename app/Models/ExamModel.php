@@ -156,4 +156,13 @@ class ExamModel extends Model
         $result = $this->dao->query("select * from exam_quiz where id = ".$id)->getFirstRow();
         return $result;
     }
+    function savePopularSetting($param){
+        $id = $param['exam_id'];
+        $data = [
+            'limit_time' => $param['limit_time'],
+            'pass_percent' => $param['pass_percent']
+        ];
+        $result = $this->dao->table('exam_list')->where('id', $id)->update($data);
+        return $result;
+    }
 }

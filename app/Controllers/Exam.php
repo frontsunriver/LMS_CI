@@ -150,4 +150,10 @@ class Exam extends BaseController
         $result['data'] = $exam->getQuizById($param);
         echo json_encode($result);
     }
+    public function savePopularSetting(){
+        $param = $_POST;
+        $exam = new ExamModel();
+        $result['data'] = $exam->savePopularSetting($param);
+        echo json_encode($result);
+    }
 }

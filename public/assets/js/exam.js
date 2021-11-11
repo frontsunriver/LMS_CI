@@ -43,7 +43,7 @@ var initialMatchModal = ''+
         '<input type="text" id = "multi_input0r" class="form-control input" aria-label="Text input with radio button" value = "">'+
     '</div>'+
     '<div class="col-2">'+
-        '<button type = "button" class = "btn btn-secondary btn-sm" onclick = "removeQuestion(1,4)">remove</button>'+
+        '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion(0,4)">remove</button>'+
     '</div>'+
 '</div>'+
 '';
@@ -93,6 +93,37 @@ function showFreeModal(){
     var is_exam = $('#is_exam').val();
     if(is_exam != 0){
         $("#freeModal").modal("show");
+    }else{
+        alertErrorSwl();
+        return false;
+    }
+}
+function savePopularset(){
+    var is_exam = $('#is_exam').val();
+    var limit_time = $('#limit_time').val();
+    var pass_percent = $('#pass_percent').val();
+
+    if(is_exam != 0){
+        $.post("/exam/save/popular",
+        {
+            exam_id : is_exam,
+            limit_time : limit_time,
+            pass_percent : pass_percent
+        },
+        function(data, status){
+            if(status == "success"){
+                Swal.fire({
+                    icon: 'success',
+                    text: 'Your examination has been successfully saved!',
+                })
+            }else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Somethings wrong...',
+                  })
+            }
+        });
     }else{
         alertErrorSwl();
         return false;
@@ -183,7 +214,7 @@ function addQuestion(val){
                     '<input type="text" id = "multi_input'+num+'r" class="form-control input" aria-label="Text input with radio button" value = "">'+
                 '</div>'+
                 '<div class="col-2">'+
-                    '<button type = "button" class = "btn btn-secondary btn-sm" onclick = "removeQuestion('+num+','+val+')">Remove</button>'+
+                    '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+num+','+val+')">Remove</button>'+
                 '</div>'+
             '</div>'
         )
@@ -210,7 +241,6 @@ function removeQuestion(val1, val2){
                 }
             }
         }
-        console.log(result);
         YourEditor.setData(result);
     }else if(val2 == 3){
 
@@ -737,14 +767,14 @@ var createMatchModal = function(data){
     var html = '<input type="hidden" id="multi_last_num" value="' + (problems.length - 1) + '">'+'<div class = "row form-group mb-3" id = match_div0>';
     for(var i = 0; i < problems.length; i++) {
         if(i == problems.length){
-            html += '<div class="col-5">'+
+            html += '<div class="col-6">'+
                         '<input type="text" id = "match_input'+i+'l" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].left+'">'+
                     '</div>'+
-                    '<div class="col-5">'+
+                    '<div class="col-6">'+
                         '<input type="text" id = "match_input'+i+'r" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].right+'">'+
                     '</div>'+
                     '<div class="col-2">'+
-                        '<button type = "button" class = "btn btn-secondary btn-sm" onclick = "removeQuestion('+i+',4)">Remove</button>'+
+                        '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+i+',4)">Remove</button>'+
                     '</div>'+
                 '</div>';
         }else{
@@ -755,7 +785,7 @@ var createMatchModal = function(data){
                         '<input type="text" id = "match_input'+i+'r" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].right+'">'+
                     '</div>'+
                     '<div class="col-2">'+
-                        '<button type = "button" class = "btn btn-secondary btn-sm" onclick = "removeQuestion('+i+',4)">Remove</button>'+
+                        '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+i+',4)">Remove</button>'+
                     '</div>';
         }
         
@@ -764,3 +794,9 @@ var createMatchModal = function(data){
     $("#match_qus_modal").html(html);
     $("#matchModal").modal('show');
 }                        
+var editExam = function(id){
+
+}
+var deleteExam = function(id){
+    
+}
