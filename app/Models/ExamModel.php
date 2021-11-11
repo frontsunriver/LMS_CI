@@ -165,4 +165,32 @@ class ExamModel extends Model
         $result = $this->dao->table('exam_list')->where('id', $id)->update($data);
         return $result;
     }
+    function getExamSetting($param){
+        $result =  $this->dao->query("SELECT exam_list.id, exam_list.content, exam_list.limit_time, exam_list.pass_percent, exam_list.title, int_curso.cursocod, int_curso.cursonom,  int_salon.nemodes, int_salon.nemo FROM ".
+        "exam_list LEFT JOIN int_curso ON exam_list.idcurso = int_curso.cursocod ".
+        "LEFT JOIN int_salon ON exam_list.idsalon = int_salon.nemo ".
+        "WHERE exam_list.id = ".$param)->getFirstRow();
+        $temp = [];
+        $temp['id'] = $result->id;
+        $temp['title'] = $result->title;
+        $temp['content'] = $result->content;
+        $temp['cursonom']['cod'] = $result->cursocod;
+        $temp['cursonom']['cursonom'] = $result->cursonom;
+        $temp['nemodes']['nemodes'] = $result->nemodes;
+        $temp['nemodes']['nemo'] = $result->nemo;
+        $temp['limit_time'] = $result->limit_time;
+        $temp['pass_percent'] = $result->pass_percent;
+        return $temp;
+    }
+    function getExamquestions($param){
+        $id = $param;
+        $result = $this->dao->query("select * from exam_quiz where exam_id = ".$id)->getResult();
+        return $result;
+    }
+    function examDelete($param){
+        $id = $param['id'];
+        $this->dao->table('exam_quiz')->delete(['exam_id'=>$id]);
+        $this->dao->table('exam_list')->delete(['id'=>$id]);
+        return true;
+    }
 }

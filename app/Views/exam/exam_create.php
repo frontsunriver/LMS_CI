@@ -93,7 +93,7 @@
                                                     </div>
                                                     <div class="form-group row">
                                                         <div class="col-sm-12">
-                                                            <input type="number" name="limit_time" id = "limit_time" class="form-control" placeholder="Time Limitation" required="" value="">
+                                                            <input type="number" name="limit_time" id = "limit_time" class="form-control" placeholder="Time Limitation" required="" value="<?php echo isset($limit_time)?$limit_time :""?>">
                                                         </div>
                                                     </div>
                                                     <div class="row">
@@ -101,7 +101,7 @@
                                                     </div>
                                                     <div class="form-group row">
                                                         <div class="col-sm-12">
-                                                            <input type="text" name="min_percent" id = "pass_percent" class="form-control" placeholder="Minimum Pass Percent (%)" required="" value="">
+                                                            <input type="text" name="min_percent" id = "pass_percent" class="form-control" placeholder="Minimum Pass Percent (%)" required="" value="<?php echo isset($pass_percent)?$pass_percent:""?>">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -124,11 +124,11 @@
                                                 <div id="quiz_type_div" class="card-body">
                                                     <div class="row">
                                                         <label class="col-sm-12 control-label text-sm-left pt-2"><h3>Exam Title</h3></label>
-                                                        <div style="color: red; font-weight: bold;font-size:11px;" class="col-sm-12 text-sm-left">You can input the title of exam.</div>
+                                                        <div style="color: red; font-weight: bold;font-size:11px;" class="col-sm-12 text-sm-left">You have to input the title of exam.</div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <div class="col-sm-12">
-                                                            <input type="text" name="exam_title" id = "exam_title" class="form-control" placeholder="title" required="" value="">
+                                                            <input type="text" name="exam_title" id = "exam_title" class="form-control" placeholder="title" required="" value="<?php echo isset($title)?$title:""?> ">
                                                         </div>
                                                     </div>
                                                     <div class="row">
@@ -136,7 +136,7 @@
                                                     </div>
                                                     <div class="form-group row">
                                                         <div class="col-sm-12">
-                                                            <textarea class="form-control" name="exam_content" style= "min-height:100px !important" id = "exam_content" aria-label="With textarea"></textarea>
+                                                            <textarea class="form-control" name="exam_content" style= "min-height:100px !important" id = "exam_content" aria-label="With textarea" ><?php echo isset($content)?$content:""?></textarea>
                                                         </div>
                                                     </div>
                                                 </div>

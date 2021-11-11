@@ -794,9 +794,27 @@ var createMatchModal = function(data){
     $("#match_qus_modal").html(html);
     $("#matchModal").modal('show');
 }                        
-var editExam = function(id){
-
-}
 var deleteExam = function(id){
-    
+    $.post("/exam/delete",
+    {
+        id : id
+    },
+    function(data, status){
+        var result = JSON.parse(data);
+        console.log(result);
+        if(result.data == true){
+            Swal.fire({
+                icon: 'success',
+                text: 'Your examination has been successfully saved!',
+            })
+            var table = $('#example').DataTable();
+            table.ajax.reload();
+        }else{
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Somethings wrong...',
+              })
+        }
+    });
 }

@@ -156,4 +156,26 @@ class Exam extends BaseController
         $result['data'] = $exam->savePopularSetting($param);
         echo json_encode($result);
     }
+    public function editExam($id = 0){
+        if($id == 0){return redirect()->to(base_url('/exam'));}
+        if(!session('scodigo')){return redirect()->to(base_url('/'));}
+        $exam = new ExamModel();
+        $exam_setting = $exam->getExamSetting($id);
+        $exam_questions = $exam->getExamquestions($id);
+        $this->user_on['nemodes'] = $exam_setting['nemodes'];
+        $this->user_on['cursonom'] = $exam_setting['cursonom'];
+        $this->user_on['exam_id'] = $exam_setting['id'];
+        $this->user_on['title'] = $exam_setting['title'];
+        $this->user_on['content'] = $exam_setting['content'];
+        $this->user_on['limit_time'] = $exam_setting['limit_time'];
+        $this->user_on['pass_percent'] = $exam_setting['pass_percent'];
+        $this->user_on['questions'] = $exam_questions;
+        return view('exam/exam_create', $this->user_on);
+    }
+    public function examDelete(){
+        $param = $_POST;
+        $exam = new ExamModel();
+        $result['data'] = $exam->examDelete($param);
+        echo json_encode($result);
+    }
 }

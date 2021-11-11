@@ -71,6 +71,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
         $(document).ready(function(){
             $("#example").DataTable({
@@ -97,7 +99,7 @@
                     data: null,
                     render: function(data, type, row) {
                         return '\
-                            <a href="javascript:editExam('+row.id+');" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
+                            <a href="/exam/editExam/'+row.id+'" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
                                 Edit\
                             </a>\
                             |\
