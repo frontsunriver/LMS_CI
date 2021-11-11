@@ -690,15 +690,15 @@ var createUniqueModal = function(data){
     for(var i = 0; i < problems.length; i++) {
         if(i == 0) {
             if(problems[i].answer == "true"){
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"></div>';
+                html += '<div class="input-group mb-3" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"></div>';
             }else {
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"></div>';
+                html += '<div class="input-group mb-3" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"></div>';
             }
         }else {
             if(problems[i].answer == "true"){
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',0)"><i class = "bi bi-trash"></i>Remove</button></div>';
+                html += '<div class="input-group mb-3" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value="" checked></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button class="btn btn-secondary btn-sm" type="button" onclick="removeQuestion(' + i + ',0)"><i class = "bi bi-trash"></i>Remove</button></div>';
             }else {
-                html += '<div class="input-group" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button type="button" onclick="removeQuestion(' + i + ',0)"><i class = "bi bi-trash"></i>Remove</button></div>';
+                html += '<div class="input-group mb-3" id="div' + i + '"><div class="input-group-text">        <input class="form-check-input " type="radio" name="flexRadioDefault" value=""></div><input type="text" id="input' + i + '" class="form-control input" aria-label="Text input with radio button" value="' + problems[i].question + '"><button class="btn btn-secondary btn-sm" type="button" onclick="removeQuestion(' + i + ',0)"><i class = "bi bi-trash"></i>Remove</button></div>';
             }
         }
         
@@ -773,29 +773,31 @@ var createMatchModal = function(data){
     $("#match_qus_content").val(content);
     $("#quiz_id").val(id);
     $("#match_qus_modal").html("");
-    var html = '<input type="hidden" id="multi_last_num" value="' + (problems.length - 1) + '">'+'<div class = "row form-group mb-3" id = match_div0>';
+    var html = '<input type="hidden" id="multi_last_num" value="' + (problems.length - 1) + '">';
     for(var i = 0; i < problems.length; i++) {
+        html += '<div class = "row form-group mb-3" id = match_div0>';
         if(i == problems.length){
-            html += '<div class="col-6">'+
+            html += '<div class="col-6">' +
                         '<input type="text" id = "match_input'+i+'l" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].left+'">'+
-                    '</div>'+
-                    '<div class="col-6">'+
+                    '</div>' +
+                    '<div class="col-6">' +
                         '<input type="text" id = "match_input'+i+'r" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].right+'">'+
-                    '</div>'+
-                    '<div class="col-2">'+
+                    '</div>' +
+                    '<div class="col-2">' +
                         '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+i+',4)"><i class = "bi bi-trash"></i>Remove</button>'+
-                    '</div>'+
+                    '</div>' +
                 '</div>';
         }else{
-            html += '<div class="col-5">'+
+            html += '<div class="col-5">' +
                         '<input type="text" id = "match_input'+i+'l" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].left+'">'+
-                    '</div>'+
-                    '<div class="col-5">'+
+                    '</div>' +
+                    '<div class="col-5">' +
                         '<input type="text" id = "match_input'+i+'r" class="form-control input" aria-label="Text input with radio button" value = "'+problems[i].right+'">'+
-                    '</div>'+
-                    '<div class="col-2">'+
+                    '</div>' +
+                    '<div class="col-2">' +
                         '<button type = "button" class = "btn btn-secondary" onclick = "removeQuestion('+i+',4)"><i class = "bi bi-trash"></i>Remove</button>'+
-                    '</div>';
+                    '</div>' +
+                '</div>';
         }
         
     }

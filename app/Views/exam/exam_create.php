@@ -136,7 +136,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <label class="col-sm-12 control-label text-sm-left pt-2"><h3>About exam.</h3></label>
+                                                        <label class="col-sm-12 control-label text-sm-left pt-2"><h3>About exam</h3></label>
                                                     </div>
                                                     <div class="form-group row">
                                                         <div class="col-sm-12">
@@ -280,13 +280,13 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" >
-                <div class = "form-group editArea mb-3">
+                <div class="form-group editArea mb-3">
                     <textarea class="form-control form-control-lg" id="blank_quiz" placeholder="Type question here. Example: Practice makes you [Blank]" height="20"></textarea>
                 </div>
-                <div class = "form-group mb-3">
-                    <button type = "button" class = "btn btn-primary" onclick = "addQuestion(2)"><i class = "bi bi-plus"></i>add blank</button>
+                <div class="form-group mb-3">
+                    <button type="button" class = "btn btn-primary" onclick = "addQuestion(2)"><i class = "bi bi-plus"></i>add blank</button>
                 </div>
-                <div class = "form-group" id = "blank_qus_modal">
+                <div class="form-group" id = "blank_qus_modal">
                     <input type="hidden" id="blank_last_num" value= 0>
                     
                 </div>
