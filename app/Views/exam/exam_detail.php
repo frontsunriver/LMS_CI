@@ -4,7 +4,14 @@
     
     <script src="https://cdn.tiny.cloud/1/51dzbcm0r82iy8a2yrit963nkv27b2lm3qhz7fftmvxn7glv/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <link rel="stylesheet" type="text/css" href="<?= base_url('/assets/css/dashboard.css') ?>">   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"/>
+    <style>
 
+        .bi{
+            font-size: 20px;
+            color: darkorchid;
+        }
+    </style>
 
     <?= $this->endSection()?>
 
@@ -87,6 +94,14 @@
                 $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
             } );
             $("#example").DataTable({
+                "language": {
+                    "paginate": {
+                        "first":      "First",
+                        "last":       "Last",
+                        "next":       ">",
+                        "previous":   "<"
+                    },
+                },
                 initComplete: function () {
                     this.api().columns().every( function () {
                         var that = this;
@@ -115,11 +130,19 @@
                     render: function(data, type, row) {
                         return '\
                             <a href="/exam/editExam/'+row.id+'" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
-                                Edit\
+                                <i class="bi bi-gear"></i>\
                             </a>\
-                            |\
+                            <a href="javascript:showHideExam('+row.id+');" class="btn btn-sm btn-clean btn-icon" title="show exam" id="show_exam">\
+                                <i class="bi '+row.icon+'"><input type="hidden" id="showFlag" value="'+row.toggle+'"></i>\
+                            </a>\
+                            <a href="javascript:" class="btn btn-sm btn-clean btn-icon" title="Download">\
+                                <i class="bi bi-download"></i>\
+                            </a>\
+                            <a href="javascript:" class="btn btn-sm btn-clean btn-icon" title="Result">\
+                                <i class="bi bi-file-earmark-text-fill"></i>\
+                            </a>\
                             <a href="javascript:deleteExam('+row.id+');" class="btn btn-sm btn-clean btn-icon" title="Delete">\
-                                delete\
+                                <i class="bi bi-trash"></i>\
                             </a>\
                         ';
                     }

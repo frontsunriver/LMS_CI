@@ -518,6 +518,14 @@ function ini_ques_tbl(){
         $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
     } );
     var table = $("#qusList").DataTable({
+        "language": {
+            "paginate": {
+                "first":      "First",
+                "last":       "Last",
+                "next":       ">",
+                "previous":   "<"
+            },
+          },
         initComplete: function () {
             this.api().columns().every( function () {
                 var that = this;
@@ -829,3 +837,38 @@ var deleteExam = function(id){
         }
     });
 }
+var showHideExam = function(id){
+    var showFlag = $("#showFlag").val();
+    if(Number(showFlag) == 0){
+        $("#showFlag").val(1);
+        toggleExam(id,1);
+    }else{
+        $("#showFlag").val(0);
+        toggleExam(id,0);
+    }
+}
+var toggleExam = function(id,flag){
+    $.post("/exam/show",
+        {
+            id : id,
+            flag : flag
+        },
+        function(data, status){
+            var result = JSON.parse(data);
+            if(result.data == true){
+                if(flag == 0){
+                    $("#show_exam").html("");
+                    $("#show_exam").html("<i class='bi bi-eye-slash-fill'></i><input type='hidden' id='showFlag' value='"+flag+"'>");
+                }else{
+                    $("#show_exam").html("");
+                    $("#show_exam").html("<i class='bi bi-eye'></i><input type='hidden' id='showFlag' value='"+flag+"'>");
+                }
+            }else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Somethings wrong...',
+                })
+            }
+        });
+    }

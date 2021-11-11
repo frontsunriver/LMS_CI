@@ -1,0 +1,83 @@
+CRITICAL - 2021-11-11 02:58:21 --> Undefined variable: fecha_creacion
+#0 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Calendario.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\workspace\\Co...', 181, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Calendario->edt_evento()
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 02:58:26 --> Undefined variable: evento
+#0 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Calendario.php(147): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\workspace\\Co...', 147, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Calendario->new_evento()
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 16:10:06 --> syntax error, unexpected '$this' (T_VARIABLE)
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\workspace\\Co...')
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Exam...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Exam...')
+#3 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(76): spl_autoload_call('App\\Models\\Exam...')
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#9 {main}
+CRITICAL - 2021-11-11 16:15:18 --> Undefined index: falg
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(198): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 198, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(184): App\Models\ExamModel->toggleShow(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->toggleShow()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+ERROR - 2021-11-11 16:36:30 --> Unknown column 'toggle' in 'field list'
+CRITICAL - 2021-11-11 16:36:30 --> Unknown column 'toggle' in 'field list'
+#0 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('UPDATE `exam_qu...')
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `exam_qu...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `exam_qu...')
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query('UPDATE `exam_qu...', Array, false)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(202): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(184): App\Models\ExamModel->toggleShow(Array)
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->toggleShow()
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#8 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#11 {main}
+CRITICAL - 2021-11-11 16:44:54 --> Array to string conversion
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\workspace\\Co...', 71, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(62): App\Models\ExamModel->getExamList('2021001', '1')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->getExamList()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-11 16:51:21 --> Undefined variable: toggle
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\exam_detail.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\workspace\\Co...', 136, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/exam_detai...', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(82): view('exam/exam_detai...', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}
+CRITICAL - 2021-11-11 16:53:17 --> Undefined variable: toggle
+#0 D:\workspace\Codeigniter\LMS_CI\app\Views\exam\exam_detail.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\workspace\\Co...', 136, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\workspace\\Co...')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('exam/exam_detai...', Array, true)
+#4 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(82): view('exam/exam_detai...', Array)
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#7 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#10 {main}

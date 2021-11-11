@@ -178,4 +178,10 @@ class Exam extends BaseController
         $result['data'] = $exam->examDelete($param);
         echo json_encode($result);
     }
+    public function toggleShow(){
+        $exam = new ExamModel();
+        $param = $_POST;
+        $returndata['data'] = $exam->toggleShow($param);
+        return json_encode($returndata);
+    }
 }

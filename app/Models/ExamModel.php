@@ -64,14 +64,22 @@ class ExamModel extends Model
 
     function getExamList($nemo, $cod) {
         $returnvValue = [];
-        $result =  $this->dao->query("SELECT exam_list.id, exam_list.title, int_curso.cursocod, int_curso.cursonom,  int_salon.nemodes FROM ".
+        $result =  $this->dao->query("SELECT exam_list.*, int_curso.cursocod, int_curso.cursonom,  int_salon.nemodes FROM ".
                 "exam_list LEFT JOIN int_curso ON exam_list.idcurso = int_curso.cursocod ".
                 "LEFT JOIN int_salon ON exam_list.idsalon = int_salon.nemo ".
                 "WHERE exam_list.idcurso = ".$cod." and exam_list.idsalon = ".$nemo)->getResult();
+                
         foreach ($result as $key) {
             $count = $this->dao->query("select * from exam_quiz where exam_id = ".$key->id)->getResult();
             $temp = [];
             $temp['id'] = $key->id;
+            $temp['toggle'] = $key->toggle;
+            if($key->toggle == 0){
+                $temp['icon'] = "bi-eye-slash-fill";
+            }else{
+                $temp['icon'] = "bi-eye";
+            }
+            $temp['feedback'] = $key->feed_back;
             $temp['title'] = $key->title;
             $temp['cursocod'] = $key->cursocod;
             $temp['cursonom'] = $key->cursonom;
@@ -191,6 +199,15 @@ class ExamModel extends Model
         $id = $param['id'];
         $this->dao->table('exam_quiz')->delete(['exam_id'=>$id]);
         $this->dao->table('exam_list')->delete(['id'=>$id]);
+        return true;
+    }
+    function toggleShow($param){
+        $id = $param['id'];
+        $flag = $param['flag'];
+        $data = [
+            'toggle'=>$flag
+        ];
+        $this->dao->table('exam_list')->where('id', $id)->update($data);
         return true;
     }
 }

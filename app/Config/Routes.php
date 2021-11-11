@@ -57,6 +57,8 @@ $routes->post('/exam/unique/delete', 'Exam::deleteQuize', ['filter' => 'auth']);
 $routes->post('/exam/quiz/getQuizById', 'Exam::getQuizById', ['filter' => 'auth']);
 $routes->post('/exam/save/popular', 'Exam::savePopularSetting', ['filter' => 'auth']);
 $routes->post('/exam/delete', 'Exam::examDelete', ['filter' => 'auth']);
+$routes->post('/exam/show', 'Exam::toggleShow', ['filter' => 'auth']);
+
 
 
 
