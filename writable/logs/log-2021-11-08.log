@@ -26,3 +26,11 @@ CRITICAL - 2021-11-08 03:26:29 --> Call to undefined method CodeIgniter\Database
 #4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
 #6 {main}
+CRITICAL - 2021-11-08 10:03:14 --> Undefined variable: curso
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Calendario.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\Workspace\\Co...', 48, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Calendario->index()
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calendario))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
