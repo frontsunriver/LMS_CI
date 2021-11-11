@@ -167,6 +167,13 @@
                                                             <th>Actions</th>
                                                         </tr>
                                                     </thead>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Content of Exam</th>
+                                                            <th>Type of Exam</th>
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                    </tfoot>
                                                 </table>
                                                 </div>
                                             </section>

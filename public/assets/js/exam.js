@@ -513,15 +513,23 @@ function saveMatchQus(){
         $("#quiz_id").val("");
 }
 function ini_ques_tbl(){
-    $("#qusList").DataTable({
-        responsive: true,
-        searchDelay: 500,
-        processing: true,
-        serverSide: true,
-        paging: false,
-        ordering: false,
-        info: false,
-        retrieve: true,
+    $('#qusList tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+    var table = $("#qusList").DataTable({
+        initComplete: function () {
+            this.api().columns().every( function () {
+                var that = this;
+                $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                    if ( that.search() !== this.value ) {
+                        that
+                            .search( this.value )
+                            .draw();
+                    }
+                } );
+            } );
+        },
         ajax: {
             url: "/exam/getQuesList",
             type: 'POST',
@@ -562,6 +570,7 @@ function ini_ques_tbl(){
             }
         }],
     });
+
 }
 var clearModal = function(val) {
     if(val == 0){

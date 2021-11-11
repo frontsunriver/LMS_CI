@@ -53,6 +53,13 @@
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
+                                            <tfoot>
+                                                <tr>
+                                                    <th>Exam Name</th>
+                                                    <th>Number of Questions</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </tfoot>
                                         </table>
                                     </div>
                                 </div>
@@ -75,15 +82,23 @@
 
     <script>
         $(document).ready(function(){
+            $('#example tfoot th').each( function () {
+                var title = $(this).text();
+                $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+            } );
             $("#example").DataTable({
-                responsive: true,
-                searchDelay: 500,
-                processing: true,
-                serverSide: true,
-                paging: false,
-                ordering: false,
-                info: false,
-                // "bInfo":false,
+                initComplete: function () {
+                    this.api().columns().every( function () {
+                        var that = this;
+                        $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                            if ( that.search() !== this.value ) {
+                                that
+                                    .search( this.value )
+                                    .draw();
+                            }
+                        } );
+                    } );
+                },
                 ajax: {
                     url: "/exam/getExamList",
                     type: 'POST',
