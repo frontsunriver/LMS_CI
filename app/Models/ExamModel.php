@@ -62,10 +62,98 @@ class ExamModel extends Model
             ->get()->getFirstRow();
     }
 
-    function getExamList($id) {
+    function getExamList($nemo, $cod) {
+        $returnvValue = [];
+        $result =  $this->dao->query("SELECT exam_list.id, exam_list.title, int_curso.cursocod, int_curso.cursonom,  int_salon.nemodes FROM ".
+                "exam_list LEFT JOIN int_curso ON exam_list.idcurso = int_curso.cursocod ".
+                "LEFT JOIN int_salon ON exam_list.idsalon = int_salon.nemo ".
+                "WHERE exam_list.idcurso = ".$cod." and exam_list.idsalon = ".$nemo)->getResult();
+        foreach ($result as $key) {
+            $count = $this->dao->query("select * from exam_quiz where exam_id = ".$key->id)->getResult();
+            $temp = [];
+            $temp['id'] = $key->id;
+            $temp['title'] = $key->title;
+            $temp['cursocod'] = $key->cursocod;
+            $temp['cursonom'] = $key->cursonom;
+            $temp['nemodes'] = $key->nemodes;
+            $temp['quizeCount'] = count($count);
+            array_push($returnvValue, $temp);
+        }
+        return $returnvValue;
+    }
+
+
+    function getnemodes($nemo){
+        $result = $this->dao->query("select nemodes from int_salon where nemo = ".$nemo)->getResult();
+        $temp = [];
+        $temp['nemodes'] = $result[0]->nemodes;
+        $temp['nemo'] = $nemo;
+        return $temp;
+    }
+
+    function getcursonom($cod){
+        $result = $this->dao->query("select cursonom from int_curso where cursocod = ".$cod)->getResult();
+        $temp = [];
+        $temp['cursonom'] = $result[0]->cursonom;
+        $temp['cod'] = $cod;
+        return $temp;
+    }
+
+    function getExamQusList($id) {
         return $this->dao->query("SELECT count(*) as count, exam_list.title, exam_list.id FROM ".
                 "exam_quiz LEFT JOIN exam_list ON exam_list.id = exam_quiz.list_id ".
                 "LEFT JOIN exam_main ON exam_list.main_id = exam_main.id ".
                 "WHERE exam_main.id = ".$id)->getResult();
+    }
+
+    function saveExame($param){
+        $data = [
+            'title' => $param['title'],
+            'content'  => $param['content'],
+            'idsalon'  => $param['idsalon'],
+            'idcurso'  => $param['iscurso']
+        ];
+        $result = $this->dao->table('exam_list')->insert($data);
+        $id = $this->dao->insertID();
+        return $id;
+    }
+
+    function saveQuestion($param){
+        $examid = $param['examid'];
+        $problems = $param['questions'];
+        $content = $param['content'];
+        $quizeid = $param['quizeid'];
+        $type = $param['type'];
+        $question = "";
+        $data = [
+            'exam_id' => $examid,
+            'type' => $type,
+            'ques_content' => $content,
+            'qus_answer' => json_encode($problems)
+        ];
+        if($quizeid != ""){
+            $this->dao->table('exam_quiz')->where('id', $quizeid)->update($data);
+
+        }else{
+            $this->dao->table('exam_quiz')->insert($data);
+        }
+        return $examid;
+    }
+    function getQuesList($param){
+        $id = $param['exam_id'];
+        $result = $this->dao->query("select * from exam_quiz where exam_id = ".$id)->getResult();
+        return $result;
+    }
+
+    function deleteQuiz($param){
+        $id = $param['id'];
+        $this->dao->table('exam_quiz')->delete(['id'=>$id]);
+        return true;
+    }
+
+    function getQuizById($param){
+        $id = $param['id'];
+        $result = $this->dao->query("select * from exam_quiz where id = ".$id)->getFirstRow();
+        return $result;
     }
 }

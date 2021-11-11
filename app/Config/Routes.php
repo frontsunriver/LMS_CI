@@ -48,6 +48,18 @@ $routes->post('/calendario/evento', 'Calendario::detalles', ['filter' => 'auth']
 
 $routes->get('/exam', 'Exam::index', ['filter' => 'auth']);
 $routes->get('/exam/detail', 'Exam::detail', ['filter' => 'auth']);
+$routes->get('/exam/detail', 'Exam::detail', ['filter' => 'auth']);
+$routes->post('/exam/getQuesList', 'Exam::getQuesList', ['filter' => 'auth']);
+$routes->post('/exam/getExamList', 'Exam::getExamList', ['filter' => 'auth']);
+$routes->post('/exam/create/save', 'Exam::saveExam', ['filter' => 'auth']);
+$routes->post('/exam/create/question', 'Exam::saveExamQuestion', ['filter' => 'auth']);
+$routes->post('/exam/unique/delete', 'Exam::deleteQuize', ['filter' => 'auth']);
+$routes->post('/exam/quiz/getQuizById', 'Exam::getQuizById', ['filter' => 'auth']);
+
+
+
+
+
 
 
 /*

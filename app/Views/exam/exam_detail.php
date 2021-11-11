@@ -19,7 +19,6 @@
     <div id="main-wrap" class="container-fluid p-0">
 
         <?= $this->include('layout/sidebar') ?>
-
         <main class="main">              
 
                 <div id="main-right" class="col-md-9 ms-sm-auto col-lg-10">
@@ -33,18 +32,17 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="<?php echo base_url('/exam'); ?>">Exam</a></li>
-                        <li class="breadcrumb-item active" aria-current="page"><?php echo $exam->title;?></li>
+                        <li class="breadcrumb-item active" aria-current="page"></li>
                         </ol>
                     </nav>
-
                     <div class="container-fluid p-0">
                         <div class="row">
                             <div class="col-12">
                                 <div class="text-left shadow">
                                     <div class="card-style card">
                                     <div class="card-header">
-                                        <div class="name p-1" style="display: inline-block;">Exam: <?=$exam->title;?></div>
-
+                                        <div class="name p-1" style="display: inline-block;">Exam:<?=$nemodes['nemodes']?>-<?=$cursonom['cursonom']?> </div>
+                                        <a type="button" href="<?php echo base_url('/exam/createExam/'.$nemodes['nemo'].'/'.$cursonom['cod']); ?>" class=" btn float-end py-1 px-2 btn-success me-2">create exam</a></button>
                                     </div>
                                     <div class="card-body">
                                         <table id="example" class="display" style="width:100%">
@@ -85,23 +83,19 @@
                 info: false,
                 // "bInfo":false,
                 ajax: {
-                    url: 'getExamList',
+                    url: "/exam/getExamList",
                     type: 'POST',
                     "data": {
-                        "exam_id": '<?=$exam->id;?>'
+                        "nemo": <?=$nemodes['nemo']?>,
+                        "cod": <?=$cursonom['cod']?>,
                     }
                 },
                 columns: [
-                {
-                    data: 'title'
-                },
-                {
-                    data:'count'
-                },
+                {data: 'title' },
+                {data:'quizeCount' },
                 {
                     data: null,
                     render: function(data, type, row) {
-                        console.log(data);
                         return '\
                             <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
                                 Edit\
@@ -112,25 +106,10 @@
                             </a>\
                         ';
                     }
-                }]
-                // columnDefs: [{
-                //         targets: -1,
-                //         title: 'Actions',
-                //         orderable: false,
-                //         render: function(data, type, full, meta) {
-                //             return '\
-                //             <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
-                //                 <i class="la la-edit"></i>\
-                //             </a>\
-                //             <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Delete">\
-                //                 <i class="la la-trash"></i>\
-                //             </a>\
-                //         ';
-                //         },
-                //     },
-                // ],
+                }],
             });
         });
 
     </script>
 <?= $this->endSection()?>
+

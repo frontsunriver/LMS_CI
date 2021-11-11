@@ -36,7 +36,7 @@ class Database extends Config
 		'username' => 'root',
 		'password' => '',
 		'database' => 'admaula_bdcarmelo_2021',
-		'DBDriver' => 'MySQLi',
+		'DBDriver' => 'mysqli',
 		'DBPrefix' => '',
 		'pConnect' => false,
 		'DBDebug'  => true,
@@ -62,7 +62,7 @@ class Database extends Config
 		'username' => '',
 		'password' => '',
 		'database' => ':memory:',
-		'DBDriver' => 'SQLite3',
+		'DBDriver' => 'mysqli',
 		'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
