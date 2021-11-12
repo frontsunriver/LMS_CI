@@ -300,8 +300,9 @@ function saveUniqQus(){
                     text: 'Somethings wrong...',
                   })
             }
+            $("#quiz_id").val("");
         });
-        $("#quiz_id").val("");
+        
 }
 function saveMultiQus(){
     var content = $('#multi_qus_content').val();
@@ -357,8 +358,6 @@ function saveMultiQus(){
             }
             $("#quiz_id").val("");
         });
-        $("#quiz_id").val("");
-        
 }
 function saveBlankQus(){
     var content = YourEditor.getData();
@@ -421,12 +420,7 @@ function saveBlankQus(){
             }
             $("#quiz_id").val("");
         });
-<<<<<<< HEAD
-        $("#quiz_id").val("");
     }
-=======
-        
->>>>>>> 87515922ae38962e14be2cf0314324801b713a3d
 }
 function saveFreeQus(){
     var content = freeEditor.getData();
@@ -525,8 +519,9 @@ function saveMatchQus(){
                     text: 'Somethings wrong...',
                   })
             }
+            $("#quiz_id").val("");
         });
-        $("#quiz_id").val("");
+        
 }
 function ini_ques_tbl(){
     $('#qusList tfoot th').each( function () {
