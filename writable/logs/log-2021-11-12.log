@@ -193,3 +193,21 @@ CRITICAL - 2021-11-12 09:19:15 --> Undefined index: questions
 #6 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
 >>>>>>> 87515922ae38962e14be2cf0314324801b713a3d
 #7 {main}
+CRITICAL - 2021-11-12 15:18:12 --> Undefined index: feed_back
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(173): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 173, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(154): App\Models\ExamModel->savePopularSetting(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->savePopularSetting()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 15:18:28 --> Undefined index: feed_back
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(173): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 173, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(154): App\Models\ExamModel->savePopularSetting(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->savePopularSetting()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}

@@ -825,28 +825,42 @@ var createMatchModal = function(data){
     $("#matchModal").modal('show');
 }                        
 var deleteExam = function(id){
-    $.post("/exam/delete",
-    {
-        id : id
-    },
-    function(data, status){
-        var result = JSON.parse(data);
-        console.log(result);
-        if(result.data == true){
-            Swal.fire({
-                icon: 'success',
-                text: 'Your examination has been successfully saved!',
-            })
-            var table = $('#example').DataTable();
-            table.ajax.reload();
-        }else{
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Somethings wrong...',
-              })
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            $.post("/exam/delete",
+            {
+                id : id
+            },
+            function(data, status){
+                var result = JSON.parse(data);
+                console.log(result);
+                if(result.data == true){
+                    Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                      )
+                    var table = $('#example').DataTable();
+                    table.ajax.reload();
+                }else{
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Somethings wrong...',
+                      })
+                }
+            });
+
         }
-    });
+    })
 }
 var showHideExam = function(id){
     var showFlag = $("#showFlag").val();
