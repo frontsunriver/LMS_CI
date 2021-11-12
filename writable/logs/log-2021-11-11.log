@@ -81,3 +81,203 @@ CRITICAL - 2021-11-11 16:53:17 --> Undefined variable: toggle
 #8 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
 #10 {main}
+ERROR - 2021-11-11 22:14:03 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-11-11 22:14:03 --> Unable to connect to the database.
+Main connection [mysqli]: No connection could be made because the target machine actively refused it.
+
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Models\UserModel.php(72): CodeIgniter\Database\BaseConnection->query('select p.p_codi...')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(24): App\Models\UserModel->getInfo(Array)
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(17): App\Controllers\Exam->connected()
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(779): App\Controllers\Exam->__construct()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#6 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#9 {main}
+CRITICAL - 2021-11-11 22:14:14 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:15 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:16 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:17 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:17 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:18 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:20 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:20 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:21 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:22 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:22 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:23 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:23 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:24 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:24 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:25 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:25 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:14:25 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:15:29 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:15:59 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 46, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->index()
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:19:52 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 70, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:20:01 --> Trying to get property 'profile' of non-object
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'E:\\Workspace\\Co...', 46, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->index()
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-11 22:31:40 --> Undefined property: stdClass::$toggle
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Models\ExamModel.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Workspace\\Co...', 76, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(60): App\Models\ExamModel->getExamList('2021001', '1')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->getExamList()
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#7 {main}
