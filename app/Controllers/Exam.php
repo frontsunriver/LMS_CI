@@ -168,6 +168,12 @@ class Exam extends BaseController
         $this->user_on['limit_time'] = $exam_setting['limit_time'];
         $this->user_on['pass_percent'] = $exam_setting['pass_percent'];
         $this->user_on['questions'] = $exam_questions;
+        $this->user_on['feed_back'] = $exam_setting['feed_back'];
+        $this->user_on['active_time'] = $exam_setting['active_time'];
+        $this->user_on['deactive_time'] = $exam_setting['deactive_time'];
+        $this->user_on['random_quize'] = $exam_setting['random_quize'];
+        $this->user_on['random_response'] = $exam_setting['random_response'];
+        $this->user_on['max_attemp'] = $exam_setting['max_attemp'];
         return view('exam/exam_create', $this->user_on);
     }
     public function examDelete(){

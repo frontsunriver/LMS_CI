@@ -1,0 +1,7 @@
+CRITICAL - 2021-11-12 06:57:09 --> date_default_timezone_set(): Timezone ID 'Tokyo' is invalid
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_ti...', 'D:\\workspace\\Co...', 183, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(183): date_default_timezone_set('Tokyo')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\workspace\Codeigniter\LMS_CI\public\index.php(28): require('D:\\workspace\\Co...')
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#5 {main}

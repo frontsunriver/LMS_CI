@@ -133,7 +133,7 @@
                             <a href="/exam/editExam/'+row.id+'" class="btn btn-sm btn-clean btn-icon" title="Edit details">\
                                 <i class="bi bi-gear"></i>\
                             </a>\
-                            <a href="javascript:showHideExam('+row.id+');" class="btn btn-sm btn-clean btn-icon" title="show exam" id="show_exam">\
+                            <a href="javascript:showHideExam('+row.id+');" class="btn btn-sm btn-clean btn-icon" title="show exam" id="show_exam'+row.id+'">\
                                 <i class="bi '+row.icon+'"><input type="hidden" id="showFlag" value="'+row.toggle+'"></i>\
                             </a>\
                             <a href="javascript:" class="btn btn-sm btn-clean btn-icon" title="Download">\
