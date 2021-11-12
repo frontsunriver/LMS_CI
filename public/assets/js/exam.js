@@ -188,7 +188,7 @@ function addQuestion(val){
     if(val == 0){
         var num = $("#last_num").val();
         $("#last_num").val(++num);
-        $('#qus_modal').append("<div class='input-group mb-3' id = 'div"+num+"'><div class='input-group-text'><input class='form-check-input' type='radio' name='flexRadioDefault'></div><input type='text' id = 'input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' class = 'btn btn-secondary btn-sm' onclick = 'removeQuestion("+num+","+val+")'><i class='bi bi-trash'></i><i class = 'bi bi-trash'></i>Remove</button></div>");
+        $('#qus_modal').append("<div class='input-group mb-3' id = 'div"+num+"'><div class='input-group-text'><input class='form-check-input' type='radio' name='flexRadioDefault'></div><input type='text' id = 'input"+num+"'class='form-control input' aria-label='Text input with radio button' value = ''><button type = 'button' class = 'btn btn-secondary btn-sm' onclick = 'removeQuestion("+num+","+val+")'><i class = 'bi bi-trash'></i>Remove</button></div>");
     }else if(val == 1){
         var num = $("#multi_last_num").val();
         $("#multi_last_num").val(++num);
@@ -379,6 +379,13 @@ function saveBlankQus(){
     var examid = $("#is_exam").val();
     var quizeid = $("#quiz_id").val();
     var qus = new Array();
+    if(inputList.length == 0){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'You must add at least 1 more blank...',
+          })
+    }else{
     for(var i = 0; i < inputList.length; i++){
         var text = inputList[i].children[0].value;
         var quesItem = {
@@ -426,6 +433,7 @@ function saveBlankQus(){
             }
         });
         $("#quiz_id").val("");
+    }
 }
 function saveFreeQus(){
     var content = freeEditor.getData();

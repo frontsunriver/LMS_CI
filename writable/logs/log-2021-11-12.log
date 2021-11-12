@@ -5,3 +5,145 @@ CRITICAL - 2021-11-12 06:57:09 --> date_default_timezone_set(): Timezone ID 'Tok
 #3 D:\workspace\Codeigniter\LMS_CI\public\index.php(28): require('D:\\workspace\\Co...')
 #4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
 #5 {main}
+CRITICAL - 2021-11-12 04:58:01 --> Trying to get property 'profile' of non-object
+#0 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\workspace\\Co...', 70, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-12 04:58:08 --> Trying to get property 'profile' of non-object
+#0 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\workspace\\Co...', 70, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#6 {main}
+CRITICAL - 2021-11-12 05:02:16 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:18 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:19 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:20 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:24 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:24 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:25 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:25 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:26 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:26 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:26 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:26 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:26 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
+CRITICAL - 2021-11-12 05:02:47 --> Undefined index: questions
+#0 D:\workspace\Codeigniter\LMS_CI\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\workspace\\Co...', 131, Array)
+#1 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(120): App\Models\ExamModel->saveQuestion(Array)
+#2 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+#7 {main}
