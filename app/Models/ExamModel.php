@@ -149,7 +149,7 @@ class ExamModel extends Model
     }
     function getQuesList($param){
         $id = $param['exam_id'];
-        $result = $this->dao->query("select * from exam_quiz where exam_id = ".$id)->getResult();
+        $result = $this->dao->query("select * from exam_quiz where exam_id = ".$id." order by id")->getResult();
         return $result;
     }
 
