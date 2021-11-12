@@ -1,21 +1,33 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('head') ?>
     <script src="//cdn.tiny.cloud/1/51dzbcm0r82iy8a2yrit963nkv27b2lm3qhz7fftmvxn7glv/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <link rel="stylesheet" type="text/css" href="<?= base_url('/assets/css/dashboard.css') ?>">   
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"/>
-    <style>
-        .ck-content {
-            height: 200px;
-        }
-        .bi{
-            padding:3px;
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="<?= base_url('/assets/css/dashboard.css') ?>">   
 <?= $this->endSection()?>
 <?= $this->section('title') ?>
     Exam
 <?= $this->endSection()?>
 <?= $this->section('body') ?>
+        <style>
+            .ck-content {
+                height: 200px;
+            }
+            .bi{
+                padding:3px;
+            }
+            .switchcheck{
+                width: 2em !important;
+                margin-left: 0px !important;
+                font-size:20px;
+                float: right !important;
+                margin-top:0px !important;
+                margin-left:10px !important;
+            }
+            .formchecknewclass{
+                padding-left:0px !important;
+            }
+        </style>
     <div id="main-wrap" class="container-fluid p-0">
         <?= $this->include('layout/sidebar') ?>
         <main class="main">              
@@ -91,22 +103,73 @@
                                                     <h4 class="name p-1"><i class="bi bi-gear"></i>Popular Settings</h4>
                                                 </header>
                                                 <div id="quiz_type_div" class="card-body">
-                                                    <div class="row">
-                                                        <label class="col-sm-12 control-label text-sm-left pt-2">Limit Time</label>
-                                                        <div style="color: red; font-weight: bold;font-size:11px;" class="col-sm-12 text-sm-left">You can put 0 to ignore time limitation.</div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-sm-12">
-                                                            <input type="number" name="limit_time" id = "limit_time" class="form-control" placeholder="Time Limitation" required="" value="<?php echo isset($limit_time)?$limit_time :""?>">
+                                                    <div class="row mb-3">
+                                                        <div class="col-6">
+                                                            <label class="col-sm-12 control-label text-sm-left pt-2">Limit Time</label>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <input type="number" name="limit_time" id = "limit_time" class="form-control" placeholder="Time Limitation" required="" value="<?php echo isset($limit_time)?$limit_time :""?>">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label class="col-sm-12 control-label text-sm-left pt-2">Minimum Pass Percent</label>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <input type="number" name="min_percent" max="100" id = "pass_percent" class="form-control" placeholder="Minimum Pass Percent (%)" required="" value="<?php echo isset($pass_percent)?$pass_percent:""?>">
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <label class="col-sm-12 control-label text-sm-left pt-2">Minimum Pass Percent</label>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-sm-12">
-                                                            <input type="text" name="min_percent" id = "pass_percent" class="form-control" placeholder="Minimum Pass Percent (%)" required="" value="<?php echo isset($pass_percent)?$pass_percent:""?>">
+                                                    <div class="row mb-3">
+                                                        <div class="col-6">
+                                                            <label class="col-sm-12 control-label text-sm-left pt-2">Start Date Time</label>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                <input data-date-format="dd/mm/yyyy" class="form-control" id="startDate">                                                                </div>
+                                                            </div>
                                                         </div>
+                                                        <div class="col-6">
+                                                            <label class="col-sm-12 control-label text-sm-left pt-2">Expire Date Time</label>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                <input data-date-format="dd/mm/yyyy" class="form-control" id="expireDate">                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-6">
+                                                            <label class="col-sm-12 control-label text-sm-left pt-2">The Max Number of Attemp</label>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <input type="number" name="max_attemp" id = "max_attemp" class="form-control"  required="" value="1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr/>
+                                                    <div class="row mb-3">
+                                                        <div class="col-6">
+                                                            <div class="form-check form-switch formchecknewclass">
+                                                                <label class="form-check-label" for="flexSwitchCheckChecked">Active Random Question</label>
+                                                                <input class="switchcheck form-check-input" type="checkbox" id="ran_quiz" checked>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check form-switch formchecknewclass">
+                                                                <label class="form-check-label" for="flexSwitchCheckChecked">Active Random Response</label>
+                                                                <input class="switchcheck form-check-input" type="checkbox" id="ran_res" checked>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-6">
+                                                            <div class="form-check form-switch formchecknewclass">
+                                                                <label class="form-check-label" for="flexSwitchCheckChecked">Feed Back</label>
+                                                                <input class="switchcheck form-check-input" type="checkbox" id="feedback" checked>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                                 <div class = "card-footer">
@@ -365,9 +428,24 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/31.0.0/classic/ckeditor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="<?= base_url('/assets/js/exam.js') ?>"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        $('#startDate').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('#startDate').datepicker("setDate", new Date());
+        $('#expireDate').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('#expireDate').datepicker("setDate", new Date());
         let YourEditor;
         let freeEditor;
         ClassicEditor

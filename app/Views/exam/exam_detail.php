@@ -11,6 +11,7 @@
             font-size: 20px;
             color: darkorchid;
         }
+        
     </style>
 
     <?= $this->endSection()?>
