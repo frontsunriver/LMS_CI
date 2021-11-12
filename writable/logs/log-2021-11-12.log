@@ -5,6 +5,7 @@ CRITICAL - 2021-11-12 06:57:09 --> date_default_timezone_set(): Timezone ID 'Tok
 #3 D:\workspace\Codeigniter\LMS_CI\public\index.php(28): require('D:\\workspace\\Co...')
 #4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
 #5 {main}
+<<<<<<< HEAD
 CRITICAL - 2021-11-12 04:58:01 --> Trying to get property 'profile' of non-object
 #0 D:\workspace\Codeigniter\LMS_CI\app\Controllers\Exam.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\workspace\\Co...', 70, Array)
 #1 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->examDetail('2021001', '01')
@@ -146,4 +147,49 @@ CRITICAL - 2021-11-12 05:02:47 --> Undefined index: questions
 #4 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 D:\workspace\Codeigniter\LMS_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 D:\workspace\Codeigniter\LMS_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\workspace\\Co...')
+=======
+ERROR - 2021-11-12 08:09:29 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-11-12 08:09:29 --> Unable to connect to the database.
+Main connection [mysqli]: No connection could be made because the target machine actively refused it.
+
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Models\UserModel.php(72): CodeIgniter\Database\BaseConnection->query('select p.p_codi...')
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(24): App\Models\UserModel->getInfo(Array)
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(17): App\Controllers\Exam->connected()
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(779): App\Controllers\Exam->__construct()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#6 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#9 {main}
+ERROR - 2021-11-12 08:33:42 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-11-12 08:33:42 --> Unable to connect to the database.
+Main connection [mysqli]: No connection could be made because the target machine actively refused it.
+
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Validation\Userrules.php(9): CodeIgniter\BaseModel->first()
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Validation\Validation.php(277): App\Validation\Userrules->validateUser('aulavirtual', 'name_user,passw...', Array, NULL)
+#6 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('password_user', 'password_user', 'aulavirtual', Array, Array)
+#7 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Login.php(38): CodeIgniter\Controller->validate(Array, Array)
+#9 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Login->authenticate()
+#10 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#11 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+#14 {main}
+CRITICAL - 2021-11-12 09:19:15 --> Undefined index: questions
+#0 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Models\ExamModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\Workspace\\Co...', 131, Array)
+#1 E:\Workspace\Codeigniter\LMS_CI_4\LMS\app\Controllers\Exam.php(118): App\Models\ExamModel->saveQuestion(Array)
+#2 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Exam->saveExamQuestion()
+#3 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exam))
+#4 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\Workspace\Codeigniter\LMS_CI_4\LMS\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 E:\Workspace\Codeigniter\LMS_CI_4\LMS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\Workspace\\Co...')
+>>>>>>> 87515922ae38962e14be2cf0314324801b713a3d
 #7 {main}

@@ -102,27 +102,13 @@ function savePopularset(){
     var is_exam = $('#is_exam').val();
     var limit_time = $('#limit_time').val();
     var pass_percent = $('#pass_percent').val();
-    var active_time = $('#startDate').val();
-    var deactive_time = $('#expireDate').val();
-    var random_quiz = $('#ran_quiz').val();
-    var random_response = $('#ran_res').val();
-    var max_attemp = $('#max_attemp').val();
-    var feed = $('#feedback').prop("checked");
-
-
 
     if(is_exam != 0){
         $.post("/exam/save/popular",
         {
             exam_id : is_exam,
             limit_time : limit_time,
-            pass_percent : pass_percent,
-            active_time : active_time,
-            deactive_time : deactive_time,
-            random_quiz : random_quiz,
-            random_response : random_response,
-            max_attemp : max_attemp,
-            feed_back : feed
+            pass_percent : pass_percent
         },
         function(data, status){
             if(status == "success"){
@@ -369,8 +355,10 @@ function saveMultiQus(){
                     text: 'Somethings wrong...',
                   })
             }
+            $("#quiz_id").val("");
         });
         $("#quiz_id").val("");
+        
 }
 function saveBlankQus(){
     var content = YourEditor.getData();
@@ -431,9 +419,14 @@ function saveBlankQus(){
                     text: 'Somethings wrong...',
                   })
             }
+            $("#quiz_id").val("");
         });
+<<<<<<< HEAD
         $("#quiz_id").val("");
     }
+=======
+        
+>>>>>>> 87515922ae38962e14be2cf0314324801b713a3d
 }
 function saveFreeQus(){
     var content = freeEditor.getData();
@@ -475,8 +468,9 @@ function saveFreeQus(){
                     text: 'Somethings wrong...',
                   })
             }
+            $("#quiz_id").val("");
         });
-        $("#quiz_id").val("");
+        
 }
 function saveMatchQus(){
     var content = $('#match_qus_content').val();
@@ -836,43 +830,28 @@ var createMatchModal = function(data){
     $("#matchModal").modal('show');
 }                        
 var deleteExam = function(id){
-    Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
-      }).then((result) => {
-        if (result.isConfirmed) {
-            $.post("/exam/delete",
-            {
-                id : id
-            },
-            function(data, status){
-                var result = JSON.parse(data);
-                console.log(result);
-                if(result.data == true){
-                    Swal.fire(
-                        'Deleted!',
-                        'Your file has been deleted.',
-                        'success'
-                      )
-                    var table = $('#example').DataTable();
-                    table.ajax.reload();
-                }else{
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Somethings wrong...',
-                      })
-                }
-            });
-
+    $.post("/exam/delete",
+    {
+        id : id
+    },
+    function(data, status){
+        var result = JSON.parse(data);
+        console.log(result);
+        if(result.data == true){
+            Swal.fire({
+                icon: 'success',
+                text: 'Your examination has been successfully saved!',
+            })
+            var table = $('#example').DataTable();
+            table.ajax.reload();
+        }else{
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Somethings wrong...',
+              })
         }
-      })
-
+    });
 }
 var showHideExam = function(id){
     var showFlag = $("#showFlag").val();
@@ -894,11 +873,11 @@ var toggleExam = function(id,flag){
             var result = JSON.parse(data);
             if(result.data == true){
                 if(flag == 0){
-                    $("#show_exam"+id).html("");
-                    $("#show_exam"+id).html("<i class='bi bi-eye-slash-fill'></i><input type='hidden' id='showFlag' value='"+flag+"'>");
+                    $("#show_exam").html("");
+                    $("#show_exam").html("<i class='bi bi-eye-slash-fill'></i><input type='hidden' id='showFlag' value='"+flag+"'>");
                 }else{
-                    $("#show_exam"+id).html("");
-                    $("#show_exam"+id).html("<i class='bi bi-eye'></i><input type='hidden' id='showFlag' value='"+flag+"'>");
+                    $("#show_exam").html("");
+                    $("#show_exam").html("<i class='bi bi-eye'></i><input type='hidden' id='showFlag' value='"+flag+"'>");
                 }
             }else{
                 Swal.fire({

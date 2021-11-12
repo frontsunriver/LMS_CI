@@ -40,14 +40,12 @@ class Exam extends BaseController
 
     public function index()
     {
-
         $calendario=new CalendarioModel();
         $cursos=[];
         if($this->user_on['user_info']->profile=="Administrador del Sistema"){$cursos=$calendario->getCursos();}
         if($this->user_on['user_info']->profile=="Profesor"){$cursos=$calendario->getCursosProf($this->user_on['user_info']->p_codigo);}
         $this->user_on['cursos'] = $cursos;
         return view('exam/index', $this->user_on);
-
     }
 
 
