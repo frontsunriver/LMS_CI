@@ -126,7 +126,7 @@
                                                             <label class="col-sm-12 control-label text-sm-left pt-2">Start Date Time</label>
                                                             <div class="form-group row">
                                                                 <div class="col-sm-12">
-                                                                    <input data-date-format="dd/mm/yyyy" class="form-control" id="startDate">
+                                                                    <input data-date-format="yyyy-mm-dd" class="form-control" id="startDate">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -134,7 +134,7 @@
                                                             <label class="col-sm-12 control-label text-sm-left pt-2">Expire Date Time</label>
                                                             <div class="form-group row">
                                                                 <div class="col-sm-12">
-                                                                    <input data-date-format="dd/mm/yyyy" class="form-control"id="expireDate">
+                                                                    <input data-date-format="yyyy-mm-dd" class="form-control" id="expireDate">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -144,7 +144,7 @@
                                                             <label class="col-sm-12 control-label text-sm-left pt-2">Active Random Question</label>
                                                             <div class="form-group row">
                                                                 <div class="col-sm-12">
-                                                                    <input type="number" name="limit_time" id = "ran_quiz" min=0 class="form-control" placeholder="Time Limitation" required="" value="0">
+                                                                    <input type="number" name="limit_time" id = "ran_quiz" min=0 class="form-control" placeholder="Time Limitation" required="" value = "<?php echo isset($random_quize)?$random_quize:"0"?>">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -152,7 +152,7 @@
                                                             <label class="col-sm-12 control-label text-sm-left pt-2">Active Random Response</label>
                                                             <div class="form-group row">
                                                                 <div class="col-sm-12">
-                                                                    <input type="number" name="limit_time" id = "ran_res" min=0 class="form-control" placeholder="Time Limitation" required="" value="0">
+                                                                    <input type="number" name="limit_time" id = "ran_res" min=0 class="form-control" placeholder="Time Limitation" required="" value = "<?php echo isset($random_response)?$random_response:"0"?>">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -162,7 +162,7 @@
                                                             <label class="col-sm-12 control-label text-sm-left pt-2">The Max Number of Attemp</label>
                                                             <div class="form-group row">
                                                                 <div class="col-sm-12">
-                                                                    <input type="number" name="max_attemp" id = "max_attemp" min=0 class="form-control"  required="" value="1">
+                                                                    <input type="number" name="max_attemp" id = "max_attemp" min=0 class="form-control"  required="" value = "<?php echo isset($max_attemp)?$max_attemp:"1"?>">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -172,7 +172,7 @@
                                                         <div class="col-6">
                                                             <div class="form-check form-switch formchecknewclass">
                                                                 <label class="form-check-label" for="flexSwitchCheckChecked">Feed Back</label>
-                                                                <input class="switchcheck form-check-input" type="checkbox" id="feedback" checked>
+                                                                <input class="switchcheck form-check-input" type="checkbox" id="feedback" <?php if(isset($feed_back)){if($feed_back == "true") {echo "checked";}}?>>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -443,14 +443,14 @@
             autoclose: true,
             todayHighlight: true,
         });
-        $('#startDate').datepicker("setDate", new Date());
+        $('#startDate').datepicker("setDate", new Date("<?php echo isset($active_time)? $active_time : "";?>"));
         $('#expireDate').datepicker({
             weekStart: 1,
             daysOfWeekHighlighted: "6,0",
             autoclose: true,
             todayHighlight: true,
         });
-        $('#expireDate').datepicker("setDate", new Date());
+        $('#expireDate').datepicker("setDate", new Date("<?php echo isset($deactive_time)? $deactive_time : "";?>"));
         let YourEditor;
         let freeEditor;
         ClassicEditor

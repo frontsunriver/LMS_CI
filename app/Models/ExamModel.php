@@ -166,15 +166,22 @@ class ExamModel extends Model
     }
     function savePopularSetting($param){
         $id = $param['exam_id'];
+        
         $data = [
             'limit_time' => $param['limit_time'],
-            'pass_percent' => $param['pass_percent']
+            'pass_percent' => $param['pass_percent'],
+            'feed_back' => $param['feed_back'],
+            'active_time' => $param['active_time'],
+            'deactive_time' => $param['deactive_time'],
+            'random_quiz' => $param['random_quiz'],
+            'random_response' => $param['random_response'],
+            'max_attemp' => $param['max_attemp']
         ];
         $result = $this->dao->table('exam_list')->where('id', $id)->update($data);
         return $result;
     }
     function getExamSetting($param){
-        $result =  $this->dao->query("SELECT exam_list.id, exam_list.content, exam_list.limit_time, exam_list.pass_percent, exam_list.title, int_curso.cursocod, int_curso.cursonom,  int_salon.nemodes, int_salon.nemo FROM ".
+        $result =  $this->dao->query("SELECT exam_list.feed_back, exam_list.active_time, exam_list.deactive_time, exam_list.random_quiz, exam_list.random_response, exam_list.max_attemp, exam_list.id, exam_list.content, exam_list.limit_time, exam_list.pass_percent, exam_list.title, int_curso.cursocod, int_curso.cursonom,  int_salon.nemodes, int_salon.nemo FROM ".
         "exam_list LEFT JOIN int_curso ON exam_list.idcurso = int_curso.cursocod ".
         "LEFT JOIN int_salon ON exam_list.idsalon = int_salon.nemo ".
         "WHERE exam_list.id = ".$param)->getFirstRow();
@@ -188,6 +195,12 @@ class ExamModel extends Model
         $temp['nemodes']['nemo'] = $result->nemo;
         $temp['limit_time'] = $result->limit_time;
         $temp['pass_percent'] = $result->pass_percent;
+        $temp['feed_back'] = $result->feed_back;
+        $temp['active_time'] = $result->active_time;
+        $temp['deactive_time']=$result->deactive_time;
+        $temp['random_quize']=$result->random_quiz;
+        $temp['random_response']=$result->random_response;
+        $temp['max_attemp']=$result->max_attemp;
         return $temp;
     }
     function getExamquestions($param){
