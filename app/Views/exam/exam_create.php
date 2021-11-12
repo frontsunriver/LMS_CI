@@ -126,14 +126,34 @@
                                                             <label class="col-sm-12 control-label text-sm-left pt-2">Start Date Time</label>
                                                             <div class="form-group row">
                                                                 <div class="col-sm-12">
-                                                                <input data-date-format="dd/mm/yyyy" class="form-control" id="startDate">                                                                </div>
+                                                                    <input data-date-format="dd/mm/yyyy" class="form-control" id="startDate">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-6">
                                                             <label class="col-sm-12 control-label text-sm-left pt-2">Expire Date Time</label>
                                                             <div class="form-group row">
                                                                 <div class="col-sm-12">
-                                                                <input data-date-format="dd/mm/yyyy" class="form-control" id="expireDate">                                                                </div>
+                                                                    <input data-date-format="dd/mm/yyyy" class="form-control"id="expireDate">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-6">
+                                                            <label class="col-sm-12 control-label text-sm-left pt-2">Active Random Question</label>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <input type="number" name="limit_time" id = "ran_quiz" min=0 class="form-control" placeholder="Time Limitation" required="" value="0">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label class="col-sm-12 control-label text-sm-left pt-2">Active Random Response</label>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <input type="number" name="limit_time" id = "ran_res" min=0 class="form-control" placeholder="Time Limitation" required="" value="0">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -142,7 +162,7 @@
                                                             <label class="col-sm-12 control-label text-sm-left pt-2">The Max Number of Attemp</label>
                                                             <div class="form-group row">
                                                                 <div class="col-sm-12">
-                                                                    <input type="number" name="max_attemp" id = "max_attemp" class="form-control"  required="" value="1">
+                                                                    <input type="number" name="max_attemp" id = "max_attemp" min=0 class="form-control"  required="" value="1">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -151,25 +171,10 @@
                                                     <div class="row mb-3">
                                                         <div class="col-6">
                                                             <div class="form-check form-switch formchecknewclass">
-                                                                <label class="form-check-label" for="flexSwitchCheckChecked">Active Random Question</label>
-                                                                <input class="switchcheck form-check-input" type="checkbox" id="ran_quiz" checked>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <div class="form-check form-switch formchecknewclass">
-                                                                <label class="form-check-label" for="flexSwitchCheckChecked">Active Random Response</label>
-                                                                <input class="switchcheck form-check-input" type="checkbox" id="ran_res" checked>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <div class="col-6">
-                                                            <div class="form-check form-switch formchecknewclass">
                                                                 <label class="form-check-label" for="flexSwitchCheckChecked">Feed Back</label>
                                                                 <input class="switchcheck form-check-input" type="checkbox" id="feedback" checked>
                                                             </div>
                                                         </div>
-
                                                     </div>
                                                 </div>
                                                 <div class = "card-footer">
